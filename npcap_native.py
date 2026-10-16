@@ -1,4 +1,4 @@
-"""Lean packet capture: talks to Npcap's wpcap.dll directly (ctypes) - no Scapy.
+"""Lean packet capture: talks to Npcap's wpcap.dll directly (ctypes) - no Scapy needed.
 
 Why: Scapy builds a full Python object for every packet it sees; this reads the raw bytes, parses
 just the TCP header by hand, and lets the Npcap *driver* throw everything else away:

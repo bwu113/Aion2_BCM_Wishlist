@@ -1,7 +1,7 @@
 @echo off
 setlocal
 cd /d "%~dp0"
-rem Runs the program from the .py files (no exe). Needs Python 3.10+, Scapy (pip) and Npcap.
+rem Runs the program from the .py files (no exe). Needs Python 3.10+ and Npcap.
 rem Right-click > Run as administrator if capture needs it.
 set "PY="
 where py >nul 2>nul && set "PY=py"

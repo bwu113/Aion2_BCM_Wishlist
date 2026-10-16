@@ -32,9 +32,8 @@ if errorlevel 1 goto failed
   --add-data "aion2_items.csv;." ^
   --add-data "bcm_icon.ico;." --add-data "bcm_icon.png;." ^
   --add-data "found_chime.wav;." ^
-  --collect-all scapy --hidden-import=scapy.arch.windows ^
   --hidden-import=shop_decoder --hidden-import=catalog --hidden-import=wishlist ^
-  --hidden-import=ui_widgets --hidden-import=theme --hidden-import=chime --hidden-import=safety --hidden-import=bulk_add --hidden-import=paste_dialog --hidden-import=npcap_native --hidden-import=scapy_backend ^
+  --hidden-import=ui_widgets --hidden-import=theme --hidden-import=chime --hidden-import=safety --hidden-import=bulk_add --hidden-import=paste_dialog --hidden-import=npcap_native ^
   BCMWishlist.pyw
 if errorlevel 1 goto failed
 

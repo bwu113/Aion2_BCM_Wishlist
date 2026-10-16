@@ -696,24 +696,9 @@ class BlackCloudWatcher:
                     return
                 raise RuntimeError(str(exc)) from exc
         except Exception as exc:
-            fallback = self._scapy_fallback(on_fields, exc)
-            if fallback is not None:
-                self._safe_queue_put(("error", fallback))
+            self._safe_queue_put(("error", f"Live capture failed: {exc}"))
         finally:
             self._safe_queue_put(("finished", "live"))
-
-    def _scapy_fallback(self, on_fields, original: Exception) -> str | None:
-        """Slow path if the direct Npcap access fails but Scapy happens to be installed.  Returns an error text or None."""
-        if isinstance(original, npcap_native.NpcapMissing):
-            return f"Live capture failed: {original}"
-        try:
-            import scapy_backend
-            if scapy_backend.AVAILABLE and not scapy_backend.problem():
-                scapy_backend.run(on_fields, self.stop_event)
-                return None
-        except Exception:
-            pass
-        return f"Live capture failed: {original}"
 
     def stop_capture(self) -> None:
         if not self.running:
