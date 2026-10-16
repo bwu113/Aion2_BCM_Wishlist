@@ -46,14 +46,20 @@ DEFAULT_HEIGHT = 486                    # overlay about 658 x 389 (80 % of the w
 
 
 def app_dir() -> str:
-    """Folder of the .exe (frozen) or of this script."""
+    """Folder of the .exe (built program) or of this script."""
+    compiled = globals().get("__compiled__")                  # set by Nuitka
+    if compiled is not None:
+        folder = getattr(compiled, "containing_dir", None)    # the folder of the onefile exe, not its temp copy
+        return os.path.abspath(folder) if folder else os.path.dirname(os.path.abspath(sys.argv[0]))
     if getattr(sys, "frozen", False):
         return os.path.dirname(os.path.abspath(sys.executable))
     return os.path.dirname(os.path.abspath(__file__))
 
 
 def resource_dir() -> str:
-    """Folder with files bundled into the .exe (PyInstaller) or the script folder."""
+    """Folder with the files bundled into the exe (Nuitka / PyInstaller) or the script folder."""
+    if "__compiled__" in globals():
+        return os.path.dirname(os.path.abspath(__file__))
     return getattr(sys, "_MEIPASS", None) or app_dir()
 
 

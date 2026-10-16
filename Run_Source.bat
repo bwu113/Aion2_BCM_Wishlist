@@ -11,10 +11,4 @@ if not defined PY (
   pause
   exit /b 1
 )
-%PY% -m pip install -r requirements.txt
-if errorlevel 1 (
-  echo Dependency installation failed.
-  pause
-  exit /b 1
-)
 start "" %PY% BCMWishlist.pyw
