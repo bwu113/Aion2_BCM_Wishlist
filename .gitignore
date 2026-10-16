@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec
+wishlist.json
+wishlist.json.bad
+wishlist.json.tmp
+item_catalog.csv.tmp

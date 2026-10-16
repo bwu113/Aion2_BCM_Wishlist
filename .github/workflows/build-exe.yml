@@ -1,0 +1,33 @@
+name: Build Windows exe
+
+# Builds BCMWishlist.exe on GitHub's Windows machines - nothing to install locally.
+# Actions tab > "Build Windows exe" > Run workflow, then download the artifact.
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.txt
+      - name: Build
+        shell: cmd
+        run: >
+          python -m PyInstaller --noconfirm --clean --onefile --windowed
+          --name BCMWishlist --icon bcm_icon.ico
+          --add-data "aion2_items.csv;." --add-data "bcm_icon.ico;." --add-data "bcm_icon.png;."
+          --add-data "found_chime.wav;."
+          --collect-all scapy --hidden-import=scapy.arch.windows
+          --hidden-import=shop_decoder --hidden-import=catalog --hidden-import=wishlist
+          --hidden-import=ui_widgets --hidden-import=theme --hidden-import=chime --hidden-import=safety --hidden-import=bulk_add --hidden-import=paste_dialog --hidden-import=npcap_native --hidden-import=scapy_backend
+          BCMWishlist.pyw
+      - uses: actions/upload-artifact@v4
+        with:
+          name: BCMWishlist
+          path: dist/BCMWishlist.exe

@@ -1,0 +1,3219 @@
+item_id,name,type
+534660001,Pet: Krall Laborer,pet
+534660002,Pet: Forest Specter,pet
+534660003,Pet: Fossa,pet
+534660004,Pet: Klaw,pet
+534660005,Pet: Sparkie,pet
+534660006,Pet: Potcrab,pet
+534660007,Pet: Baby Odyle Spider,pet
+534660008,Pet: Kernon,pet
+534660009,Pet: Manduri Fighter,pet
+534660010,Pet: Skyray,pet
+534660011,Pet: Fungie,pet
+534660012,Pet: Swarm,pet
+534660013,Pet: Drakan Guard Dog,pet
+534660014,Pet: Kailin,pet
+534660015,Pet: Slink,pet
+534660016,Pet: Krall Warshaman,pet
+534660017,Pet: Varg Berserker,pet
+534660019,Pet: Ashen Spider,pet
+534660020,Pet: Mutated Aberrant Odyle Spider,pet
+534660021,Pet: Crasaur,pet
+534660023,Pet: Withered Branch Spider,pet
+534660024,Pet: Aberrant Odyle Spider,pet
+534660025,Pet: Krall Warrior,pet
+534660026,Pet: Withered Agrint,pet
+534660027,Pet: Krao Mutant,pet
+534660029,Pet: Klaw Scout,pet
+534660030,Pet: Nagarant Guardian Warrior,pet
+534660031,Pet: Konutin Worker,pet
+534660032,Pet: Elite Keneire,pet
+534660033,Pet: Elite Manduri Fighter,pet
+534660034,Pet: Giant Sparkie,pet
+534660035,Pet: Skama,pet
+534660037,Pet: Lupyllini,pet
+534660038,Pet: Male Crestlich,pet
+534660039,Pet: Airon,pet
+534660040,Pet: Crestlich,pet
+534660041,Pet: Aullaeu Shaman,pet
+534660042,Pet: Cave Bat,pet
+534660043,Pet: Ursus,pet
+534660044,Pet: Elite Ursus,pet
+534660045,Pet: Aultross's Doppelganger,pet
+534660046,Pet: Sylphen,pet
+534660047,Pet: Armadon,pet
+534660048,Pet: Aberrant Armadon,pet
+534660049,Pet: Forest Spirit,pet
+534660050,Pet: Mutated Forest Spirit,pet
+534660051,Pet: Gravi,pet
+534660052,Pet: Magic Gravi,pet
+534660053,Pet: Large Leaf Gravi,pet
+534660054,Pet: Aberrant Potcrab,pet
+534660055,Pet: Mumu Warrior,pet
+534660056,Pet: Grave Rat,pet
+534660057,Pet: Drakan Probe,pet
+534660058,Pet: Coradon,pet
+534660059,Pet: Black Smoke Murute,pet
+534660060,Pet: Giant Bee,pet
+534660061,Pet: Starturtle,pet
+534660062,Pet: Slime,pet
+534660063,Pet: Contaminated Slime,pet
+534660064,Pet: Vigilant Oculazen,pet
+534660065,Pet: Oculazen,pet
+534660066,Pet: Biruta,pet
+534660067,Pet: Papis,pet
+534660068,Pet: Scorpion,pet
+534660069,Pet: Krao Test Subject,pet
+534660070,Pet: Stone Spirit,pet
+534660072,Pet: Cadaver Insectoid,pet
+534660073,Pet: Tog,pet
+534660074,Pet: Nepenthes,pet
+534660075,Pet: Kuru Worker,pet
+534660076,Pet: Kuru Tinkerer,pet
+534660077,Pet: Kuru Overseer,pet
+534660078,Pet: Harcon,pet
+534660079,Pet: Urugugu Brawler,pet
+534660080,Pet: Ultimate Wind Spirit,pet
+534660081,Pet: Sentinel K'nash,pet
+534660082,Pet: Dionae,pet
+534660083,Pet: Ultimate Fire Spirit,pet
+534660084,Pet: Spider,pet
+534660085,Pet: Kalgolem,pet
+534660086,Pet: Unstable Spider,pet
+534660087,Pet: Fungen,pet
+534660088,Pet: Pino,pet
+534660089,Pet: Pino Worker,pet
+534660090,Pet: Aberrant Skama,pet
+534660091,Pet: Ultimate Water Spirit,pet
+534660092,Pet: Red Spark Ignus,pet
+534660093,Pet: Lesser Wind Spirit,pet
+534660094,Pet: Phantasmal Lakshmi,pet
+534660095,Pet: Intermediate Wind Spirit,pet
+534660096,Pet: Superior Wind Spirit,pet
+534660097,Pet: Superior Fire Spirit,pet
+534660098,Pet: Karnif,pet
+534660099,Pet: Modified Karnif,pet
+534660100,Pet: Elite Karnif,pet
+534660101,Pet: Ultimate Earth Spirit,pet
+534660102,Pet: Forest Guardian,pet
+534660103,Pet: Dried Up Forest Guardian,pet
+534660104,Pet: Pretor Veil Administrator,pet
+534660105,Pet: Manduri Trebuchet Worker,pet
+534660106,Pet: Biruta Herbalist,pet
+534660107,Pet: Tayga,pet
+534660108,Pet: Krao Seal Guardian,pet
+534660109,Pet: Enhanced Krall Combatant,pet
+534660110,Pet: Enhanced Krall Sentry,pet
+534660111,Pet: Blue Kalgolem,pet
+534660112,Pet: Parasite Swarm,pet
+534660113,Pet: Thin Agrint,pet
+534660114,Pet: Forest Monster,pet
+534660115,Pet: Black Spirit,pet
+534660116,Pet: Drana Mutant Brute,pet
+534660117,Pet: Zelophi,pet
+534660118,Pet: Predator Saraswati,pet
+534660119,Pet: Naga Elite Priest,pet
+534660120,Pet: Gatekeeper Pinopi,pet
+534660121,Pet: Zaif,pet
+534660122,Pet: Lesser Water Spirit,pet
+534660123,Pet: Intermediate Water Spirit,pet
+534660124,Pet: Superior Water Spirit,pet
+534660125,Pet: Lesser Earth Spirit,pet
+534660126,Pet: Intermediate Earth Spirit,pet
+534660127,Pet: Superior Earth Spirit,pet
+534660128,Pet: Lesser Fire Spirit,pet
+534660129,Pet: Intermediate Fire Spirit,pet
+534660130,Pet: Silver Blade Rotan,pet
+534660131,Pet: Flame Barghest,pet
+534660132,Pet: Flame Stone Guardian Statue,pet
+534660133,Pet: Furious Feruk,pet
+534660134,Pet: Vivel,pet
+534660135,Pet: Dratona,pet
+534660136,Pet: Basilisk,pet
+534660138,Pet: Elite Soulless Corpse Gnat,pet
+534660139,Pet: Duduka Worker,pet
+534660140,Pet: Duduka Trebuchet Worker,pet
+534660141,Pet: Guardite,pet
+534660142,Pet: Drakan Watcher,pet
+534660143,Pet: Dracuni Herbalist,pet
+534660144,Pet: Kerubar,pet
+534660145,Pet: Kerubian,pet
+534660146,Pet: Spirit King's Bodyguard Warrior,pet
+534660149,Pet: Dark Spirit,pet
+534660152,Pet: Aberrant Bee,pet
+534660153,Pet: Aberrant Coradon,pet
+534660154,Pet: Young Kailin,pet
+534660155,Pet: Young Slink,pet
+534660156,Pet: Young Tog,pet
+534660157,Pet: Young Ursus,pet
+534660159,Pet: Aberrant Zaif,pet
+534660160,Pet: Aberrant Tog,pet
+534660161,Pet: Odyle Stone Spirit,pet
+534660162,Pet: Drana Slime,pet
+534660163,Pet: Drana Swarm,pet
+534660164,Pet: Mutated Cadaver Insectoid,pet
+534660165,Pet: Drana Spore,pet
+534660166,Pet: Ashen Lupyllini,pet
+534660167,Pet: Forest Dionae,pet
+534660168,Pet: Eternal Coradon,pet
+534660169,Pet: Ashen Dionae,pet
+534660170,Pet: Rafflesia,pet
+534660171,Pet: Mumu Worker,pet
+534660172,Pet: Mumu Overseer,pet
+534660173,Pet: Swamp Monster,pet
+534660175,Pet: Marsh Targon,pet
+534660176,Pet: Distorted Mutant,pet
+534660177,Pet: Mutated Ursus,pet
+534660178,Pet: Mutated Forest Guardian,pet
+534660179,Pet: Mutated Insectoid Valka,pet
+534660182,Pet: Drakana Kalgolem,pet
+534660187,Pet: Ancient Spirit,pet
+534660188,Pet: Poison Blood,pet
+534660189,Pet: Drana Contaminant,pet
+534660190,Pet: Congealed Drana,pet
+534660191,Pet: Cadaver Cleaner,pet
+534660192,Pet: Elite Poisonous Spore Fungen,pet
+534660193,Pet: Elite Dratona,pet
+534660194,Pet: Elite Klaw,pet
+534660195,Pet: Venomous Insect Sram,pet
+534660199,Pet: Agrint,pet
+534660200,Pet: Brax,pet
+534660201,Pet: Modified Lupyllini,pet
+534660202,Pet: Drana Predator,pet
+534660203,Pet: Faded Predator,pet
+534660204,Pet: Faded Mutant,pet
+534660205,Pet: Faded Mutant Brute,pet
+534660206,Pet: Faded Floater,pet
+534660207,Pet: Drana Mutant,pet
+534660209,Pet: Addicted Shulak Cart Worker,pet
+534660210,Pet: Elite Guardite,pet
+534660211,Pet: Watcher Guardite,pet
+534660212,Pet: Kerubiel,pet
+534660214,Pet: Decomposed Lupyllini,pet
+534660215,Pet: Faded Drana,pet
+534660216,Pet: Mudthorn,pet
+534660217,Pet: Ashen Agrint,pet
+534660218,Pet: Ashen Basilisk,pet
+534660219,Pet: Tamed Karnif,pet
+534660220,Pet: Dratona Tinkerer,pet
+534660224,Pet: Soulless Corpse Gnat,pet
+534660225,Pet: Dry Leaf Agrint,pet
+534660226,Pet: Tamed Zaif,pet
+534660227,Pet: Ashpile Forester,pet
+534660228,Pet: Ashen Forester,pet
+534660229,Pet: Varg Shaman,pet
+534660230,Pet: Test Subject Hoka,pet
+534660233,Pet: Ghula,pet
+534660234,Pet: Floofy,pet
+534660235,Pet: Tuka,pet
+534660236,Pet: Snowfield Debry,pet
+534660237,Pet: Snowfield Frugon,pet
+534660238,Pet: Icecap Pachyron,pet
+534660239,Pet: Lagur,pet
+534660240,Pet: Driznak,pet
+534660241,Pet: Draconute Shaman,pet
+534660242,Pet: Snowfield Tuka,pet
+534660243,Pet: Trogas,pet
+534660244,Pet: Debry,pet
+534660245,Pet: Snowfield Stone Spirit,pet
+534660246,Pet: Lava Gravarax,pet
+534660247,Pet: Lava Pokus,pet
+534660248,Pet: Snowfield Floofy,pet
+534660249,Pet: Desert Swift Latoha,pet
+534660250,Pet: Desert Small Latoha,pet
+534660251,Pet: Snowfield Torba,pet
+534660252,Pet: Snowfield Trogas,pet
+534660253,Pet: Pokus,pet
+534660254,Pet: Iralcig Swift Latoha,pet
+534660255,Pet: Iralcig Small Latoha,pet
+534660256,Pet: Torba,pet
+534660257,Pet: Frugon,pet
+534660258,Pet: Gray Ursus,pet
+534660259,Pet: Snowfield Lamphu,pet
+534660260,Pet: Snowfield Kalgolem,pet
+534660261,Pet: Lava-Maned Kailin,pet
+534660262,Pet: Lava Starturtle,pet
+534660263,Pet: Ice Ghula,pet
+534660264,Pet: Desert Magic Latoha,pet
+534660265,Pet: Snowfield Lagur,pet
+534660266,Pet: Pachyron,pet
+534660267,Pet: Kurpak Krall Scout,pet
+534660268,Pet: Kurpak Krall Enforcer,pet
+534660269,Pet: Obsidian Driznak,pet
+534660270,Pet: Iralcig Magic Latoha,pet
+534660271,Pet: Ashpile Durgal,pet
+534660272,Pet: Durgal,pet
+534660273,Pet: Red Fur Durgal,pet
+534660274,Pet: Icecap Durgal,pet
+534660275,Pet: Lava Stone Spirit,pet
+534660276,Pet: Gravarax,pet
+534660277,Pet: Icecap Kailin,pet
+534660278,Pet: Kurpak Krall Supporter,pet
+534660279,Pet: Desert Lamphu,pet
+534660280,Pet: Snowfield Zaif,pet
+534660281,Pet: Young Snowfield Zaif,pet
+534760001,Pet: Krall laborer,pet
+534760002,Pet: Forest Specter,pet
+534760003,Pet: Fossa,pet
+534760004,Pet: Klaw,pet
+534760005,Pet: Sparkie,pet
+534760006,Pet: Potcrab,pet
+534760007,Pet: Baby Odyle Spider,pet
+534760008,Pet: Kernon,pet
+534760009,Pet: Manduri Fighter,pet
+534760010,Pet: Skyray,pet
+534760011,Pet: Fungie,pet
+534760012,Pet: Swarm,pet
+534760013,Pet: Drakan Guard Dog,pet
+534760014,Pet: Kailin,pet
+534760015,Pet: Slink,pet
+534760016,Pet: Krall Warshaman,pet
+534760017,Pet: Varg Berserker,pet
+534760019,Pet: Ashen Spider,pet
+534760020,Pet: Mutated Aberrant Odyle Spider,pet
+534760021,Pet: Crasaur,pet
+534760023,Pet: Withered Branch Spider,pet
+534760024,Pet: Aberrant Odyle Spider,pet
+534760025,Pet: Krall Warrior,pet
+534760026,Pet: Withered Agrint,pet
+534760027,Pet: Krao Mutant,pet
+534760028,Pet: Klaw Scout,pet
+534760029,Pet: Nagarant Guardian Warrior,pet
+534760030,Pet: Konutin Worker,pet
+534760031,Pet: Elite Keneire,pet
+534760032,Pet: Elite Manduri Fighter,pet
+534760033,Pet: Giant Sparkie,pet
+534760034,Pet: Skama,pet
+534760035,Pet: Lupyllini,pet
+534760036,Pet: Male Crestlich,pet
+534760037,Pet: Airon,pet
+534760038,Pet: Crestlich,pet
+534760039,Pet: Aullaeu Shaman,pet
+534760040,Pet: Cave Bat,pet
+534760041,Pet: Ursus,pet
+534760042,Pet: Elite Ursus,pet
+534760043,Pet: Aultross's Doppelganger,pet
+534760044,Pet: Sylphen,pet
+534760045,Pet: Armadon,pet
+534760046,Pet: Aberrant Armadon,pet
+534760047,Pet: Forest Spirit,pet
+534760048,Pet: Mutated Forest Spirit,pet
+534760049,Pet: Gravi,pet
+534760050,Pet: Magic Gravi,pet
+534760051,Pet: Large Leaf Gravi,pet
+534760052,Pet: Aberrant Potcrab,pet
+534760053,Pet: Mumu Warrior,pet
+534760054,Pet: Grave Rat,pet
+534760055,Pet: Drakan Probe,pet
+534760056,Pet: Coradon,pet
+534760057,Pet: Black Smoke Murute,pet
+534760058,Pet: Giant Bee,pet
+534760059,Pet: Starturtle,pet
+534760060,Pet: Slime,pet
+534760061,Pet: Contaminated Slime,pet
+534760062,Pet: Vigilant Oculazen,pet
+534760063,Pet: Oculazen,pet
+534760064,Pet: Biruta,pet
+534760065,Pet: Papis,pet
+534760066,Pet: Scorpion,pet
+534760067,Pet: Krao Test Subject,pet
+534760068,Pet: Stone Spirit,pet
+534760070,Pet: Cadaver Insectoid,pet
+534760071,Pet: Tog,pet
+534760072,Pet: Nepenthes,pet
+534760073,Pet: Kuru Worker,pet
+534760074,Pet: Kuru Tinkerer,pet
+534760075,Pet: Kuru Overseer,pet
+534760076,Pet: Harcon,pet
+534760077,Pet: Urugugu Brawler,pet
+534760078,Pet: Ultimate Wind Spirit,pet
+534760079,Pet: Sentinel K'nash,pet
+534760080,Pet: Dionae,pet
+534760081,Pet: Ultimate Fire Spirit,pet
+534760082,Pet: Spider,pet
+534760083,Pet: Kalgolem,pet
+534760084,Pet: Unstable Spider,pet
+534760085,Pet: Fungen,pet
+534760086,Pet: Pino,pet
+534760087,Pet: Pino Worker,pet
+534760088,Pet: Aberrant Skama,pet
+534760089,Pet: Ultimate Water Spirit,pet
+534760090,Pet: Red Spark Ignus,pet
+534760091,Pet: Lesser Wind Spirit,pet
+534760092,Pet: Phantasmal Lakshmi,pet
+534760093,Pet: Intermediate Wind Spirit,pet
+534760094,Pet: Superior Wind Spirit,pet
+534760095,Pet: Superior Fire Spirit,pet
+534760096,Pet: Karnif,pet
+534760097,Pet: Modified Karnif,pet
+534760098,Pet: Elite Karnif,pet
+534760099,Pet: Ultimate Earth Spirit,pet
+534760100,Pet: Forest Guardian,pet
+534760101,Pet: Dried Up Forest Guardian,pet
+534760102,Pet: Pretor Veil Administrator,pet
+534760103,Pet: Manduri Trebuchet Worker,pet
+534760104,Pet: Biruta Herbalist,pet
+534760105,Pet: Tayga,pet
+534760106,Pet: Krao Seal Guardian,pet
+534760107,Pet: Enhanced Krall Combatant,pet
+534760108,Pet: Enhanced Krall Sentry,pet
+534760109,Pet: Blue Kalgolem,pet
+534760110,Pet: Parasite Swarm,pet
+534760111,Pet: Thin Agrint,pet
+534760112,Pet: Forest Monster,pet
+534760113,Pet: Black Spirit,pet
+534760114,Pet: Drana Mutant Brute,pet
+534760115,Pet: Zelophi,pet
+534760116,Pet: Predator Saraswati,pet
+534760117,Pet: Naga Elite Priest,pet
+534760118,Pet: Gatekeeper Pinopi,pet
+534760119,Pet: Zaif,pet
+534760120,Pet: Lesser Water Spirit,pet
+534760121,Pet: Intermediate Water Spirit,pet
+534760122,Pet: Superior Water Spirit,pet
+534760123,Pet: Lesser Earth Spirit,pet
+534760124,Pet: Intermediate Earth Spirit,pet
+534760125,Pet: Superior Earth Spirit,pet
+534760126,Pet: Lesser Fire Spirit,pet
+534760127,Pet: Intermediate Fire Spirit,pet
+534760128,Pet: Silver Blade Rotan,pet
+534760129,Pet: Flame Barghest,pet
+534760130,Pet: Flame Stone Guardian Statue,pet
+534760131,Pet: Furious Feruk,pet
+534760132,Pet: Vivel,pet
+534760133,Pet: Dratona,pet
+534760134,Pet: Basilisk,pet
+534760136,Pet: Elite Soulless Corpse Gnat,pet
+534760137,Pet: Duduka Worker,pet
+534760138,Pet: Duduka Trebuchet Worker,pet
+534760139,Pet: Guardite,pet
+534760140,Pet: Drakan Watcher,pet
+534760141,Pet: Dracuni Herbalist,pet
+534760142,Pet: Kerubar,pet
+534760143,Pet: Kerubian,pet
+534760144,Pet: Spirit King's Bodyguard Warrior,pet
+534760146,Pet: Swift Lugi,pet
+534760147,Pet: Dark Spirit,pet
+534760148,Pet: Wandering Merchant Lugi,pet
+534760149,Pet: Aberrant Bee,pet
+534760150,Pet: Aberrant Coradon,pet
+534760151,Pet: Young Kailin,pet
+534760152,Pet: Young Slink,pet
+534760153,Pet: Young Tog,pet
+534760154,Pet: Young Ursus,pet
+534760156,Pet: Aberrant Zaif,pet
+534760157,Pet: Aberrant Tog,pet
+534760158,Pet: Odyle Stone Spirit,pet
+534760159,Pet: Drana Slime,pet
+534760160,Pet: Drana Swarm,pet
+534760161,Pet: Mutated Cadaver Insectoid,pet
+534760162,Pet: Drana Spore,pet
+534760163,Pet: Ashen Lupyllini,pet
+534760164,Pet: Forest Dionae,pet
+534760165,Pet: Eternal Coradon,pet
+534760166,Pet: Ashen Dionae,pet
+534760167,Pet: Rafflesia,pet
+534760168,Pet: Mumu Worker,pet
+534760169,Pet: Mumu Overseer,pet
+534760170,Pet: Swamp Monster,pet
+534760172,Pet: Marsh Targon,pet
+534760173,Pet: Distorted Mutant,pet
+534760174,Pet: Mutated Ursus,pet
+534760175,Pet: Mutated Forest Guardian,pet
+534760176,Pet: Mutated Insectoid Valka,pet
+534760179,Pet: Drakana Kalgolem,pet
+534760180,Pet: Baikron,pet
+534760181,Pet: Azure Baikron,pet
+534760182,Pet: Silver Baikron,pet
+534760183,Pet: Golden Baikron,pet
+534760184,Pet: Ancient Spirit,pet
+534760185,Pet: Poison Blood,pet
+534760186,Pet: Drana Contaminant,pet
+534760187,Pet: Congealed Drana,pet
+534760188,Pet: Cadaver Cleaner,pet
+534760189,Pet: Elite Poisonous Spore Fungen,pet
+534760190,Pet: Elite Dratona,pet
+534760191,Pet: Elite Klaw,pet
+534760192,Pet: Venomous Insect Sram,pet
+534760196,Pet: Agrint,pet
+534760197,Pet: Brax,pet
+534760198,Pet: Modified Lupyllini,pet
+534760199,Pet: Drana Predator,pet
+534760200,Pet: Faded Predator,pet
+534760201,Pet: Faded Mutant,pet
+534760202,Pet: Faded Mutant Brute,pet
+534760203,Pet: Faded Floater,pet
+534760204,Pet: Drana Mutant,pet
+534760206,Pet: Addicted Shulak Cart Worker,pet
+534760207,Pet: Elite Guardite,pet
+534760208,Pet: Watcher Guardite,pet
+534760209,Pet: Kerubiel,pet
+534760211,Pet: Decomposed Lupyllini,pet
+534760212,Pet: Faded Drana,pet
+534760213,Pet: Mudthorn,pet
+534760214,Pet: Ashen Agrint,pet
+534760215,Pet: Ashen Basilisk,pet
+534760216,Pet: Tamed Karnif,pet
+534760217,Pet: Dratona Tinkerer,pet
+534760221,Pet: Soulless Corpse Gnat,pet
+534760222,Pet: Dry Leaf Agrint,pet
+534760223,Pet: Tamed Zaif,pet
+534760224,Pet: Reindeer,pet
+534760225,Pet: Pagati,pet
+534760226,Pet: Sky Whale,pet
+534760227,Pet: Void,pet
+534760228,Pet: Frosty Snowman,pet
+534760229,Pet: Pom-Pom Hat Snowman,pet
+534760233,Pet: Infernal Steed,pet
+534760234,Pet: Red Horse Doll,pet
+534760243,Pet: Luminous Golden Unicorn,pet
+534760244,Pet: White Bunny,pet
+534760245,Pet: Star,pet
+534760246,Pet: Moon,pet
+534760248,Pet: Pearlescent Butterfly Kite,pet
+534760250,Pet: Sweet Unicorn,pet
+534760252,Pet: Fluffball Haechi,pet
+534760253,Pet: Babymeow,pet
+534760254,Pet: Aristomeow,pet
+534760255,Pet: Azure Flame Kumiho,pet
+534760256,Pet: Teddy Plushie,pet
+534760257,Pet: Glossy Pink Puppy,pet
+534760258,Pet: Unicorn Plush,pet
+534760259,Pet: Chickpea,pet
+534760260,Pet: Harp Seal,pet
+534760261,Pet: Umbral Shadow Unicorn,pet
+534760265,Pet: Chonky Hamster,pet
+534760287,Pet: Red Dragon,pet
+534760288,Pet: Flostick,pet
+534760290,Pet: Orange Dragon,pet
+534760291,Pet: Yellow Dragon,pet
+534760298,Pet: Baby Flomeow,pet
+534760299,Pet: Rollin' Pink Skateboard,pet
+534760316,Pet: Two,pet
+534760329,Pet: Poofy Lamb,pet
+534760332,Pet: Squishy Octopus,pet
+534760333,Pet: Teddy Tube,pet
+534760334,Pet: Goodnight Teddy Bear,pet
+574760001,Pet: Black Dragon,pet
+574760002,Pet: White Dragon,pet
+110140003,Heart of Royalty (Greatsword),skin
+110140010,Shadow Whisper (Greatsword),skin
+110140027,Legacy of the Forest (Greatsword),skin
+110150012,Glacier's Judgment (Greatsword),skin
+110150026,Master's Legacy (Greatsword),skin
+110150027,Midnight Veil (Greatsword),skin
+110150028,Black Moonlight (Greatsword),skin
+110240003,Heart of Royalty (Longsword),skin
+110240010,Shadow Whisper (Longsword),skin
+110240027,Legacy of the Forest (Longsword),skin
+110250012,Glacier's Judgment (Longsword),skin
+110250026,Master's Legacy (Longsword),skin
+110250027,Midnight Veil (Longsword),skin
+110250028,Black Moonlight (Longsword),skin
+110340003,Heart of Royalty (Dagger),skin
+110340010,Shadow Whisper (Dagger),skin
+110340027,Legacy of the Forest (Dagger),skin
+110350012,Glacier's Judgment (Dagger),skin
+110350026,Master's Legacy (Dagger),skin
+110350027,Midnight Veil (Dagger),skin
+110350028,Black Moonlight (Dagger),skin
+110440003,Heart of Royalty (Bow),skin
+110440010,Shadow Whisper (Bow),skin
+110440027,Legacy of the Forest (Bow),skin
+110450012,Glacier's Judgment (Bow),skin
+110450026,Master's Legacy (Bow),skin
+110450028,Black Moonlight (Bow),skin
+110540003,Heart of Royalty (Spellbook),skin
+110540010,Shadow Whisper (Spellbook),skin
+110540027,Legacy of the Forest (Spellbook),skin
+110550012,Glacier's Judgment (Spellbook),skin
+110550026,Master's Legacy (Spellbook),skin
+110550028,Black Moonlight (Spellbook),skin
+110640003,Heart of Royalty (Orb),skin
+110640010,Shadow Whisper (Orb),skin
+110640027,Legacy of the Forest (Orb),skin
+110650012,Glacier's Judgment (Orb),skin
+110650026,Master's Legacy (Orb),skin
+110650028,Black Moonlight (Orb),skin
+110730026,Dusk Vow (Mace),skin
+110740003,Heart of Royalty (Mace),skin
+110740010,Shadow Whisper (Mace),skin
+110740027,Legacy of the Forest (Mace),skin
+110750012,Glacier's Judgment (Mace),skin
+110750026,Master's Legacy (Mace),skin
+110750028,Black Moonlight (Mace),skin
+110830026,Dusk Vow (Staff),skin
+110840003,Heart of Royalty (Staff),skin
+110840010,Shadow Whisper (Staff),skin
+110840027,Legacy of the Forest (Staff),skin
+110850012,Glacier's Judgment (Staff),skin
+110850026,Master's Legacy (Staff),skin
+110850028,Black Moonlight (Staff),skin
+110930026,Dusk Vow (Fist),skin
+110930130,Deep Sea Pearl (Fist),skin
+110940003,Heart of Royalty (Fist),skin
+110940010,Shadow Whisper (Fist),skin
+110940027,Legacy of the Forest (Fist),skin
+110950012,Glacier's Judgment (Fist),skin
+110950026,Master's Legacy (Fist),skin
+110950028,Black Moonlight (Fist),skin
+503700059,Dragon's Breath (Greatsword),skin
+515810008,Restored Recon Team (Skin: Breastplate),skin
+515810009,Restored Recon Team (Skin: Greaves),skin
+515810010,Restored Recon Team (Skin: Helm),skin
+515810011,Restored Recon Team (Skin: Pauldrons),skin
+515810012,Restored Recon Team (Skin: Gloves),skin
+515810013,Restored Recon Team (Skin: Boots),skin
+515810014,Restored Recon Team (Skin: Cloak),skin
+515810015,Silent Resolve (Skin: Breastplate),skin
+515810016,Silent Resolve (Skin: Greaves),skin
+515810017,Silent Resolve (Skin: Helm),skin
+515810018,Silent Resolve (Skin: Pauldrons),skin
+515810019,Silent Resolve (Skin: Gloves),skin
+515810020,Silent Resolve (Skin: Boots),skin
+515810021,Silent Resolve (Skin: Cloak),skin
+515810036,Wild Wanderer (Skin: Breastplate),skin
+515810037,Wild Wanderer (Skin: Greaves),skin
+515810038,Wild Wanderer (Skin: Helm),skin
+515810040,Wild Wanderer (Skin: Gloves),skin
+515810041,Wild Wanderer (Skin: Boots),skin
+515810043,Promise Legion (Skin: Breastplate),skin
+515810044,Promise Legion (Skin: Greaves),skin
+515810045,Promise Legion (Skin: Helm),skin
+515810046,Promise Legion (Skin: Pauldrons),skin
+515810047,Promise Legion (Skin: Gloves),skin
+515810048,Promise Legion (Skin: Boots),skin
+515810049,Promise Legion (Skin: Cloak),skin
+515910001,Verdant Leaf (Skin: Earrings),skin
+515910002,Verdant Leaf (Skin: Necklace),skin
+515910003,Woodland Whisper (Skin: Earrings),skin
+515910004,Woodland Whisper (Skin: Necklace),skin
+515910005,Shadow Ruby (Skin: Earrings),skin
+515910006,Shadow Ruby (Skin: Necklace),skin
+515910007,Light Droplet (Skin: Earrings),skin
+515910008,Light Droplet (Skin: Necklace),skin
+515910009,Spring Blossom Whisper (Skin: Earrings),skin
+515910010,Spring Blossom Whisper (Skin: Necklace),skin
+515910011,White Petal Sigh (Skin: Earrings),skin
+515910012,White Petal Sigh (Skin: Necklace),skin
+515910013,Moonlight Blossom (Skin: Earrings),skin
+515910014,Moonlight Blossom (Skin: Necklace),skin
+515910015,Sweet Whisper (Skin: Earrings),skin
+515910016,Sweet Whisper (Skin: Necklace),skin
+516010001,Saam Laurel (Skin: Helm),skin
+516010002,Windmancer Mask (Skin: Helm),skin
+516010003,Water Spirit Mask (Skin: Helm),skin
+516010004,Guardian Token (Skin: Helm),skin
+516010006,Saendukal Mask (Skin: Helm),skin
+516010007,Apple Candy (Skin: Helm),skin
+516010008,Frozen Silver (Helm),skin
+516010009,Kaisinel's Illusion (Helm),skin
+535510001,Adamant Guardian (Skin: Set) (Bound),skin
+535510002,Meteor's Benediction (Skin: Set) (Bound),skin
+535510003,Noble Vow (Skin: Set) (Bound),skin
+535510004,Chivalrous Will (Skin: Set) (Bound),skin
+535510005,Dawnbreaker (Skin: Set) (Bound),skin
+535510006,Flash Ironclad (Skin: Set) (Bound),skin
+535510007,Forest Guardian (Skin: Set) (Bound),skin
+535510008,Blessing of Life (Skin: Set) (Bound),skin
+535510009,Keeper (Skin: Set) (Bound),skin
+535510010,Soul Pledge (Skin: Set) (Bound),skin
+535510011,Moon Luster (Skin: Set) (Bound),skin
+535510012,Nameless Savior (Skin: Set) (Bound),skin
+535510013,Ironclad Vow (Skin: Set) (Bound),skin
+535510014,Steel Fortress (Skin: Set) (Bound),skin
+535510015,Silent Wraith (Skin: Set) (Bound),skin
+535510016,Hidden Escaper (Skin: Set) (Bound),skin
+535510017,Silent Hunter (Skin: Set) (Bound),skin
+535510018,Solar Radiance (Skin: Set) (Bound),skin
+535510019,Iron Heart (Skin: Set) (Bound),skin
+535510020,Wings of Fate (Skin: Set) (Bound),skin
+535510021,Judgment of Glory (Skin: Set) (Bound),skin
+535510022,Star Prophet (Skin: Set) (Bound),skin
+535510023,Battle Spirit (Skin: Set) (Bound),skin
+535510024,Contemplator (Skin: Set) (Bound),skin
+535510026,Nature Greenwood (Skin: Set) (Bound),skin
+535510027,Sky Feather (Skin: Set) (Bound),skin
+535510028,Ruinous Devourer (Skin: Set) (Bound),skin
+535510029,Dusk Silk (Skin: Set) (Bound),skin
+535510030,Lone Chaser (Skin: Set) (Bound),skin
+535510031,Knightly Conviction (Skin: Set) (Bound),skin
+535510032,Hallowed Promise (Skin: Set) (Bound),skin
+535510033,Silver Executioner (Skin: Set) (Bound),skin
+535510034,Night Mist Phantom (Skin: Set) (Bound),skin
+535510035,Forest Scholar (Skin: Set) (Bound),skin
+535510036,Shadow Mask (Skin: Set) (Bound),skin
+535510037,Direction Setter (Skin: Set) (Bound),skin
+535510038,Lunar Benediction (Breastplate),skin
+535510039,Steel Endurance (Skin: Set) (Bound),skin
+535510040,Anguished Darkness (Skin: Set) (Bound),skin
+535510041,Night Shadow (Skin: Set) (Bound),skin
+535510042,Night Dragon (Skin: Set) (Bound),skin
+535510043,Destruction Spearhead (Skin: Set) (Bound),skin
+535510044,Roaring Dragon (Skin: Set) (Bound),skin
+535510045,Howling Dragon (Skin: Set) (Bound),skin
+535510046,Windborne Vow (Breastplate),skin
+535510047,Silver Bell Fairy's Dream (Skin: Set) (Bound),skin
+535510049,Netherworld Explorer (Skin: Set) (Bound),skin
+535510050,Skilled Expert (Skin: Set) (Bound),skin
+535510051,Azure Aura (Skin: Set) (Bound),skin
+535510052,Eternal Horn (Skin: Set) (Bound),skin
+535510053,Immortal Heart (Skin: Set) (Bound),skin
+535510055,Divine Benediction (Skin: Set) (Bound),skin
+535510056,Storm Legacy (Skin: Set) (Bound),skin
+535510057,Draconic Benediction (Skin: Set) (Bound),skin
+535510058,Draconic Aura (Skin: Set) (Bound),skin
+535510059,Draconic Rage (Skin: Set) (Bound),skin
+535510060,Light of Genesis (Skin: Set) (Bound),skin
+535510061,Dark Fang (Skin: Set) (Bound),skin
+535510062,Illusionary Shadow (Skin: Set) (Bound),skin
+535510063,Restored Recon Team (Skin: Set) (Bound),skin
+535510064,Forgotten Recon Team (Skin: Set) (Bound),skin
+535510065,Awakened (Skin: Set) (Bound),skin
+535510067,Skyfeather Guardian (Skin: Set) (Bound),skin
+535510070,Ascended Daeva (Skin: Set) (Bound),skin
+535510071,Lightpath Trace (Skin: Set) (Bound),skin
+535510073,Forest Hermit (Skin: Set) (Bound),skin
+535510074,Wayfarer (Skin: Set) (Bound),skin
+535510075,Start of Training (Skin: Set) (Bound),skin
+535510076,Knowledge Successor (Skin: Set) (Bound),skin
+535510077,Researcher (Skin: Set) (Bound),skin
+535510078,Scribe (Skin: Set) (Bound),skin
+535510079,Silent Forest (Skin: Set) (Bound),skin
+535510080,Sage of Destiny (Skin: Set) (Bound),skin
+535510081,Whisper of the Ether (Skin: Set) (Bound),skin
+535510082,Senior Inquirer (Skin: Set) (Bound),skin
+535510083,Journey Progress (Skin: Set) (Bound),skin
+535510084,Journey Flow (Skin: Set) (Bound),skin
+535510087,Rage Ironclad (Skin: Set) (Bound),skin
+535510088,Silent Steel (Skin: Set) (Bound),skin
+535510089,Steel Heavy Armor (Skin: Set) (Bound),skin
+535510090,Unknown Pursuer (Skin: Set) (Bound),skin
+535510091,Netherworld Seeker (Skin: Set) (Bound),skin
+535510092,Sandstorm Wanderer (Skin: Set) (Bound),skin
+535510093,Blue Breath Searcher (Skin: Set) (Bound),skin
+535510094,Tailor of Fate (Skin: Set) (Bound),skin
+535510095,Radiant Heart (Skin: Set) (Bound),skin
+535510096,Steel Wall (Skin: Set) (Bound),skin
+535510097,Silver Barrier (Skin: Set) (Bound),skin
+535510098,Gilded Guardian (Skin: Set) (Bound),skin
+535510099,Bloodscent Image (Skin: Set) (Bound),skin
+535510100,Shadowlight Wind (Skin: Set) (Bound),skin
+535510101,Holylight Vestments (Skin: Set) (Bound),skin
+535510102,Wilderness Grain (Skin: Set) (Bound),skin
+535510103,Argent Light (Skin: Set) (Bound),skin
+535510104,Pitch Black Night (Skin: Set) (Bound),skin
+535510105,Duskpath (Skin: Set) (Bound),skin
+535510106,Amethyst Scale (Skin: Set) (Bound),skin
+535510107,Silent Breath (Skin: Set) (Bound),skin
+535510108,Wind's Benediction (Skin: Set) (Bound),skin
+535510110,Dream Executor (Skin: Set) (Bound),skin
+535510111,Oblivion Mediator (Skin: Set) (Bound),skin
+535510112,Ancient Guardian (Skin: Set) (Bound),skin
+535510117,Skybright Oath (Skin: Set) (Bound),skin
+535510118,Guardian of Honor (Skin: Set) (Bound),skin
+535510120,North Wind Ironclad (Skin: Set) (Bound),skin
+535510121,Kromede's Desire (Skin: Set) (Bound),skin
+535510122,Snowy Reindeer Festival (Breastplate),skin
+535510123,Snowy Holiday (Breastplate),skin
+535510124,Dreamy Day Uniform (Breastplate),skin
+535510125,Relaxing Day Uniform (Breastplate),skin
+535510126,Loose-Fit Streetwear (Skin: Set) (Bound),skin
+535510127,No-Nonsense Maid (Breastplate),skin
+535510129,Tech Biker (Breastplate),skin
+535510130,Casual Hoodie (Breastplate),skin
+535510131,Leather Crop Fit (Breastplate),skin
+535510132,Blanc Noir (Breastplate),skin
+535510134,Steadfast Advisor (Skin: Set) (Bound),skin
+535510135,Sand Dunes Workshop (Skin: Set) (Bound),skin
+535510136,Silent Wind (Skin: Set) (Bound),skin
+535510137,Dawnfrost (Skin: Set) (Bound),skin
+535510138,Silent Resolve (Skin: Set) (Bound),skin
+535510140,Red Horse Vestments (Breastplate),skin
+535510141,Sporty Chic Fit (Breastplate),skin
+535510142,Shadow Slayer (Skin: Set) (Bound),skin
+535510143,Wild Wanderer (Skin: Set) (Bound),skin
+535510144,Promise Legion (Skin: Set) (Bound),skin
+535510145,Shaggy Shugo Friend (Skin: Set) (Bound),skin
+535510146,Snowy Sheer (Skin: Set) (Bound),skin
+535510147,Genesis Daeva (Breastplate),skin
+535510148,Relaxing Bathtime (Breastplate),skin
+535510149,Mischievous Shugo (Skin: Set) (Bound),skin
+535510150,Celadon Moon Hanbok (Breastplate),skin
+535510151,Moonlit Aria (Skin: Set) (Bound),skin
+535510152,Classic Bunny Suit (Breastplate),skin
+535510153,Modern Bunny Suit (Breastplate),skin
+535510154,Black Cat (Breastplate),skin
+535510155,Winter Wonderland (Breastplate),skin
+535510158,Artisan Handicrafter (Breastplate),skin
+535510160,Artisan Chef (Breastplate),skin
+535510169,Cozy Bunny Suit (Breastplate),skin
+535510170,Shadow Moon Hanbok (Breastplate),skin
+535510171,Fragrant Peony (Breastplate),skin
+535510172,Forest's Whisper (Breastplate),skin
+535510173,Sweet Cherry Cake (Breastplate),skin
+535510174,Red Velvet Ganache (Breastplate),skin
+535510176,Goodnight Bear Pajamas (Breastplate),skin
+535510177,Fluffy Chick Hoodie (Breastplate),skin
+535510178,Magical Heart Suit (Breastplate),skin
+535510181,100th Day Anniversary (Breastplate),skin
+535510182,Warm-Hearted Maid (Breastplate),skin
+535510186,Puffy Penguin Hoodie (Breastplate),skin
+535510187,Athleisure Leggings (Breastplate),skin
+535510188,Lazy Pajama Shirt (Breastplate),skin
+535510189,Sharp Slim-Fit Suit (Breastplate),skin
+535510190,fromis_9 Park Jiwon (Breastplate),skin
+535510191,fromis_9 Lee Chaeyoung (Breastplate),skin
+535510192,fromis_9 Lee Nagyung (Breastplate),skin
+535510193,fromis_9 Song Hayoung (Breastplate),skin
+535510194,fromis_9 Baek Jiheon (Breastplate),skin
+535510195,Retro Gym Clothes (Breastplate),skin
+535510196,Fan Uniform (Breastplate),skin
+535510197,Windbound Wanderer (Breastplate),skin
+535510204,Black Kitty Hoodie (Breastplate),skin
+535510205,Lovely Heart Angel (Breastplate),skin
+535510206,Sexy Chic Devil (Breastplate),skin
+535510207,Clear Skies Poncho (Breastplate),skin
+535510208,Sporty Rash Guard (Breastplate),skin
+535510209,Flamingo Swimsuit (Breastplate),skin
+535510210,Romantic Summer (Breastplate),skin
+535510211,Classic Athletic (Breastplate),skin
+535510212,Midnight Muse (Breastplate),skin
+535510213,Cozy Cloud Pajamas (Breastplate),skin
+535510214,Lovely Patissier (Breastplate),skin
+535510215,Dark Police Suit (Breastplate),skin
+535510216,Neo Ranger Suit (Breastplate),skin
+535710001,Nameless Master (Skin: Greatsword) (Bound),skin
+535710002,Nameless Master (Skin: Longsword) (Bound),skin
+535710003,Nameless Master (Skin: Dagger) (Bound),skin
+535710004,Nameless Master (Skin: Bow) (Bound),skin
+535710005,Nameless Master (Skin: Spellbook) (Bound),skin
+535710006,Nameless Master (Skin: Orb) (Bound),skin
+535710007,Nameless Master (Skin: Mace) (Bound),skin
+535710008,Nameless Master (Skin: Staff) (Bound),skin
+535710009,Battlefield Debris (Skin: Greatsword) (Bound),skin
+535710010,Battlefield Debris (Skin: Longsword) (Bound),skin
+535710011,Battlefield Debris (Skin: Dagger) (Bound),skin
+535710012,Battlefield Debris (Skin: Bow) (Bound),skin
+535710013,Battlefield Debris (Skin: Spellbook) (Bound),skin
+535710014,Battlefield Debris (Skin: Orb) (Bound),skin
+535710015,Battlefield Debris (Skin: Mace) (Bound),skin
+535710016,Battlefield Debris (Skin: Staff) (Bound),skin
+535710025,Knight-in-Training (Greatsword),skin
+535710026,Knight-in-Training (Longsword),skin
+535710027,Knight-in-Training (Dagger),skin
+535710028,Knight-in-Training (Bow),skin
+535710029,Knight-in-Training (Spellbook),skin
+535710030,Knight-in-Training (Orb),skin
+535710031,Knight-in-Training (Mace),skin
+535710032,Knight-in-Training (Staff),skin
+535710041,Abandoned Legacy (Skin: Greatsword) (Bound),skin
+535710042,Abandoned Legacy (Skin: Longsword) (Bound),skin
+535710043,Abandoned Legacy (Skin: Dagger) (Bound),skin
+535710044,Abandoned Legacy (Skin: Bow) (Bound),skin
+535710045,Abandoned Legacy (Skin: Spellbook) (Bound),skin
+535710046,Abandoned Legacy (Skin: Orb) (Bound),skin
+535710047,Abandoned Legacy (Skin: Mace) (Bound),skin
+535710048,Abandoned Legacy (Skin: Staff) (Bound),skin
+535710049,Golden Legacy (Skin: Greatsword) (Bound),skin
+535710050,Golden Legacy (Skin: Longsword) (Bound),skin
+535710051,Golden Legacy (Skin: Dagger) (Bound),skin
+535710052,Golden Legacy (Skin: Bow) (Bound),skin
+535710053,Golden Legacy (Skin: Spellbook) (Bound),skin
+535710054,Golden Legacy (Skin: Orb) (Bound),skin
+535710055,Golden Legacy (Skin: Mace) (Bound),skin
+535710056,Golden Legacy (Skin: Staff) (Bound),skin
+535710057,Blue Dawn (Skin: Greatsword) (Bound),skin
+535710058,Blue Dawn (Skin: Longsword) (Bound),skin
+535710059,Blue Dawn (Skin: Dagger) (Bound),skin
+535710060,Blue Dawn (Skin: Bow) (Bound),skin
+535710061,Blue Dawn (Skin: Spellbook) (Bound),skin
+535710062,Blue Dawn (Skin: Orb) (Bound),skin
+535710063,Blue Dawn (Skin: Mace) (Bound),skin
+535710064,Blue Dawn (Skin: Staff) (Bound),skin
+535710065,Dusk Vow (Skin: Greatsword) (Bound),skin
+535710066,Dusk Vow (Skin: Longsword) (Bound),skin
+535710067,Dusk Vow (Skin: Dagger) (Bound),skin
+535710068,Dusk Vow (Skin: Bow) (Bound),skin
+535710069,Dusk Vow (Skin: Spellbook) (Bound),skin
+535710070,Dusk Vow (Skin: Orb) (Bound),skin
+535710071,Dusk Vow (Skin: Mace) (Bound),skin
+535710072,Dusk Vow (Skin: Staff) (Bound),skin
+535710073,Master's Legacy (Skin: Greatsword) (Bound),skin
+535710074,Master's Legacy (Skin: Longsword) (Bound),skin
+535710075,Master's Legacy (Skin: Dagger) (Bound),skin
+535710076,Master's Legacy (Skin: Bow) (Bound),skin
+535710077,Master's Legacy (Skin: Spellbook) (Bound),skin
+535710078,Master's Legacy (Skin: Orb) (Bound),skin
+535710079,Master's Legacy (Skin: Mace) (Bound),skin
+535710080,Master's Legacy (Skin: Staff) (Bound),skin
+535710081,Legacy of the Forest (Skin: Greatsword) (Bound),skin
+535710082,Legacy of the Forest (Skin: Longsword) (Bound),skin
+535710083,Legacy of the Forest (Skin: Dagger) (Bound),skin
+535710084,Legacy of the Forest (Skin: Bow) (Bound),skin
+535710085,Legacy of the Forest (Skin: Spellbook) (Bound),skin
+535710086,Legacy of the Forest (Skin: Orb) (Bound),skin
+535710087,Legacy of the Forest (Skin: Mace) (Bound),skin
+535710088,Legacy of the Forest (Skin: Staff) (Bound),skin
+535710089,Glacier's Judgment (Skin: Greatsword) (Bound),skin
+535710090,Glacier's Judgment (Skin: Longsword) (Bound),skin
+535710091,Glacier's Judgment (Skin: Dagger) (Bound),skin
+535710092,Glacier's Judgment (Skin: Bow) (Bound),skin
+535710093,Glacier's Judgment (Skin: Spellbook) (Bound),skin
+535710094,Glacier's Judgment (Skin: Orb) (Bound),skin
+535710095,Glacier's Judgment (Skin: Mace) (Bound),skin
+535710096,Glacier's Judgment (Skin: Staff) (Bound),skin
+535710097,Heart of Royalty (Skin: Greatsword) (Bound),skin
+535710098,Heart of Royalty (Skin: Longsword) (Bound),skin
+535710099,Heart of Royalty (Skin: Dagger) (Bound),skin
+535710100,Heart of Royalty (Skin: Bow) (Bound),skin
+535710101,Heart of Royalty (Skin: Spellbook) (Bound),skin
+535710102,Heart of Royalty (Skin: Orb) (Bound),skin
+535710103,Heart of Royalty (Skin: Mace) (Bound),skin
+535710104,Heart of Royalty (Skin: Staff) (Bound),skin
+535710105,Black Moonlight (Skin: Greatsword) (Bound),skin
+535710106,Black Moonlight (Skin: Longsword) (Bound),skin
+535710107,Black Moonlight (Skin: Dagger) (Bound),skin
+535710108,Black Moonlight (Skin: Bow) (Bound),skin
+535710109,Black Moonlight (Skin: Spellbook) (Bound),skin
+535710110,Black Moonlight (Skin: Orb) (Bound),skin
+535710111,Black Moonlight (Skin: Mace) (Bound),skin
+535710112,Black Moonlight (Skin: Staff) (Bound),skin
+535710113,Shadow Whisper (Skin: Greatsword) (Bound),skin
+535710114,Shadow Whisper (Skin: Longsword) (Bound),skin
+535710115,Shadow Whisper (Skin: Dagger) (Bound),skin
+535710116,Shadow Whisper (Skin: Bow) (Bound),skin
+535710117,Shadow Whisper (Skin: Spellbook) (Bound),skin
+535710118,Shadow Whisper (Skin: Orb) (Bound),skin
+535710119,Shadow Whisper (Skin: Mace) (Bound),skin
+535710120,Shadow Whisper (Skin: Staff) (Bound),skin
+535710121,Midnight Veil (Skin: Greatsword) (Bound),skin
+535710122,Midnight Veil (Skin: Longsword) (Bound),skin
+535710123,Midnight Veil (Skin: Dagger) (Bound),skin
+535710124,Midnight Veil (Skin: Bow) (Bound),skin
+535710125,Midnight Veil (Skin: Spellbook) (Bound),skin
+535710126,Midnight Veil (Skin: Orb) (Bound),skin
+535710127,Midnight Veil (Skin: Mace) (Bound),skin
+535710128,Midnight Veil (Skin: Staff) (Bound),skin
+535710129,Eternal Crest (Skin: Greatsword) (Bound),skin
+535710130,Eternal Crest (Skin: Longsword) (Bound),skin
+535710131,Eternal Crest (Skin: Dagger) (Bound),skin
+535710132,Eternal Crest (Skin: Bow) (Bound),skin
+535710133,Eternal Crest (Skin: Spellbook) (Bound),skin
+535710134,Eternal Crest (Skin: Orb) (Bound),skin
+535710135,Eternal Crest (Skin: Mace) (Bound),skin
+535710136,Eternal Crest (Skin: Staff) (Bound),skin
+535710137,Starless Night (Skin: Greatsword) (Bound),skin
+535710138,Starless Night (Skin: Longsword) (Bound),skin
+535710139,Starless Night (Skin: Dagger) (Bound),skin
+535710140,Starless Night (Skin: Bow) (Bound),skin
+535710141,Starless Night (Skin: Spellbook) (Bound),skin
+535710142,Starless Night (Skin: Orb) (Bound),skin
+535710143,Starless Night (Skin: Mace) (Bound),skin
+535710144,Starless Night (Skin: Staff) (Bound),skin
+535710145,Ancient Remnant (Skin: Greatsword) (Bound),skin
+535710146,Ancient Remnant (Skin: Longsword) (Bound),skin
+535710147,Ancient Remnant (Skin: Dagger) (Bound),skin
+535710148,Ancient Remnant (Skin: Bow) (Bound),skin
+535710149,Ancient Remnant (Skin: Spellbook) (Bound),skin
+535710150,Ancient Remnant (Skin: Orb) (Bound),skin
+535710151,Ancient Remnant (Skin: Mace) (Bound),skin
+535710152,Ancient Remnant (Skin: Staff) (Bound),skin
+535710153,Ancient Oath (Skin: Greatsword) (Bound),skin
+535710154,Ancient Oath (Skin: Longsword) (Bound),skin
+535710155,Ancient Oath (Skin: Dagger) (Bound),skin
+535710156,Ancient Oath (Skin: Bow) (Bound),skin
+535710157,Ancient Oath (Skin: Spellbook) (Bound),skin
+535710158,Ancient Oath (Skin: Orb) (Bound),skin
+535710159,Ancient Oath (Skin: Mace) (Bound),skin
+535710160,Ancient Oath (Skin: Staff) (Bound),skin
+535710169,Dark Whisper (Skin: Greatsword) (Bound),skin
+535710170,Dark Whisper (Skin: Longsword) (Bound),skin
+535710171,Dark Whisper (Skin: Dagger) (Bound),skin
+535710172,Dark Whisper (Skin: Bow) (Bound),skin
+535710173,Dark Whisper (Skin: Spellbook) (Bound),skin
+535710174,Dark Whisper (Skin: Orb) (Bound),skin
+535710175,Dark Whisper (Skin: Mace) (Bound),skin
+535710176,Dark Whisper (Skin: Staff) (Bound),skin
+535710185,Divine Light (Skin: Greatsword) (Bound),skin
+535710186,Divine Light (Skin: Longsword) (Bound),skin
+535710187,Divine Light (Skin: Dagger) (Bound),skin
+535710188,Divine Light (Skin: Bow) (Bound),skin
+535710189,Divine Light (Skin: Spellbook) (Bound),skin
+535710190,Divine Light (Skin: Orb) (Bound),skin
+535710191,Divine Light (Skin: Mace) (Bound),skin
+535710192,Divine Light (Skin: Staff) (Bound),skin
+535710193,Dragonscale (Skin: Greatsword) (Bound),skin
+535710194,Dragonscale (Skin: Longsword) (Bound),skin
+535710195,Dragonscale (Skin: Dagger) (Bound),skin
+535710196,Dragonscale (Skin: Bow) (Bound),skin
+535710197,Dragonscale (Skin: Spellbook) (Bound),skin
+535710198,Dragonscale (Skin: Orb) (Bound),skin
+535710199,Dragonscale (Skin: Mace) (Bound),skin
+535710200,Dragonscale (Skin: Staff) (Bound),skin
+535710201,Frozen Time (Skin: Greatsword) (Bound),skin
+535710202,Frozen Time (Skin: Longsword) (Bound),skin
+535710203,Frozen Time (Skin: Dagger) (Bound),skin
+535710204,Frozen Time (Skin: Bow) (Bound),skin
+535710205,Frozen Time (Skin: Spellbook) (Bound),skin
+535710206,Frozen Time (Skin: Orb) (Bound),skin
+535710207,Frozen Time (Skin: Mace) (Bound),skin
+535710208,Frozen Time (Skin: Staff) (Bound),skin
+535710217,Endless Prelude (Skin: Greatsword) (Bound),skin
+535710218,Endless Prelude (Skin: Longsword) (Bound),skin
+535710219,Endless Prelude (Skin: Dagger) (Bound),skin
+535710220,Endless Prelude (Skin: Bow) (Bound),skin
+535710221,Endless Prelude (Skin: Spellbook) (Bound),skin
+535710222,Endless Prelude (Skin: Orb) (Bound),skin
+535710223,Endless Prelude (Skin: Mace) (Bound),skin
+535710224,Endless Prelude (Skin: Staff) (Bound),skin
+535710233,Dark Abyssal Scale (Skin: Greatsword) (Bound),skin
+535710234,Dark Abyssal Scale (Skin: Longsword) (Bound),skin
+535710235,Dark Abyssal Scale (Skin: Dagger) (Bound),skin
+535710236,Dark Abyssal Scale (Skin: Bow) (Bound),skin
+535710237,Dark Abyssal Scale (Skin: Spellbook) (Bound),skin
+535710238,Dark Abyssal Scale (Skin: Orb) (Bound),skin
+535710239,Dark Abyssal Scale (Skin: Mace) (Bound),skin
+535710240,Dark Abyssal Scale (Skin: Staff) (Bound),skin
+535710241,Zikel's Apparition (Skin: Greatsword) (Bound),skin
+535710242,Zikel's Apparition (Skin: Longsword) (Bound),skin
+535710243,Zikel's Apparition (Skin: Dagger) (Bound),skin
+535710244,Zikel's Apparition (Skin: Bow) (Bound),skin
+535710245,Zikel's Apparition (Skin: Spellbook) (Bound),skin
+535710246,Zikel's Apparition (Skin: Orb) (Bound),skin
+535710247,Zikel's Apparition (Skin: Mace) (Bound),skin
+535710248,Zikel's Apparition (Skin: Staff) (Bound),skin
+535710257,Endsong (Skin: Greatsword) (Bound),skin
+535710258,Endsong (Skin: Longsword) (Bound),skin
+535710259,Endsong (Skin: Dagger) (Bound),skin
+535710260,Endsong (Skin: Bow) (Bound),skin
+535710261,Endsong (Skin: Spellbook) (Bound),skin
+535710262,Endsong (Skin: Orb) (Bound),skin
+535710263,Endsong (Skin: Mace) (Bound),skin
+535710264,Endsong (Skin: Staff) (Bound),skin
+535710273,Shattered Fragment (Skin: Greatsword) (Bound),skin
+535710274,Shattered Fragment (Skin: Longsword) (Bound),skin
+535710275,Shattered Fragment (Skin: Dagger) (Bound),skin
+535710276,Shattered Fragment (Skin: Bow) (Bound),skin
+535710277,Shattered Fragment (Skin: Spellbook) (Bound),skin
+535710278,Shattered Fragment (Skin: Orb) (Bound),skin
+535710279,Shattered Fragment (Skin: Mace) (Bound),skin
+535710280,Shattered Fragment (Skin: Staff) (Bound),skin
+535710281,Forgotten Melody (Skin: Greatsword) (Bound),skin
+535710282,Forgotten Melody (Skin: Longsword) (Bound),skin
+535710283,Forgotten Melody (Skin: Dagger) (Bound),skin
+535710284,Forgotten Melody (Skin: Bow) (Bound),skin
+535710285,Forgotten Melody (Skin: Spellbook) (Bound),skin
+535710286,Forgotten Melody (Skin: Orb) (Bound),skin
+535710287,Forgotten Melody (Skin: Mace) (Bound),skin
+535710288,Forgotten Melody (Skin: Staff) (Bound),skin
+535710297,Savage Tread (Skin: Greatsword) (Bound),skin
+535710298,Savage Tread (Skin: Longsword) (Bound),skin
+535710299,Savage Tread (Skin: Dagger) (Bound),skin
+535710300,Savage Tread (Skin: Bow) (Bound),skin
+535710301,Savage Tread (Skin: Spellbook) (Bound),skin
+535710302,Savage Tread (Skin: Orb) (Bound),skin
+535710303,Savage Tread (Skin: Mace) (Bound),skin
+535710304,Savage Tread (Skin: Staff) (Bound),skin
+535710305,Endless Veil (Skin: Greatsword) (Bound),skin
+535710306,Endless Veil (Skin: Longsword) (Bound),skin
+535710307,Endless Veil (Skin: Dagger) (Bound),skin
+535710308,Endless Veil (Skin: Bow) (Bound),skin
+535710309,Endless Veil (Skin: Spellbook) (Bound),skin
+535710310,Endless Veil (Skin: Orb) (Bound),skin
+535710311,Endless Veil (Skin: Mace) (Bound),skin
+535710312,Endless Veil (Skin: Staff) (Bound),skin
+535710313,Conqueror (Skin: Greatsword) (Bound),skin
+535710314,Conqueror (Skin: Longsword) (Bound),skin
+535710315,Conqueror (Skin: Dagger) (Bound),skin
+535710316,Conqueror (Skin: Bow) (Bound),skin
+535710317,Conqueror (Skin: Spellbook) (Bound),skin
+535710318,Conqueror (Skin: Orb) (Bound),skin
+535710319,Conqueror (Skin: Mace) (Bound),skin
+535710320,Conqueror (Skin: Staff) (Bound),skin
+535710321,Pyromancer (Skin: Greatsword) (Bound),skin
+535710322,Pyromancer (Skin: Longsword) (Bound),skin
+535710323,Pyromancer (Skin: Dagger) (Bound),skin
+535710324,Pyromancer (Skin: Bow) (Bound),skin
+535710325,Pyromancer (Skin: Spellbook) (Bound),skin
+535710326,Pyromancer (Skin: Orb) (Bound),skin
+535710327,Pyromancer (Skin: Mace) (Bound),skin
+535710328,Pyromancer (Skin: Staff) (Bound),skin
+535710337,Heritage Arbiter (Skin: Greatsword) (Bound),skin
+535710338,Heritage Arbiter (Skin: Longsword) (Bound),skin
+535710339,Heritage Arbiter (Skin: Dagger) (Bound),skin
+535710340,Heritage Arbiter (Skin: Bow) (Bound),skin
+535710341,Heritage Arbiter (Skin: Spellbook) (Bound),skin
+535710342,Heritage Arbiter (Skin: Orb) (Bound),skin
+535710343,Heritage Arbiter (Skin: Mace) (Bound),skin
+535710344,Heritage Arbiter (Skin: Staff) (Bound),skin
+535710369,Verdant Melody (Skin: Greatsword) (Bound),skin
+535710370,Verdant Melody (Skin: Longsword) (Bound),skin
+535710371,Verdant Melody (Skin: Dagger) (Bound),skin
+535710372,Verdant Melody (Skin: Bow) (Bound),skin
+535710373,Verdant Melody (Skin: Spellbook) (Bound),skin
+535710374,Verdant Melody (Skin: Orb) (Bound),skin
+535710375,Verdant Melody (Skin: Mace) (Bound),skin
+535710376,Verdant Melody (Skin: Staff) (Bound),skin
+535710377,Crimson Eclipse (Skin: Greatsword) (Bound),skin
+535710378,Crimson Eclipse (Skin: Longsword) (Bound),skin
+535710379,Crimson Eclipse (Skin: Dagger) (Bound),skin
+535710380,Crimson Eclipse (Skin: Bow) (Bound),skin
+535710381,Crimson Eclipse (Skin: Spellbook) (Bound),skin
+535710382,Crimson Eclipse (Skin: Orb) (Bound),skin
+535710383,Crimson Eclipse (Skin: Mace) (Bound),skin
+535710384,Crimson Eclipse (Skin: Staff) (Bound),skin
+535710385,Abyssal Fragment (Skin: Greatsword) (Bound),skin
+535710386,Abyssal Fragment (Skin: Longsword) (Bound),skin
+535710387,Abyssal Fragment (Skin: Dagger) (Bound),skin
+535710388,Abyssal Fragment (Skin: Bow) (Bound),skin
+535710389,Abyssal Fragment (Skin: Spellbook) (Bound),skin
+535710390,Abyssal Fragment (Skin: Orb) (Bound),skin
+535710391,Abyssal Fragment (Skin: Mace) (Bound),skin
+535710392,Abyssal Fragment (Skin: Staff) (Bound),skin
+535710401,Forbidden Ritual (Skin: Greatsword) (Bound),skin
+535710402,Forbidden Ritual (Skin: Longsword) (Bound),skin
+535710403,Forbidden Ritual (Skin: Dagger) (Bound),skin
+535710404,Forbidden Ritual (Skin: Bow) (Bound),skin
+535710405,Forbidden Ritual (Skin: Spellbook) (Bound),skin
+535710406,Forbidden Ritual (Skin: Orb) (Bound),skin
+535710407,Forbidden Ritual (Skin: Mace) (Bound),skin
+535710408,Forbidden Ritual (Skin: Staff) (Bound),skin
+535710409,Judicator of Truth (Skin: Greatsword) (Bound),skin
+535710410,Judicator of Truth (Skin: Longsword) (Bound),skin
+535710411,Judicator of Truth (Skin: Dagger) (Bound),skin
+535710412,Judicator of Truth (Skin: Bow) (Bound),skin
+535710413,Judicator of Truth (Skin: Spellbook) (Bound),skin
+535710414,Judicator of Truth (Skin: Orb) (Bound),skin
+535710415,Judicator of Truth (Skin: Mace) (Bound),skin
+535710416,Judicator of Truth (Skin: Staff) (Bound),skin
+535710417,Glorious Remembrance (Greatsword),skin
+535710418,Glorious Remembrance (Longsword),skin
+535710419,Glorious Remembrance (Dagger),skin
+535710420,Glorious Remembrance (Bow),skin
+535710421,Glorious Remembrance (Spellbook),skin
+535710422,Glorious Remembrance (Orb),skin
+535710423,Glorious Remembrance (Mace),skin
+535710424,Glorious Remembrance (Staff),skin
+535710425,Deep Breath (Skin: Greatsword) (Bound),skin
+535710426,Deep Breath (Skin: Longsword) (Bound),skin
+535710427,Deep Breath (Skin: Dagger) (Bound),skin
+535710428,Deep Breath (Skin: Bow) (Bound),skin
+535710429,Deep Breath (Skin: Spellbook) (Bound),skin
+535710430,Deep Breath (Skin: Orb) (Bound),skin
+535710431,Deep Breath (Skin: Mace) (Bound),skin
+535710432,Deep Breath (Skin: Staff) (Bound),skin
+535710433,Shaman's Prayer (Skin: Greatsword) (Bound),skin
+535710434,Shaman's Prayer (Skin: Longsword) (Bound),skin
+535710435,Shaman's Prayer (Skin: Dagger) (Bound),skin
+535710436,Shaman's Prayer (Skin: Bow) (Bound),skin
+535710437,Shaman's Prayer (Skin: Spellbook) (Bound),skin
+535710438,Shaman's Prayer (Skin: Orb) (Bound),skin
+535710439,Shaman's Prayer (Skin: Mace) (Bound),skin
+535710440,Shaman's Prayer (Skin: Staff) (Bound),skin
+535710441,Veiled Arbiter (Skin: Greatsword) (Bound),skin
+535710442,Veiled Arbiter (Skin: Longsword) (Bound),skin
+535710443,Veiled Arbiter (Skin: Dagger) (Bound),skin
+535710444,Veiled Arbiter (Skin: Bow) (Bound),skin
+535710445,Veiled Arbiter (Skin: Spellbook) (Bound),skin
+535710446,Veiled Arbiter (Skin: Orb) (Bound),skin
+535710447,Veiled Arbiter (Skin: Mace) (Bound),skin
+535710448,Veiled Arbiter (Skin: Staff) (Bound),skin
+535710457,Steel Solidarity (Skin: Greatsword) (Bound),skin
+535710458,Steel Solidarity (Skin: Longsword) (Bound),skin
+535710459,Steel Solidarity (Skin: Dagger) (Bound),skin
+535710460,Steel Solidarity (Skin: Bow) (Bound),skin
+535710461,Steel Solidarity (Skin: Spellbook) (Bound),skin
+535710462,Steel Solidarity (Skin: Orb) (Bound),skin
+535710463,Steel Solidarity (Skin: Mace) (Bound),skin
+535710464,Steel Solidarity (Skin: Staff) (Bound),skin
+535710465,Royal Crest (Skin: Greatsword) (Bound),skin
+535710466,Royal Crest (Skin: Longsword) (Bound),skin
+535710467,Royal Crest (Skin: Dagger) (Bound),skin
+535710468,Royal Crest (Skin: Bow) (Bound),skin
+535710469,Royal Crest (Skin: Spellbook) (Bound),skin
+535710470,Royal Crest (Skin: Orb) (Bound),skin
+535710471,Royal Crest (Skin: Mace) (Bound),skin
+535710472,Royal Crest (Skin: Staff) (Bound),skin
+535710473,Dusk Ritual (Skin: Greatsword) (Bound),skin
+535710474,Dusk Ritual (Skin: Longsword) (Bound),skin
+535710475,Dusk Ritual (Skin: Dagger) (Bound),skin
+535710476,Dusk Ritual (Skin: Bow) (Bound),skin
+535710477,Dusk Ritual (Skin: Spellbook) (Bound),skin
+535710478,Dusk Ritual (Skin: Orb) (Bound),skin
+535710479,Dusk Ritual (Skin: Mace) (Bound),skin
+535710480,Dusk Ritual (Skin: Staff) (Bound),skin
+535710505,Strange Rift (Skin: Greatsword) (Bound),skin
+535710506,Strange Rift (Skin: Longsword) (Bound),skin
+535710507,Strange Rift (Skin: Dagger) (Bound),skin
+535710508,Strange Rift (Skin: Bow) (Bound),skin
+535710509,Strange Rift (Skin: Spellbook) (Bound),skin
+535710510,Strange Rift (Skin: Orb) (Bound),skin
+535710511,Strange Rift (Skin: Mace) (Bound),skin
+535710512,Strange Rift (Skin: Staff) (Bound),skin
+535710513,Skybound Oath (Skin: Greatsword) (Bound),skin
+535710514,Skybound Oath (Skin: Longsword) (Bound),skin
+535710515,Skybound Oath (Skin: Dagger) (Bound),skin
+535710516,Skybound Oath (Skin: Bow) (Bound),skin
+535710517,Skybound Oath (Skin: Spellbook) (Bound),skin
+535710518,Skybound Oath (Skin: Orb) (Bound),skin
+535710519,Skybound Oath (Skin: Mace) (Bound),skin
+535710520,Skybound Oath (Skin: Staff) (Bound),skin
+535710521,Veiled Blessing (Skin: Greatsword) (Bound),skin
+535710522,Veiled Blessing (Skin: Longsword) (Bound),skin
+535710523,Veiled Blessing (Skin: Dagger) (Bound),skin
+535710524,Veiled Blessing (Skin: Bow) (Bound),skin
+535710525,Veiled Blessing (Skin: Spellbook) (Bound),skin
+535710526,Veiled Blessing (Skin: Orb) (Bound),skin
+535710527,Veiled Blessing (Skin: Mace) (Bound),skin
+535710528,Veiled Blessing (Skin: Staff) (Bound),skin
+535710529,Sleeping Token (Skin: Greatsword) (Bound),skin
+535710530,Sleeping Token (Skin: Longsword) (Bound),skin
+535710531,Sleeping Token (Skin: Dagger) (Bound),skin
+535710532,Sleeping Token (Skin: Bow) (Bound),skin
+535710533,Sleeping Token (Skin: Spellbook) (Bound),skin
+535710534,Sleeping Token (Skin: Orb) (Bound),skin
+535710535,Sleeping Token (Skin: Mace) (Bound),skin
+535710536,Sleeping Token (Skin: Staff) (Bound),skin
+535710537,Seal Guardian (Skin: Greatsword) (Bound),skin
+535710538,Seal Guardian (Skin: Longsword) (Bound),skin
+535710539,Seal Guardian (Skin: Dagger) (Bound),skin
+535710540,Seal Guardian (Skin: Bow) (Bound),skin
+535710541,Seal Guardian (Skin: Spellbook) (Bound),skin
+535710542,Seal Guardian (Skin: Orb) (Bound),skin
+535710543,Seal Guardian (Skin: Mace) (Bound),skin
+535710544,Seal Guardian (Skin: Staff) (Bound),skin
+535710617,Golden Vow (Skin: Greatsword) (Bound),skin
+535710618,Golden Vow (Skin: Longsword) (Bound),skin
+535710619,Golden Vow (Skin: Dagger) (Bound),skin
+535710620,Golden Vow (Skin: Bow) (Bound),skin
+535710621,Golden Vow (Skin: Spellbook) (Bound),skin
+535710622,Golden Vow (Skin: Orb) (Bound),skin
+535710623,Golden Vow (Skin: Mace) (Bound),skin
+535710624,Golden Vow (Skin: Staff) (Bound),skin
+535710625,Fate Daeva (Skin: Greatsword) (Bound),skin
+535710626,Fate Daeva (Skin: Longsword) (Bound),skin
+535710627,Fate Daeva (Skin: Dagger) (Bound),skin
+535710628,Fate Daeva (Skin: Bow) (Bound),skin
+535710629,Fate Daeva (Skin: Spellbook) (Bound),skin
+535710630,Fate Daeva (Skin: Orb) (Bound),skin
+535710631,Fate Daeva (Skin: Mace) (Bound),skin
+535710632,Fate Daeva (Skin: Staff) (Bound),skin
+535710641,Ring of Light (Skin: Greatsword) (Bound),skin
+535710642,Ring of Light (Skin: Longsword) (Bound),skin
+535710643,Ring of Light (Skin: Dagger) (Bound),skin
+535710644,Ring of Light (Skin: Bow) (Bound),skin
+535710645,Ring of Light (Skin: Spellbook) (Bound),skin
+535710646,Ring of Light (Skin: Orb) (Bound),skin
+535710647,Ring of Light (Skin: Mace) (Bound),skin
+535710648,Ring of Light (Skin: Staff) (Bound),skin
+535710665,Vitalis Root (Skin: Greatsword) (Bound),skin
+535710666,Vitalis Root (Skin: Longsword) (Bound),skin
+535710667,Vitalis Root (Skin: Dagger) (Bound),skin
+535710668,Vitalis Root (Skin: Bow) (Bound),skin
+535710669,Vitalis Root (Skin: Spellbook) (Bound),skin
+535710670,Vitalis Root (Skin: Orb) (Bound),skin
+535710671,Vitalis Root (Skin: Mace) (Bound),skin
+535710672,Vitalis Root (Skin: Staff) (Bound),skin
+535710681,Radiant Boundary (Skin: Greatsword) (Bound),skin
+535710682,Radiant Boundary (Skin: Longsword) (Bound),skin
+535710683,Radiant Boundary (Skin: Dagger) (Bound),skin
+535710684,Radiant Boundary (Skin: Bow) (Bound),skin
+535710685,Radiant Boundary (Skin: Spellbook) (Bound),skin
+535710686,Radiant Boundary (Skin: Orb) (Bound),skin
+535710687,Radiant Boundary (Skin: Mace) (Bound),skin
+535710688,Radiant Boundary (Skin: Staff) (Bound),skin
+535710769,Wind Feather (Skin: Greatsword) (Bound),skin
+535710770,Wind Feather (Skin: Longsword) (Bound),skin
+535710771,Wind Feather (Skin: Dagger) (Bound),skin
+535710772,Wind Feather (Skin: Bow) (Bound),skin
+535710773,Wind Feather (Skin: Spellbook) (Bound),skin
+535710774,Wind Feather (Skin: Orb) (Bound),skin
+535710775,Wind Feather (Skin: Mace) (Bound),skin
+535710776,Wind Feather (Skin: Staff) (Bound),skin
+535710793,Rending Roar (Skin: Greatsword) (Bound),skin
+535710794,Rending Roar (Skin: Longsword) (Bound),skin
+535710795,Rending Roar (Skin: Dagger) (Bound),skin
+535710796,Rending Roar (Skin: Bow) (Bound),skin
+535710797,Rending Roar (Skin: Spellbook) (Bound),skin
+535710798,Rending Roar (Skin: Orb) (Bound),skin
+535710799,Rending Roar (Skin: Mace) (Bound),skin
+535710800,Rending Roar (Skin: Staff) (Bound),skin
+535710841,Desolate Abyss (Greatsword),skin
+535710842,Desolate Abyss (Longsword),skin
+535710843,Desolate Abyss (Dagger),skin
+535710844,Desolate Abyss (Bow),skin
+535710845,Desolate Abyss (Spellbook),skin
+535710846,Desolate Abyss (Orb),skin
+535710847,Desolate Abyss (Mace),skin
+535710848,Desolate Abyss (Staff),skin
+535710857,Cursed Dragonscale (Skin: Greatsword) (Bound),skin
+535710858,Cursed Dragonscale (Skin: Longsword) (Bound),skin
+535710859,Cursed Dragonscale (Skin: Dagger) (Bound),skin
+535710860,Cursed Dragonscale (Skin: Bow) (Bound),skin
+535710861,Cursed Dragonscale (Skin: Spellbook) (Bound),skin
+535710862,Cursed Dragonscale (Skin: Orb) (Bound),skin
+535710863,Cursed Dragonscale (Skin: Mace) (Bound),skin
+535710864,Cursed Dragonscale (Skin: Staff) (Bound),skin
+535710865,Cozy Forest Shugo (Skin: Greatsword) (Bound),skin
+535710866,Cozy Forest Shugo (Skin: Longsword) (Bound),skin
+535710867,Cozy Forest Shugo (Skin: Dagger) (Bound),skin
+535710868,Cozy Forest Shugo (Skin: Bow) (Bound),skin
+535710869,Cozy Forest Shugo (Skin: Spellbook) (Bound),skin
+535710870,Cozy Forest Shugo (Skin: Orb) (Bound),skin
+535710871,Cozy Forest Shugo (Skin: Mace) (Bound),skin
+535710872,Cozy Forest Shugo (Skin: Staff) (Bound),skin
+535710873,Beach Buddies (Greatsword),skin
+535710874,Beach Buddies (Longsword),skin
+535710875,Beach Buddies (Dagger),skin
+535710876,Beach Buddies (Bow),skin
+535710877,Beach Buddies (Spellbook),skin
+535710878,Beach Buddies (Orb),skin
+535710879,Beach Buddies (Mace),skin
+535710880,Beach Buddies (Staff),skin
+535710889,Crown Chess (Skin: Greatsword) (Bound),skin
+535710890,Crown Chess (Skin: Longsword) (Bound),skin
+535710891,Crown Chess (Skin: Dagger) (Bound),skin
+535710892,Crown Chess (Skin: Bow) (Bound),skin
+535710893,Crown Chess (Skin: Spellbook) (Bound),skin
+535710894,Crown Chess (Skin: Orb) (Bound),skin
+535710895,Crown Chess (Skin: Mace) (Bound),skin
+535710896,Crown Chess (Skin: Staff) (Bound),skin
+535710897,Eternal Sun (Skin: Greatsword) (Bound),skin
+535710898,Eternal Sun (Skin: Longsword) (Bound),skin
+535710899,Eternal Sun (Skin: Dagger) (Bound),skin
+535710900,Eternal Sun (Skin: Bow) (Bound),skin
+535710901,Eternal Sun (Skin: Spellbook) (Bound),skin
+535710902,Eternal Sun (Skin: Orb) (Bound),skin
+535710903,Eternal Sun (Skin: Mace) (Bound),skin
+535710904,Eternal Sun (Skin: Staff) (Bound),skin
+535710905,Tranquil Moon (Greatsword),skin
+535710906,Tranquil Moon (Longsword),skin
+535710907,Tranquil Moon (Dagger),skin
+535710908,Tranquil Moon (Bow),skin
+535710909,Tranquil Moon (Spellbook),skin
+535710910,Tranquil Moon (Orb),skin
+535710911,Tranquil Moon (Mace),skin
+535710912,Tranquil Moon (Staff),skin
+535710913,Winterdusk Frostbloom (Greatsword),skin
+535710914,Winterdusk Frostbloom (Longsword),skin
+535710915,Winterdusk Frostbloom (Dagger),skin
+535710916,Winterdusk Frostbloom (Bow),skin
+535710917,Winterdusk Frostbloom (Spellbook),skin
+535710918,Winterdusk Frostbloom (Orb),skin
+535710919,Winterdusk Frostbloom (Mace),skin
+535710920,Winterdusk Frostbloom (Staff),skin
+535710921,Liron's Precious Leek (Greatsword),skin
+535710922,Kron's Precious Carrot (Longsword),skin
+535710923,Sniron's Precious Snack (Dagger),skin
+535710924,Hdar's Precious Instrument (Bow),skin
+535710925,Tyron's Precious Diary (Spellbook),skin
+535710926,Dukiron's Precious Ornament (Orb),skin
+535710927,Kashuron's Precious Toy (Mace),skin
+535710928,Pseron's Precious Fork (Staff),skin
+535710929,Dragon's Breath (Skin: Greatsword) (Bound),skin
+535710930,Dragon's Breath (Skin: Longsword) (Bound),skin
+535710931,Dragon's Breath (Skin: Dagger) (Bound),skin
+535710932,Dragon's Breath (Skin: Bow) (Bound),skin
+535710933,Dragon's Breath (Skin: Spellbook) (Bound),skin
+535710934,Dragon's Breath (Skin: Orb) (Bound),skin
+535710935,Dragon's Breath (Skin: Mace) (Bound),skin
+535710936,Dragon's Breath (Skin: Staff) (Bound),skin
+535710937,Secret Teatime (Greatsword),skin
+535710938,Secret Teatime (Longsword),skin
+535710939,Secret Teatime (Dagger),skin
+535710940,Secret Teatime (Bow),skin
+535710941,Secret Teatime (Spellbook),skin
+535710942,Secret Teatime (Orb),skin
+535710943,Secret Teatime (Mace),skin
+535710944,Secret Teatime (Staff),skin
+535710961,Dragonheart (Greatsword),skin
+535710962,Dragonheart (Longsword),skin
+535710963,Dragonheart (Dagger),skin
+535710964,Dragonheart (Bow),skin
+535710965,Dragonheart (Spellbook),skin
+535710966,Dragonheart (Orb),skin
+535710967,Dragonheart (Mace),skin
+535710968,Dragonheart (Staff),skin
+535710993,Mystic Light (Greatsword),skin
+535710994,Mystic Light (Longsword),skin
+535710995,Mystic Light (Dagger),skin
+535710996,Mystic Light (Bow),skin
+535710997,Mystic Light (Spellbook),skin
+535710998,Mystic Light (Orb),skin
+535710999,Mystic Light (Mace),skin
+535711000,Mystic Light (Staff),skin
+535711001,Corroded Crimson Mist (Greatsword),skin
+535711002,Corroded Crimson Mist (Longsword),skin
+535711003,Corroded Crimson Mist (Dagger),skin
+535711004,Corroded Crimson Mist (Bow),skin
+535711005,Corroded Crimson Mist (Spellbook),skin
+535711006,Corroded Crimson Mist (Orb),skin
+535711007,Corroded Crimson Mist (Mace),skin
+535711008,Corroded Crimson Mist (Staff),skin
+535711009,Whispering Star (Greatsword),skin
+535711010,Whispering Star (Longsword),skin
+535711011,Whispering Star (Dagger),skin
+535711012,Whispering Star (Bow),skin
+535711013,Whispering Star (Spellbook),skin
+535711014,Whispering Star (Orb),skin
+535711015,Whispering Star (Mace),skin
+535711016,Whispering Star (Staff),skin
+535711017,Sweet Heart (Greatsword),skin
+535711018,Sweet Heart (Longsword),skin
+535711019,Sweet Heart (Dagger),skin
+535711020,Sweet Heart (Bow),skin
+535711021,Sweet Heart (Spellbook),skin
+535711022,Sweet Heart (Orb),skin
+535711023,Sweet Heart (Mace),skin
+535711024,Sweet Heart (Staff),skin
+535711025,Black Metal (Greatsword),skin
+535711026,Black Metal (Longsword),skin
+535711027,Black Metal (Dagger),skin
+535711028,Black Metal (Bow),skin
+535711029,Black Metal (Spellbook),skin
+535711030,Black Metal (Orb),skin
+535711031,Black Metal (Mace),skin
+535711032,Black Metal (Staff),skin
+535711033,Argent Prayer (Greatsword),skin
+535711034,Argent Prayer (Longsword),skin
+535711035,Argent Prayer (Dagger),skin
+535711036,Argent Prayer (Bow),skin
+535711037,Argent Prayer (Spellbook),skin
+535711038,Argent Prayer (Orb),skin
+535711039,Argent Prayer (Mace),skin
+535711040,Argent Prayer (Staff),skin
+535711041,Carmine Dragonfire (Greatsword),skin
+535711042,Carmine Dragonfire (Longsword),skin
+535711043,Carmine Dragonfire (Dagger),skin
+535711044,Carmine Dragonfire (Bow),skin
+535711045,Carmine Dragonfire (Spellbook),skin
+535711046,Carmine Dragonfire (Orb),skin
+535711047,Carmine Dragonfire (Mace),skin
+535711048,Carmine Dragonfire (Staff),skin
+535711049,Twinkle Twinkle Teddy Bear (Greatsword),skin
+535711050,Twinkle Twinkle Teddy Bear (Longsword),skin
+535711051,Twinkle Twinkle Teddy Bear (Dagger),skin
+535711052,Twinkle Twinkle Teddy Bear (Bow),skin
+535711053,Twinkle Twinkle Teddy Bear (Spellbook),skin
+535711054,Twinkle Twinkle Teddy Bear (Orb),skin
+535711055,Twinkle Twinkle Teddy Bear (Mace),skin
+535711056,Twinkle Twinkle Teddy Bear (Staff),skin
+535711057,Pinky Milky Lollipop (Greatsword),skin
+535711058,Pinky Milky Lollipop (Longsword),skin
+535711059,Pinky Milky Lollipop (Dagger),skin
+535711060,Pinky Milky Lollipop (Bow),skin
+535711061,Pinky Milky Lollipop (Spellbook),skin
+535711062,Pinky Milky Lollipop (Orb),skin
+535711063,Pinky Milky Lollipop (Mace),skin
+535711064,Pinky Milky Lollipop (Staff),skin
+535711065,Hollow Specter (Greatsword),skin
+535711066,Hollow Specter (Longsword),skin
+535711067,Hollow Specter (Dagger),skin
+535711068,Hollow Specter (Bow),skin
+535711069,Hollow Specter (Spellbook),skin
+535711070,Hollow Specter (Orb),skin
+535711071,Hollow Specter (Mace),skin
+535711072,Hollow Specter (Staff),skin
+535711081,Fluffy Chick (Greatsword),skin
+535711082,Fluffy Chick (Longsword),skin
+535711083,Fluffy Chick (Dagger),skin
+535711084,Fluffy Chick (Bow),skin
+535711085,Fluffy Chick (Spellbook),skin
+535711086,Fluffy Chick (Orb),skin
+535711087,Fluffy Chick (Mace),skin
+535711088,Fluffy Chick (Staff),skin
+535711089,Night Cat Claw (Greatsword),skin
+535711090,Night Cat Claw (Longsword),skin
+535711091,Night Cat Claw (Dagger),skin
+535711092,Night Cat Claw (Bow),skin
+535711093,Night Cat Claw (Spellbook),skin
+535711094,Night Cat Claw (Orb),skin
+535711095,Night Cat Claw (Mace),skin
+535711096,Night Cat Claw (Staff),skin
+535711097,Deep Sea Pearl (Greatsword),skin
+535711098,Deep Sea Pearl (Longsword),skin
+535711099,Deep Sea Pearl (Dagger),skin
+535711100,Deep Sea Pearl (Bow),skin
+535711101,Deep Sea Pearl (Spellbook),skin
+535711102,Deep Sea Pearl (Orb),skin
+535711103,Deep Sea Pearl (Mace),skin
+535711104,Deep Sea Pearl (Staff),skin
+535711105,Sleeping Lovers' Memory (Greatsword),skin
+535711106,Sleeping Lovers' Memory (Longsword),skin
+535711107,Sleeping Lovers' Memory (Dagger),skin
+535711108,Sleeping Lovers' Memory (Bow),skin
+535711109,Sleeping Lovers' Memory (Spellbook),skin
+535711110,Sleeping Lovers' Memory (Orb),skin
+535711111,Sleeping Lovers' Memory (Mace),skin
+535711112,Sleeping Lovers' Memory (Staff),skin
+535711113,fromis_9 Light Stick (Greatsword),skin
+535711114,fromis_9 Light Stick (Longsword),skin
+535711115,fromis_9 Light Stick (Dagger),skin
+535711116,fromis_9 Light Stick (Bow),skin
+535711117,fromis_9 Light Stick (Spellbook),skin
+535711118,fromis_9 Light Stick (Orb),skin
+535711119,fromis_9 Light Stick (Mace),skin
+535711120,fromis_9 Light Stick (Staff),skin
+535711121,Midnight Moon (Greatsword),skin
+535711122,Midnight Moon (Longsword),skin
+535711123,Midnight Moon (Dagger),skin
+535711124,Midnight Moon (Bow),skin
+535711125,Midnight Moon (Spellbook),skin
+535711126,Midnight Moon (Orb),skin
+535711127,Midnight Moon (Mace),skin
+535711128,Midnight Moon (Staff),skin
+535711129,Knight-in-Training (Fist),skin
+535711130,Glorious Remembrance (Fist),skin
+535711131,Nameless Master (Fist),skin
+535711132,Battlefield Debris (Fist),skin
+535711133,Abandoned Legacy (Fist),skin
+535711134,Golden Legacy (Fist),skin
+535711135,Blue Dawn (Fist),skin
+535711136,Dusk Vow (Fist),skin
+535711137,Master's Legacy (Fist),skin
+535711138,Legacy of the Forest (Fist),skin
+535711139,Glacier's Judgment (Fist),skin
+535711140,Heart of Royalty (Fist),skin
+535711141,Black Moonlight (Fist),skin
+535711142,Shadow Whisper (Fist),skin
+535711143,Midnight Veil (Fist),skin
+535711144,Eternal Crest (Fist),skin
+535711145,Starless Night (Fist),skin
+535711146,Ancient Remnant (Fist),skin
+535711147,Ancient Oath (Fist),skin
+535711148,Dark Whisper (Fist),skin
+535711149,Divine Light (Fist),skin
+535711150,Dragonscale (Fist),skin
+535711151,Frozen Time (Fist),skin
+535711152,Endless Prelude (Fist),skin
+535711153,Dark Abyssal Scale (Fist),skin
+535711154,Zikel's Apparition (Fist),skin
+535711155,Endsong (Fist),skin
+535711156,Shattered Fragment (Fist),skin
+535711157,Forgotten Melody (Fist),skin
+535711158,Savage Tread (Fist),skin
+535711159,Endless Veil (Fist),skin
+535711160,Conqueror (Fist),skin
+535711161,Pyromancer (Fist),skin
+535711162,Balance Arbiter (Fist),skin
+535711163,Verdant Melody (Fist),skin
+535711164,Crimson Eclipse (Fist),skin
+535711165,Abyssal Fragment (Fist),skin
+535711166,Forbidden Ritual (Fist),skin
+535711167,Judicator of Truth (Fist),skin
+535711168,Deep Breath (Fist),skin
+535711169,Shaman's Prayer (Fist),skin
+535711170,Veiled Arbiter (Fist),skin
+535711171,Steel Solidarity (Fist),skin
+535711172,Royal Crest (Fist),skin
+535711173,Dusk Ritual (Fist),skin
+535711174,Strange Rift (Fist),skin
+535711175,Skybound Oath (Fist),skin
+535711176,Veiled Blessing (Fist),skin
+535711177,Sleeping Token (Fist),skin
+535711178,Seal Guardian (Fist),skin
+535711179,Golden Vow (Fist),skin
+535711180,Fate Daeva (Fist),skin
+535711181,Ring of Light (Fist),skin
+535711182,Vitalis Root (Fist),skin
+535711183,Radiant Boundary (Fist),skin
+535711184,Wind Feather (Fist),skin
+535711185,Rending Roar (Fist),skin
+535711186,Desolate Abyss (Fist),skin
+535711187,Cursed Dragonscale (Fist),skin
+535711188,Dragonheart (Fist),skin
+535711189,Argent Prayer (Fist),skin
+535711190,Carmine Dragonfire (Fist),skin
+535711191,Sleeping Lovers' Memory (Fist),skin
+535711192,Cozy Forest Shugo (Fist),skin
+535711193,Beach Buddies (Fist),skin
+535711195,Eternal Sun (Fist),skin
+535711196,Tranquil Moon (Fist),skin
+535711197,Midnight Moon (Fist),skin
+535711198,Winterdusk Frostbloom (Fist),skin
+535711199,Mushron's Precious Mushroom (Fist),skin
+535711200,Dragon's Breath (Fist),skin
+535711201,Secret Teatime (Fist),skin
+535711202,Mystic Light (Fist),skin
+535711203,Corroded Crimson Mist (Fist),skin
+535711204,Whispering Star (Fist),skin
+535711205,Sweet Heart (Fist),skin
+535711206,Pinky Milky Lollipop (Fist),skin
+535711207,Black Metal (Fist),skin
+535711208,Hollow Specter (Fist),skin
+535711209,Twinkle Twinkle Teddy Bear (Fist),skin
+535711210,Fluffy Chick (Fist),skin
+535711211,Night Cat Claw (Fist),skin
+535711212,fromis_9 Light Stick (Fist),skin
+535711213,Bluesea Summer Break (Greatsword),skin
+535711214,Bluesea Summer Break (Longsword),skin
+535711215,Bluesea Summer Break (Dagger),skin
+535711216,Bluesea Summer Break (Bow),skin
+535711217,Bluesea Summer Break (Spellbook),skin
+535711218,Bluesea Summer Break (Orb),skin
+535711219,Bluesea Summer Break (Mace),skin
+535711220,Bluesea Summer Break (Staff),skin
+535711221,Bluesea Summer Break (Fist),skin
+535711222,Frozen Snowscape (Greatsword),skin
+535711223,Frozen Snowscape (Longsword),skin
+535711224,Frozen Snowscape (Dagger),skin
+535711225,Frozen Snowscape (Bow),skin
+535711226,Frozen Snowscape (Spellbook),skin
+535711227,Frozen Snowscape (Orb),skin
+535711228,Frozen Snowscape (Mace),skin
+535711229,Frozen Snowscape (Staff),skin
+535711230,Frozen Snowscape (Fist),skin
+535810001,Adamant Guardian (Skin: Breastplate) (Bound),skin
+535810002,Adamant Guardian (Skin: Greaves) (Bound),skin
+535810003,Adamant Guardian (Skin: Helm) (Bound),skin
+535810004,Adamant Guardian (Skin: Pauldrons) (Bound),skin
+535810005,Adamant Guardian (Skin: Gloves) (Bound),skin
+535810006,Adamant Guardian (Skin: Boots) (Bound),skin
+535810007,Adamant Guardian (Skin: Cloak) (Bound),skin
+535810008,Meteor's Benediction (Skin: Breastplate) (Bound),skin
+535810009,Meteor's Benediction (Skin: Greaves) (Bound),skin
+535810010,Meteor's Benediction (Skin: Helm) (Bound),skin
+535810011,Meteor's Benediction (Skin: Pauldrons) (Bound),skin
+535810012,Meteor's Benediction (Skin: Gloves) (Bound),skin
+535810013,Meteor's Benediction (Skin: Boots) (Bound),skin
+535810014,Meteor's Benediction (Skin: Cloak) (Bound),skin
+535810015,Noble Vow (Skin: Breastplate) (Bound),skin
+535810016,Noble Vow (Skin: Greaves) (Bound),skin
+535810017,Noble Vow (Skin: Helm) (Bound),skin
+535810018,Noble Vow (Skin: Pauldrons) (Bound),skin
+535810019,Noble Vow (Skin: Gloves) (Bound),skin
+535810020,Noble Vow (Skin: Boots) (Bound),skin
+535810021,Noble Vow (Skin: Cloak) (Bound),skin
+535810022,Chivalrous Will (Skin: Breastplate) (Bound),skin
+535810023,Chivalrous Will (Skin: Greaves) (Bound),skin
+535810024,Chivalrous Will (Skin: Helm) (Bound),skin
+535810025,Chivalrous Will (Skin: Pauldrons) (Bound),skin
+535810026,Chivalrous Will (Skin: Gloves) (Bound),skin
+535810027,Chivalrous Will (Skin: Boots) (Bound),skin
+535810028,Chivalrous Will (Skin: Cloak) (Bound),skin
+535810029,Dawnbreaker (Skin: Breastplate) (Bound),skin
+535810030,Dawnbreaker (Skin: Greaves) (Bound),skin
+535810031,Dawnbreaker (Skin: Helm) (Bound),skin
+535810032,Dawnbreaker (Skin: Pauldrons) (Bound),skin
+535810033,Dawnbreaker (Skin: Gloves) (Bound),skin
+535810034,Dawnbreaker (Skin: Boots) (Bound),skin
+535810035,Dawnbreaker (Skin: Cloak) (Bound),skin
+535810036,Flash Ironclad (Skin: Breastplate) (Bound),skin
+535810037,Flash Ironclad (Skin: Greaves) (Bound),skin
+535810038,Flash Ironclad (Skin: Helm) (Bound),skin
+535810039,Flash Ironclad (Skin: Pauldrons) (Bound),skin
+535810040,Flash Ironclad (Skin: Gloves) (Bound),skin
+535810041,Flash Ironclad (Skin: Boots) (Bound),skin
+535810042,Flash Ironclad (Skin: Cloak) (Bound),skin
+535810043,Forest Guardian (Skin: Breastplate) (Bound),skin
+535810044,Forest Guardian (Skin: Greaves) (Bound),skin
+535810045,Forest Guardian (Skin: Helm) (Bound),skin
+535810046,Forest Guardian (Skin: Pauldrons) (Bound),skin
+535810047,Forest Guardian (Skin: Gloves) (Bound),skin
+535810048,Forest Guardian (Skin: Boots) (Bound),skin
+535810049,Forest Guardian (Skin: Cloak) (Bound),skin
+535810050,Blessing of Life (Skin: Breastplate) (Bound),skin
+535810051,Blessing of Life (Skin: Greaves) (Bound),skin
+535810052,Blessing of Life (Skin: Helm) (Bound),skin
+535810053,Blessing of Life (Skin: Pauldrons) (Bound),skin
+535810054,Blessing of Life (Skin: Gloves) (Bound),skin
+535810055,Blessing of Life (Skin: Boots) (Bound),skin
+535810056,Blessing of Life (Skin: Cloak) (Bound),skin
+535810057,Keeper (Skin: Breastplate) (Bound),skin
+535810058,Keeper (Skin: Greaves) (Bound),skin
+535810059,Keeper (Skin: Helm) (Bound),skin
+535810060,Keeper (Skin: Pauldrons) (Bound),skin
+535810061,Keeper (Skin: Gloves) (Bound),skin
+535810062,Keeper (Skin: Boots) (Bound),skin
+535810063,Keeper (Skin: Cloak) (Bound),skin
+535810064,Soul Pledge (Skin: Breastplate) (Bound),skin
+535810065,Soul Pledge (Skin: Greaves) (Bound),skin
+535810066,Soul Pledge (Skin: Helm) (Bound),skin
+535810067,Soul Pledge (Skin: Pauldrons) (Bound),skin
+535810068,Soul Pledge (Skin: Gloves) (Bound),skin
+535810069,Soul Pledge (Skin: Boots) (Bound),skin
+535810070,Soul Pledge (Skin: Cloak) (Bound),skin
+535810071,Moon Luster (Skin: Breastplate) (Bound),skin
+535810072,Moon Luster (Skin: Greaves) (Bound),skin
+535810073,Moon Luster (Skin: Helm) (Bound),skin
+535810074,Moon Luster (Skin: Pauldrons) (Bound),skin
+535810075,Moon Luster (Skin: Gloves) (Bound),skin
+535810076,Moon Luster (Skin: Boots) (Bound),skin
+535810077,Moon Luster (Skin: Cloak) (Bound),skin
+535810078,Nameless Savior (Skin: Breastplate) (Bound),skin
+535810079,Nameless Savior (Skin: Greaves) (Bound),skin
+535810080,Nameless Savior (Skin: Helm) (Bound),skin
+535810081,Nameless Savior (Skin: Pauldrons) (Bound),skin
+535810082,Nameless Savior (Skin: Gloves) (Bound),skin
+535810083,Nameless Savior (Skin: Boots) (Bound),skin
+535810084,Nameless Savior (Skin: Cloak) (Bound),skin
+535810085,Ironclad Vow (Skin: Breastplate) (Bound),skin
+535810086,Ironclad Vow (Skin: Greaves) (Bound),skin
+535810087,Ironclad Vow (Skin: Helm) (Bound),skin
+535810088,Ironclad Vow (Skin: Pauldrons) (Bound),skin
+535810089,Ironclad Vow (Skin: Gloves) (Bound),skin
+535810090,Ironclad Vow (Skin: Boots) (Bound),skin
+535810091,Ironclad Vow (Skin: Cloak) (Bound),skin
+535810092,Steel Fortress (Skin: Breastplate) (Bound),skin
+535810093,Steel Fortress (Skin: Greaves) (Bound),skin
+535810094,Steel Fortress (Skin: Helm) (Bound),skin
+535810095,Steel Fortress (Skin: Pauldrons) (Bound),skin
+535810096,Steel Fortress (Skin: Gloves) (Bound),skin
+535810097,Steel Fortress (Skin: Boots) (Bound),skin
+535810098,Steel Fortress (Skin: Cloak) (Bound),skin
+535810099,Silent Wraith (Skin: Breastplate) (Bound),skin
+535810100,Silent Wraith (Skin: Greaves) (Bound),skin
+535810101,Silent Wraith (Skin: Helm) (Bound),skin
+535810102,Silent Wraith (Skin: Pauldrons) (Bound),skin
+535810103,Silent Wraith (Skin: Gloves) (Bound),skin
+535810104,Silent Wraith (Skin: Boots) (Bound),skin
+535810105,Silent Wraith (Skin: Cloak) (Bound),skin
+535810106,Hidden Escaper (Skin: Breastplate) (Bound),skin
+535810107,Hidden Escaper (Skin: Greaves) (Bound),skin
+535810108,Hidden Escaper (Skin: Helm) (Bound),skin
+535810109,Hidden Escaper (Skin: Pauldrons) (Bound),skin
+535810110,Hidden Escaper (Skin: Gloves) (Bound),skin
+535810111,Hidden Escaper (Skin: Boots) (Bound),skin
+535810112,Hidden Escaper (Skin: Cloak) (Bound),skin
+535810113,Silent Hunter (Skin: Breastplate) (Bound),skin
+535810114,Silent Hunter (Skin: Greaves) (Bound),skin
+535810115,Silent Hunter (Skin: Helm) (Bound),skin
+535810116,Silent Hunter (Skin: Pauldrons) (Bound),skin
+535810117,Silent Hunter (Skin: Gloves) (Bound),skin
+535810118,Silent Hunter (Skin: Boots) (Bound),skin
+535810119,Silent Hunter (Skin: Cloak) (Bound),skin
+535810120,Solar Radiance (Skin: Breastplate) (Bound),skin
+535810121,Solar Radiance (Skin: Greaves) (Bound),skin
+535810122,Solar Radiance (Skin: Helm) (Bound),skin
+535810123,Solar Radiance (Skin: Pauldrons) (Bound),skin
+535810124,Solar Radiance (Skin: Gloves) (Bound),skin
+535810125,Solar Radiance (Skin: Boots) (Bound),skin
+535810126,Solar Radiance (Skin: Cloak) (Bound),skin
+535810127,Iron Heart (Skin: Breastplate) (Bound),skin
+535810128,Iron Heart (Skin: Greaves) (Bound),skin
+535810129,Iron Heart (Skin: Helm) (Bound),skin
+535810130,Iron Heart (Skin: Pauldrons) (Bound),skin
+535810131,Iron Heart (Skin: Gloves) (Bound),skin
+535810132,Iron Heart (Skin: Boots) (Bound),skin
+535810133,Iron Heart (Skin: Cloak) (Bound),skin
+535810134,Wings of Fate (Skin: Breastplate) (Bound),skin
+535810135,Wings of Fate (Skin: Greaves) (Bound),skin
+535810136,Wings of Fate (Skin: Helm) (Bound),skin
+535810137,Wings of Fate (Skin: Pauldrons) (Bound),skin
+535810138,Wings of Fate (Skin: Gloves) (Bound),skin
+535810139,Wings of Fate (Skin: Boots) (Bound),skin
+535810140,Wings of Fate (Skin: Cloak) (Bound),skin
+535810141,Judgment of Glory (Skin: Breastplate) (Bound),skin
+535810142,Judgment of Glory (Skin: Greaves) (Bound),skin
+535810143,Judgment of Glory (Skin: Helm) (Bound),skin
+535810144,Judgment of Glory (Skin: Pauldrons) (Bound),skin
+535810145,Judgment of Glory (Skin: Gloves) (Bound),skin
+535810146,Judgment of Glory (Skin: Boots) (Bound),skin
+535810147,Judgment of Glory (Skin: Cloak) (Bound),skin
+535810148,Star Prophet (Skin: Breastplate) (Bound),skin
+535810149,Star Prophet (Skin: Greaves) (Bound),skin
+535810150,Star Prophet (Skin: Helm) (Bound),skin
+535810151,Star Prophet (Skin: Pauldrons) (Bound),skin
+535810152,Star Prophet (Skin: Gloves) (Bound),skin
+535810153,Star Prophet (Skin: Boots) (Bound),skin
+535810154,Star Prophet (Skin: Cloak) (Bound),skin
+535810155,Battle Spirit (Skin: Breastplate) (Bound),skin
+535810156,Battle Spirit (Skin: Greaves) (Bound),skin
+535810157,Battle Spirit (Skin: Helm) (Bound),skin
+535810158,Battle Spirit (Skin: Pauldrons) (Bound),skin
+535810159,Battle Spirit (Skin: Gloves) (Bound),skin
+535810160,Battle Spirit (Skin: Boots) (Bound),skin
+535810161,Battle Spirit (Skin: Cloak) (Bound),skin
+535810162,Contemplator (Skin: Breastplate) (Bound),skin
+535810163,Contemplator (Skin: Greaves) (Bound),skin
+535810164,Contemplator (Skin: Helm) (Bound),skin
+535810165,Contemplator (Skin: Pauldrons) (Bound),skin
+535810166,Contemplator (Skin: Gloves) (Bound),skin
+535810167,Contemplator (Skin: Boots) (Bound),skin
+535810168,Contemplator (Skin: Cloak) (Bound),skin
+535810176,Nature Greenwood (Skin: Breastplate) (Bound),skin
+535810177,Nature Greenwood (Skin: Greaves) (Bound),skin
+535810178,Nature Greenwood (Skin: Helm) (Bound),skin
+535810179,Nature Greenwood (Skin: Pauldrons) (Bound),skin
+535810180,Nature Greenwood (Skin: Gloves) (Bound),skin
+535810181,Nature Greenwood (Skin: Boots) (Bound),skin
+535810182,Nature Greenwood (Skin: Cloak) (Bound),skin
+535810183,Sky Feather (Skin: Breastplate) (Bound),skin
+535810184,Sky Feather (Skin: Greaves) (Bound),skin
+535810185,Sky Feather (Skin: Helm) (Bound),skin
+535810186,Sky Feather (Skin: Pauldrons) (Bound),skin
+535810187,Sky Feather (Skin: Gloves) (Bound),skin
+535810188,Sky Feather (Skin: Boots) (Bound),skin
+535810189,Sky Feather (Skin: Cloak) (Bound),skin
+535810190,Ruinous Devourer (Skin: Breastplate) (Bound),skin
+535810191,Ruinous Devourer (Skin: Greaves) (Bound),skin
+535810192,Ruinous Devourer (Skin: Helm) (Bound),skin
+535810193,Ruinous Devourer (Skin: Pauldrons) (Bound),skin
+535810194,Ruinous Devourer (Skin: Gloves) (Bound),skin
+535810195,Ruinous Devourer (Skin: Boots) (Bound),skin
+535810196,Ruinous Devourer (Skin: Cloak) (Bound),skin
+535810197,Dusk Silk (Skin: Breastplate) (Bound),skin
+535810198,Dusk Silk (Skin: Greaves) (Bound),skin
+535810199,Dusk Silk (Skin: Helm) (Bound),skin
+535810200,Dusk Silk (Skin: Pauldrons) (Bound),skin
+535810201,Dusk Silk (Skin: Gloves) (Bound),skin
+535810202,Dusk Silk (Skin: Boots) (Bound),skin
+535810203,Dusk Silk (Skin: Cloak) (Bound),skin
+535810204,Lone Chaser (Skin: Breastplate) (Bound),skin
+535810205,Lone Chaser (Skin: Greaves) (Bound),skin
+535810206,Lone Chaser (Skin: Helm) (Bound),skin
+535810207,Lone Chaser (Skin: Pauldrons) (Bound),skin
+535810208,Lone Chaser (Skin: Gloves) (Bound),skin
+535810209,Lone Chaser (Skin: Boots) (Bound),skin
+535810210,Lone Chaser (Skin: Cloak) (Bound),skin
+535810211,Knightly Conviction (Skin: Breastplate) (Bound),skin
+535810212,Knightly Conviction (Skin: Greaves) (Bound),skin
+535810213,Knightly Conviction (Skin: Helm) (Bound),skin
+535810214,Knightly Conviction (Skin: Pauldrons) (Bound),skin
+535810215,Knightly Conviction (Skin: Gloves) (Bound),skin
+535810216,Knightly Conviction (Skin: Boots) (Bound),skin
+535810217,Knightly Conviction (Skin: Cloak) (Bound),skin
+535810218,Hallowed Promise (Skin: Breastplate) (Bound),skin
+535810219,Hallowed Promise (Skin: Greaves) (Bound),skin
+535810220,Hallowed Promise (Skin: Helm) (Bound),skin
+535810221,Hallowed Promise (Skin: Pauldrons) (Bound),skin
+535810222,Hallowed Promise (Skin: Gloves) (Bound),skin
+535810223,Hallowed Promise (Skin: Boots) (Bound),skin
+535810224,Hallowed Promise (Skin: Cloak) (Bound),skin
+535810225,Silver Executioner (Skin: Breastplate) (Bound),skin
+535810226,Silver Executioner (Skin: Greaves) (Bound),skin
+535810227,Silver Executioner (Skin: Helm) (Bound),skin
+535810228,Silver Executioner (Skin: Pauldrons) (Bound),skin
+535810229,Silver Executioner (Skin: Gloves) (Bound),skin
+535810230,Silver Executioner (Skin: Boots) (Bound),skin
+535810231,Silver Executioner (Skin: Cloak) (Bound),skin
+535810232,Night Mist Phantom (Skin: Breastplate) (Bound),skin
+535810233,Night Mist Phantom (Skin: Greaves) (Bound),skin
+535810234,Night Mist Phantom (Skin: Helm) (Bound),skin
+535810235,Night Mist Phantom (Skin: Pauldrons) (Bound),skin
+535810236,Night Mist Phantom (Skin: Gloves) (Bound),skin
+535810237,Night Mist Phantom (Skin: Boots) (Bound),skin
+535810238,Night Mist Phantom (Skin: Cloak) (Bound),skin
+535810239,Forest Scholar (Skin: Breastplate) (Bound),skin
+535810240,Forest Scholar (Skin: Greaves) (Bound),skin
+535810241,Forest Scholar (Skin: Helm) (Bound),skin
+535810242,Forest Scholar (Skin: Pauldrons) (Bound),skin
+535810243,Forest Scholar (Skin: Gloves) (Bound),skin
+535810244,Forest Scholar (Skin: Boots) (Bound),skin
+535810245,Forest Scholar (Skin: Cloak) (Bound),skin
+535810246,Shadow Mask (Skin: Breastplate) (Bound),skin
+535810247,Shadow Mask (Skin: Greaves) (Bound),skin
+535810248,Shadow Mask (Skin: Helm) (Bound),skin
+535810249,Shadow Mask (Skin: Pauldrons) (Bound),skin
+535810250,Shadow Mask (Skin: Gloves) (Bound),skin
+535810251,Shadow Mask (Skin: Boots) (Bound),skin
+535810252,Shadow Mask (Skin: Cloak) (Bound),skin
+535810253,Direction Setter (Skin: Breastplate) (Bound),skin
+535810254,Direction Setter (Skin: Greaves) (Bound),skin
+535810255,Direction Setter (Skin: Helm) (Bound),skin
+535810256,Direction Setter (Skin: Pauldrons) (Bound),skin
+535810257,Direction Setter (Skin: Gloves) (Bound),skin
+535810258,Direction Setter (Skin: Boots) (Bound),skin
+535810259,Direction Setter (Skin: Cloak) (Bound),skin
+535810261,Lunar Benediction (Greaves),skin
+535810262,Lunar Benediction (Helm),skin
+535810263,Lunar Benediction (Pauldrons),skin
+535810264,Lunar Benediction (Gloves),skin
+535810265,Lunar Benediction (Boots),skin
+535810266,Lunar Benediction (Cloak),skin
+535810267,Steel Endurance (Skin: Breastplate) (Bound),skin
+535810268,Steel Endurance (Skin: Greaves) (Bound),skin
+535810269,Steel Endurance (Skin: Helm) (Bound),skin
+535810270,Steel Endurance (Skin: Pauldrons) (Bound),skin
+535810271,Steel Endurance (Skin: Gloves) (Bound),skin
+535810272,Steel Endurance (Skin: Boots) (Bound),skin
+535810273,Steel Endurance (Skin: Cloak) (Bound),skin
+535810274,Anguished Darkness (Skin: Breastplate) (Bound),skin
+535810275,Anguished Darkness (Skin: Greaves) (Bound),skin
+535810276,Anguished Darkness (Skin: Helm) (Bound),skin
+535810277,Anguished Darkness (Skin: Pauldrons) (Bound),skin
+535810278,Anguished Darkness (Skin: Gloves) (Bound),skin
+535810279,Anguished Darkness (Skin: Boots) (Bound),skin
+535810280,Anguished Darkness (Skin: Cloak) (Bound),skin
+535810281,Night Shadow (Skin: Breastplate) (Bound),skin
+535810282,Night Shadow (Skin: Greaves) (Bound),skin
+535810283,Night Shadow (Skin: Helm) (Bound),skin
+535810284,Night Shadow (Skin: Pauldrons) (Bound),skin
+535810285,Night Shadow (Skin: Gloves) (Bound),skin
+535810286,Night Shadow (Skin: Boots) (Bound),skin
+535810287,Night Shadow (Skin: Cloak) (Bound),skin
+535810288,Night Dragon (Skin: Breastplate) (Bound),skin
+535810289,Night Dragon (Skin: Greaves) (Bound),skin
+535810290,Night Dragon (Skin: Helm) (Bound),skin
+535810291,Night Dragon (Skin: Pauldrons) (Bound),skin
+535810292,Night Dragon (Skin: Gloves) (Bound),skin
+535810293,Night Dragon (Skin: Boots) (Bound),skin
+535810294,Night Dragon (Skin: Cloak) (Bound),skin
+535810295,Destruction Spearhead (Skin: Breastplate) (Bound),skin
+535810296,Destruction Spearhead (Skin: Greaves) (Bound),skin
+535810297,Destruction Spearhead (Skin: Helm) (Bound),skin
+535810298,Destruction Spearhead (Skin: Pauldrons) (Bound),skin
+535810299,Destruction Spearhead (Skin: Gloves) (Bound),skin
+535810300,Destruction Spearhead (Skin: Boots) (Bound),skin
+535810301,Destruction Spearhead (Skin: Cloak) (Bound),skin
+535810302,Roaring Dragon (Skin: Breastplate) (Bound),skin
+535810303,Roaring Dragon (Skin: Greaves) (Bound),skin
+535810304,Roaring Dragon (Skin: Helm) (Bound),skin
+535810305,Roaring Dragon (Skin: Pauldrons) (Bound),skin
+535810306,Roaring Dragon (Skin: Gloves) (Bound),skin
+535810307,Roaring Dragon (Skin: Boots) (Bound),skin
+535810308,Roaring Dragon (Skin: Cloak) (Bound),skin
+535810309,Howling Dragon (Skin: Breastplate) (Bound),skin
+535810310,Howling Dragon (Skin: Greaves) (Bound),skin
+535810311,Howling Dragon (Skin: Helm) (Bound),skin
+535810312,Howling Dragon (Skin: Pauldrons) (Bound),skin
+535810313,Howling Dragon (Skin: Gloves) (Bound),skin
+535810314,Howling Dragon (Skin: Boots) (Bound),skin
+535810315,Howling Dragon (Skin: Cloak) (Bound),skin
+535810317,Windborne Vow (Greaves),skin
+535810318,Windborne Vow (Helm),skin
+535810319,Windborne Vow (Pauldrons),skin
+535810320,Windborne Vow (Gloves),skin
+535810321,Windborne Vow (Boots),skin
+535810322,Windborne Vow (Cloak),skin
+535810323,Silver Bell Fairy's Dream (Skin: Breastplate) (Bound),skin
+535810324,Silver Bell Fairy's Dream (Skin: Greaves) (Bound),skin
+535810325,Silver Bell Fairy's Dream (Skin: Helm) (Bound),skin
+535810326,Silver Bell Fairy's Dream (Skin: Pauldrons) (Bound),skin
+535810327,Silver Bell Fairy's Dream (Skin: Gloves) (Bound),skin
+535810328,Silver Bell Fairy's Dream (Skin: Boots) (Bound),skin
+535810329,Silver Bell Fairy's Dream (Skin: Cloak) (Bound),skin
+535810330,Sky Song (Breastplate),skin
+535810331,Sky Song (Greaves),skin
+535810332,Sky Song (Helm),skin
+535810333,Sky Song (Pauldrons),skin
+535810334,Sky Song (Gloves),skin
+535810335,Sky Song (Boots),skin
+535810336,Sky Song (Cloak),skin
+535810337,Netherworld Explorer (Skin: Breastplate) (Bound),skin
+535810338,Netherworld Explorer (Skin: Greaves) (Bound),skin
+535810339,Netherworld Explorer (Skin: Helm) (Bound),skin
+535810340,Netherworld Explorer (Skin: Pauldrons) (Bound),skin
+535810341,Netherworld Explorer (Skin: Gloves) (Bound),skin
+535810342,Netherworld Explorer (Skin: Boots) (Bound),skin
+535810343,Netherworld Explorer (Skin: Cloak) (Bound),skin
+535810344,Skilled Expert (Skin: Breastplate) (Bound),skin
+535810345,Skilled Expert (Skin: Greaves) (Bound),skin
+535810346,Skilled Expert (Skin: Helm) (Bound),skin
+535810347,Skilled Expert (Skin: Pauldrons) (Bound),skin
+535810348,Skilled Expert (Skin: Gloves) (Bound),skin
+535810349,Skilled Expert (Skin: Boots) (Bound),skin
+535810350,Skilled Expert (Skin: Cloak) (Bound),skin
+535810351,Azure Aura (Skin: Breastplate) (Bound),skin
+535810352,Azure Aura (Skin: Greaves) (Bound),skin
+535810353,Azure Aura (Skin: Helm) (Bound),skin
+535810354,Azure Aura (Skin: Pauldrons) (Bound),skin
+535810355,Azure Aura (Skin: Gloves) (Bound),skin
+535810356,Azure Aura (Skin: Boots) (Bound),skin
+535810357,Azure Aura (Skin: Cloak) (Bound),skin
+535810358,Eternal Horn (Skin: Breastplate) (Bound),skin
+535810359,Eternal Horn (Skin: Greaves) (Bound),skin
+535810360,Eternal Horn (Skin: Helm) (Bound),skin
+535810361,Eternal Horn (Skin: Pauldrons) (Bound),skin
+535810362,Eternal Horn (Skin: Gloves) (Bound),skin
+535810363,Eternal Horn (Skin: Boots) (Bound),skin
+535810364,Eternal Horn (Skin: Cloak) (Bound),skin
+535810365,Immortal Heart (Skin: Breastplate) (Bound),skin
+535810366,Immortal Heart (Skin: Greaves) (Bound),skin
+535810367,Immortal Heart (Skin: Helm) (Bound),skin
+535810368,Immortal Heart (Skin: Pauldrons) (Bound),skin
+535810369,Immortal Heart (Skin: Gloves) (Bound),skin
+535810370,Immortal Heart (Skin: Boots) (Bound),skin
+535810371,Immortal Heart (Skin: Cloak) (Bound),skin
+535810372,Crimson Lord (Breastplate),skin
+535810373,Crimson Lord (Greaves),skin
+535810374,Crimson Lord (Helm),skin
+535810375,Crimson Lord (Pauldrons),skin
+535810376,Crimson Lord (Gloves),skin
+535810377,Crimson Lord (Boots),skin
+535810378,Crimson Lord (Cloak),skin
+535810379,Divine Benediction (Skin: Breastplate) (Bound),skin
+535810380,Divine Benediction (Skin: Greaves) (Bound),skin
+535810381,Divine Benediction (Skin: Helm) (Bound),skin
+535810382,Divine Benediction (Skin: Pauldrons) (Bound),skin
+535810383,Divine Benediction (Skin: Gloves) (Bound),skin
+535810384,Divine Benediction (Skin: Boots) (Bound),skin
+535810385,Divine Benediction (Skin: Cloak) (Bound),skin
+535810386,Storm Legacy (Skin: Breastplate) (Bound),skin
+535810387,Storm Legacy (Skin: Greaves) (Bound),skin
+535810388,Storm Legacy (Skin: Helm) (Bound),skin
+535810389,Storm Legacy (Skin: Pauldrons) (Bound),skin
+535810390,Storm Legacy (Skin: Gloves) (Bound),skin
+535810391,Storm Legacy (Skin: Boots) (Bound),skin
+535810392,Storm Legacy (Skin: Cloak) (Bound),skin
+535810393,Draconic Benediction (Skin: Breastplate) (Bound),skin
+535810394,Draconic Benediction (Skin: Greaves) (Bound),skin
+535810395,Draconic Benediction (Skin: Helm) (Bound),skin
+535810396,Draconic Benediction (Skin: Pauldrons) (Bound),skin
+535810397,Draconic Benediction (Skin: Gloves) (Bound),skin
+535810398,Draconic Benediction (Skin: Boots) (Bound),skin
+535810399,Draconic Benediction (Skin: Cloak) (Bound),skin
+535810400,Draconic Aura (Skin: Breastplate) (Bound),skin
+535810401,Draconic Aura (Skin: Greaves) (Bound),skin
+535810402,Draconic Aura (Skin: Helm) (Bound),skin
+535810403,Draconic Aura (Skin: Pauldrons) (Bound),skin
+535810404,Draconic Aura (Skin: Gloves) (Bound),skin
+535810405,Draconic Aura (Skin: Boots) (Bound),skin
+535810406,Draconic Aura (Skin: Cloak) (Bound),skin
+535810407,Draconic Rage (Skin: Breastplate) (Bound),skin
+535810408,Draconic Rage (Skin: Greaves) (Bound),skin
+535810409,Draconic Rage (Skin: Helm) (Bound),skin
+535810410,Draconic Rage (Skin: Pauldrons) (Bound),skin
+535810411,Draconic Rage (Skin: Gloves) (Bound),skin
+535810412,Draconic Rage (Skin: Boots) (Bound),skin
+535810413,Draconic Rage (Skin: Cloak) (Bound),skin
+535810414,Light of Genesis (Skin: Breastplate) (Bound),skin
+535810415,Light of Genesis (Skin: Greaves) (Bound),skin
+535810416,Light of Genesis (Skin: Helm) (Bound),skin
+535810417,Light of Genesis (Skin: Pauldrons) (Bound),skin
+535810418,Light of Genesis (Skin: Gloves) (Bound),skin
+535810419,Light of Genesis (Skin: Boots) (Bound),skin
+535810420,Light of Genesis (Skin: Cloak) (Bound),skin
+535810421,Dark Fang (Skin: Breastplate) (Bound),skin
+535810422,Dark Fang (Skin: Greaves) (Bound),skin
+535810423,Dark Fang (Skin: Helm) (Bound),skin
+535810424,Dark Fang (Skin: Pauldrons) (Bound),skin
+535810425,Dark Fang (Skin: Gloves) (Bound),skin
+535810426,Dark Fang (Skin: Boots) (Bound),skin
+535810427,Dark Fang (Skin: Cloak) (Bound),skin
+535810428,Illusionary Shadow (Skin: Breastplate) (Bound),skin
+535810429,Illusionary Shadow (Skin: Greaves) (Bound),skin
+535810430,Illusionary Shadow (Skin: Helm) (Bound),skin
+535810431,Illusionary Shadow (Skin: Pauldrons) (Bound),skin
+535810432,Illusionary Shadow (Skin: Gloves) (Bound),skin
+535810433,Illusionary Shadow (Skin: Boots) (Bound),skin
+535810434,Illusionary Shadow (Skin: Cloak) (Bound),skin
+535810435,Restored Recon Team (Skin: Breastplate) (Bound),skin
+535810436,Restored Recon Team (Skin: Greaves) (Bound),skin
+535810437,Restored Recon Team (Skin: Helm) (Bound),skin
+535810438,Restored Recon Team (Skin: Pauldrons) (Bound),skin
+535810439,Restored Recon Team (Skin: Gloves) (Bound),skin
+535810440,Restored Recon Team (Skin: Boots) (Bound),skin
+535810441,Restored Recon Team (Skin: Cloak) (Bound),skin
+535810442,Forgotten Recon Team (Skin: Breastplate) (Bound),skin
+535810443,Forgotten Recon Team (Skin: Greaves) (Bound),skin
+535810444,Forgotten Recon Team (Skin: Helm) (Bound),skin
+535810445,Forgotten Recon Team (Skin: Pauldrons) (Bound),skin
+535810446,Forgotten Recon Team (Skin: Gloves) (Bound),skin
+535810447,Forgotten Recon Team (Skin: Boots) (Bound),skin
+535810448,Forgotten Recon Team (Skin: Cloak) (Bound),skin
+535810449,Awakened (Skin: Breastplate) (Bound),skin
+535810450,Awakened (Skin: Greaves) (Bound),skin
+535810451,Awakened (Skin: Helm) (Bound),skin
+535810452,Awakened (Skin: Pauldrons) (Bound),skin
+535810453,Awakened (Skin: Gloves) (Bound),skin
+535810454,Awakened (Skin: Boots) (Bound),skin
+535810455,Awakened (Skin: Cloak) (Bound),skin
+535810456,Transcendent (Breastplate),skin
+535810457,Transcendent (Greaves),skin
+535810458,Transcendent (Helm),skin
+535810459,Transcendent (Pauldrons),skin
+535810460,Transcendent (Gloves),skin
+535810461,Transcendent (Boots),skin
+535810462,Transcendent (Cloak),skin
+535810463,Skyfeather Guardian (Skin: Breastplate) (Bound),skin
+535810464,Skyfeather Guardian (Skin: Greaves) (Bound),skin
+535810465,Skyfeather Guardian (Skin: Helm) (Bound),skin
+535810466,Skyfeather Guardian (Skin: Pauldrons) (Bound),skin
+535810467,Skyfeather Guardian (Skin: Gloves) (Bound),skin
+535810468,Skyfeather Guardian (Skin: Boots) (Bound),skin
+535810469,Skyfeather Guardian (Skin: Cloak) (Bound),skin
+535810477,Star-Embracing Night (Breastplate),skin
+535810478,Star-Embracing Night (Greaves),skin
+535810479,Star-Embracing Night (Helm),skin
+535810480,Star-Embracing Night (Pauldrons),skin
+535810481,Star-Embracing Night (Gloves),skin
+535810482,Star-Embracing Night (Boots),skin
+535810483,Star-Embracing Night (Cloak),skin
+535810484,Ascended Daeva (Skin: Breastplate) (Bound),skin
+535810485,Ascended Daeva (Skin: Greaves) (Bound),skin
+535810486,Ascended Daeva (Skin: Helm) (Bound),skin
+535810487,Ascended Daeva (Skin: Pauldrons) (Bound),skin
+535810488,Ascended Daeva (Skin: Gloves) (Bound),skin
+535810489,Ascended Daeva (Skin: Boots) (Bound),skin
+535810490,Ascended Daeva (Skin: Cloak) (Bound),skin
+535810491,Lightpath Trace (Skin: Breastplate) (Bound),skin
+535810492,Lightpath Trace (Skin: Greaves) (Bound),skin
+535810493,Lightpath Trace (Skin: Helm) (Bound),skin
+535810494,Lightpath Trace (Skin: Pauldrons) (Bound),skin
+535810495,Lightpath Trace (Skin: Gloves) (Bound),skin
+535810496,Lightpath Trace (Skin: Boots) (Bound),skin
+535810497,Lightpath Trace (Skin: Cloak) (Bound),skin
+535810505,Forest Hermit (Skin: Breastplate) (Bound),skin
+535810506,Forest Hermit (Skin: Greaves) (Bound),skin
+535810507,Forest Hermit (Skin: Helm) (Bound),skin
+535810508,Forest Hermit (Skin: Pauldrons) (Bound),skin
+535810509,Forest Hermit (Skin: Gloves) (Bound),skin
+535810510,Forest Hermit (Skin: Boots) (Bound),skin
+535810511,Forest Hermit (Skin: Cloak) (Bound),skin
+535810512,Wayfarer (Skin: Breastplate) (Bound),skin
+535810513,Wayfarer (Skin: Greaves) (Bound),skin
+535810514,Wayfarer (Skin: Helm) (Bound),skin
+535810515,Wayfarer (Skin: Pauldrons) (Bound),skin
+535810516,Wayfarer (Skin: Gloves) (Bound),skin
+535810517,Wayfarer (Skin: Boots) (Bound),skin
+535810518,Wayfarer (Skin: Cloak) (Bound),skin
+535810519,Start of Training (Skin: Breastplate) (Bound),skin
+535810520,Start of Training (Skin: Greaves) (Bound),skin
+535810521,Start of Training (Skin: Helm) (Bound),skin
+535810522,Start of Training (Skin: Pauldrons) (Bound),skin
+535810523,Start of Training (Skin: Gloves) (Bound),skin
+535810524,Start of Training (Skin: Boots) (Bound),skin
+535810525,Start of Training (Skin: Cloak) (Bound),skin
+535810526,Knowledge Successor (Skin: Breastplate) (Bound),skin
+535810527,Knowledge Successor (Skin: Greaves) (Bound),skin
+535810528,Knowledge Successor (Skin: Helm) (Bound),skin
+535810529,Knowledge Successor (Skin: Pauldrons) (Bound),skin
+535810530,Knowledge Successor (Skin: Gloves) (Bound),skin
+535810531,Knowledge Successor (Skin: Boots) (Bound),skin
+535810532,Knowledge Successor (Skin: Cloak) (Bound),skin
+535810533,Researcher (Skin: Breastplate) (Bound),skin
+535810534,Researcher (Skin: Greaves) (Bound),skin
+535810535,Researcher (Skin: Helm) (Bound),skin
+535810536,Researcher (Skin: Pauldrons) (Bound),skin
+535810537,Researcher (Skin: Gloves) (Bound),skin
+535810538,Researcher (Skin: Boots) (Bound),skin
+535810539,Researcher (Skin: Cloak) (Bound),skin
+535810540,Scribe (Skin: Breastplate) (Bound),skin
+535810541,Scribe (Skin: Greaves) (Bound),skin
+535810542,Scribe (Skin: Helm) (Bound),skin
+535810543,Scribe (Skin: Pauldrons) (Bound),skin
+535810544,Scribe (Skin: Gloves) (Bound),skin
+535810545,Scribe (Skin: Boots) (Bound),skin
+535810546,Scribe (Skin: Cloak) (Bound),skin
+535810547,Silent Forest (Skin: Breastplate) (Bound),skin
+535810548,Silent Forest (Skin: Greaves) (Bound),skin
+535810549,Silent Forest (Skin: Helm) (Bound),skin
+535810550,Silent Forest (Skin: Pauldrons) (Bound),skin
+535810551,Silent Forest (Skin: Gloves) (Bound),skin
+535810552,Silent Forest (Skin: Boots) (Bound),skin
+535810553,Silent Forest (Skin: Cloak) (Bound),skin
+535810554,Sage of Destiny (Skin: Breastplate) (Bound),skin
+535810555,Sage of Destiny (Skin: Greaves) (Bound),skin
+535810556,Sage of Destiny (Skin: Helm) (Bound),skin
+535810557,Sage of Destiny (Skin: Pauldrons) (Bound),skin
+535810558,Sage of Destiny (Skin: Gloves) (Bound),skin
+535810559,Sage of Destiny (Skin: Boots) (Bound),skin
+535810560,Sage of Destiny (Skin: Cloak) (Bound),skin
+535810561,Whisper of the Ether (Skin: Breastplate) (Bound),skin
+535810562,Whisper of the Ether (Skin: Greaves) (Bound),skin
+535810563,Whisper of the Ether (Skin: Helm) (Bound),skin
+535810564,Whisper of the Ether (Skin: Pauldrons) (Bound),skin
+535810565,Whisper of the Ether (Skin: Gloves) (Bound),skin
+535810566,Whisper of the Ether (Skin: Boots) (Bound),skin
+535810567,Whisper of the Ether (Skin: Cloak) (Bound),skin
+535810568,Senior Inquirer (Skin: Breastplate) (Bound),skin
+535810569,Senior Inquirer (Skin: Greaves) (Bound),skin
+535810570,Senior Inquirer (Skin: Helm) (Bound),skin
+535810571,Senior Inquirer (Skin: Pauldrons) (Bound),skin
+535810572,Senior Inquirer (Skin: Gloves) (Bound),skin
+535810573,Senior Inquirer (Skin: Boots) (Bound),skin
+535810574,Senior Inquirer (Skin: Cloak) (Bound),skin
+535810575,Journey Progress (Skin: Breastplate) (Bound),skin
+535810576,Journey Progress (Skin: Greaves) (Bound),skin
+535810577,Journey Progress (Skin: Helm) (Bound),skin
+535810578,Journey Progress (Skin: Pauldrons) (Bound),skin
+535810579,Journey Progress (Skin: Gloves) (Bound),skin
+535810580,Journey Progress (Skin: Boots) (Bound),skin
+535810581,Journey Progress (Skin: Cloak) (Bound),skin
+535810582,Journey Flow (Skin: Breastplate) (Bound),skin
+535810583,Journey Flow (Skin: Greaves) (Bound),skin
+535810584,Journey Flow (Skin: Helm) (Bound),skin
+535810585,Journey Flow (Skin: Pauldrons) (Bound),skin
+535810586,Journey Flow (Skin: Gloves) (Bound),skin
+535810587,Journey Flow (Skin: Boots) (Bound),skin
+535810588,Journey Flow (Skin: Cloak) (Bound),skin
+535810603,Rage Ironclad (Skin: Breastplate) (Bound),skin
+535810604,Rage Ironclad (Skin: Greaves) (Bound),skin
+535810605,Rage Ironclad (Skin: Helm) (Bound),skin
+535810606,Rage Ironclad (Skin: Pauldrons) (Bound),skin
+535810607,Rage Ironclad (Skin: Gloves) (Bound),skin
+535810608,Rage Ironclad (Skin: Boots) (Bound),skin
+535810609,Rage Ironclad (Skin: Cloak) (Bound),skin
+535810610,Silent Steel (Skin: Breastplate) (Bound),skin
+535810611,Silent Steel (Skin: Greaves) (Bound),skin
+535810612,Silent Steel (Skin: Helm) (Bound),skin
+535810613,Silent Steel (Skin: Pauldrons) (Bound),skin
+535810614,Silent Steel (Skin: Gloves) (Bound),skin
+535810615,Silent Steel (Skin: Boots) (Bound),skin
+535810616,Silent Steel (Skin: Cloak) (Bound),skin
+535810617,Steel Heavy Armor (Skin: Breastplate) (Bound),skin
+535810618,Steel Heavy Armor (Skin: Greaves) (Bound),skin
+535810619,Steel Heavy Armor (Skin: Helm) (Bound),skin
+535810620,Steel Heavy Armor (Skin: Pauldrons) (Bound),skin
+535810621,Steel Heavy Armor (Skin: Gloves) (Bound),skin
+535810622,Steel Heavy Armor (Skin: Boots) (Bound),skin
+535810623,Steel Heavy Armor (Skin: Cloak) (Bound),skin
+535810624,Unknown Pursuer (Skin: Breastplate) (Bound),skin
+535810625,Unknown Pursuer (Skin: Greaves) (Bound),skin
+535810626,Unknown Pursuer (Skin: Helm) (Bound),skin
+535810627,Unknown Pursuer (Skin: Pauldrons) (Bound),skin
+535810628,Unknown Pursuer (Skin: Gloves) (Bound),skin
+535810629,Unknown Pursuer (Skin: Boots) (Bound),skin
+535810630,Unknown Pursuer (Skin: Cloak) (Bound),skin
+535810631,Netherworld Seeker (Skin: Breastplate) (Bound),skin
+535810632,Netherworld Seeker (Skin: Greaves) (Bound),skin
+535810633,Netherworld Seeker (Skin: Helm) (Bound),skin
+535810634,Netherworld Seeker (Skin: Pauldrons) (Bound),skin
+535810635,Netherworld Seeker (Skin: Gloves) (Bound),skin
+535810636,Netherworld Seeker (Skin: Boots) (Bound),skin
+535810637,Netherworld Seeker (Skin: Cloak) (Bound),skin
+535810638,Sandstorm Wanderer (Skin: Breastplate) (Bound),skin
+535810639,Sandstorm Wanderer (Skin: Greaves) (Bound),skin
+535810640,Sandstorm Wanderer (Skin: Helm) (Bound),skin
+535810641,Sandstorm Wanderer (Skin: Pauldrons) (Bound),skin
+535810642,Sandstorm Wanderer (Skin: Gloves) (Bound),skin
+535810643,Sandstorm Wanderer (Skin: Boots) (Bound),skin
+535810644,Sandstorm Wanderer (Skin: Cloak) (Bound),skin
+535810645,Blue Breath Searcher (Skin: Breastplate) (Bound),skin
+535810646,Blue Breath Searcher (Skin: Greaves) (Bound),skin
+535810647,Blue Breath Searcher (Skin: Helm) (Bound),skin
+535810648,Blue Breath Searcher (Skin: Pauldrons) (Bound),skin
+535810649,Blue Breath Searcher (Skin: Gloves) (Bound),skin
+535810650,Blue Breath Searcher (Skin: Boots) (Bound),skin
+535810651,Blue Breath Searcher (Skin: Cloak) (Bound),skin
+535810652,Tailor of Fate (Skin: Breastplate) (Bound),skin
+535810653,Tailor of Fate (Skin: Greaves) (Bound),skin
+535810654,Tailor of Fate (Skin: Helm) (Bound),skin
+535810655,Tailor of Fate (Skin: Pauldrons) (Bound),skin
+535810656,Tailor of Fate (Skin: Gloves) (Bound),skin
+535810657,Tailor of Fate (Skin: Boots) (Bound),skin
+535810658,Tailor of Fate (Skin: Cloak) (Bound),skin
+535810659,Radiant Heart (Skin: Breastplate) (Bound),skin
+535810660,Radiant Heart (Skin: Greaves) (Bound),skin
+535810661,Radiant Heart (Skin: Helm) (Bound),skin
+535810662,Radiant Heart (Skin: Pauldrons) (Bound),skin
+535810663,Radiant Heart (Skin: Gloves) (Bound),skin
+535810664,Radiant Heart (Skin: Boots) (Bound),skin
+535810665,Radiant Heart (Skin: Cloak) (Bound),skin
+535810666,Steel Wall (Skin: Breastplate) (Bound),skin
+535810667,Steel Wall (Skin: Greaves) (Bound),skin
+535810668,Steel Wall (Skin: Helm) (Bound),skin
+535810669,Steel Wall (Skin: Pauldrons) (Bound),skin
+535810670,Steel Wall (Skin: Gloves) (Bound),skin
+535810671,Steel Wall (Skin: Boots) (Bound),skin
+535810672,Steel Wall (Skin: Cloak) (Bound),skin
+535810673,Silver Barrier (Skin: Breastplate) (Bound),skin
+535810674,Silver Barrier (Skin: Greaves) (Bound),skin
+535810675,Silver Barrier (Skin: Helm) (Bound),skin
+535810676,Silver Barrier (Skin: Pauldrons) (Bound),skin
+535810677,Silver Barrier (Skin: Gloves) (Bound),skin
+535810678,Silver Barrier (Skin: Boots) (Bound),skin
+535810679,Silver Barrier (Skin: Cloak) (Bound),skin
+535810680,Gilded Guardian (Skin: Breastplate) (Bound),skin
+535810681,Gilded Guardian (Skin: Greaves) (Bound),skin
+535810682,Gilded Guardian (Skin: Helm) (Bound),skin
+535810683,Gilded Guardian (Skin: Pauldrons) (Bound),skin
+535810684,Gilded Guardian (Skin: Gloves) (Bound),skin
+535810685,Gilded Guardian (Skin: Boots) (Bound),skin
+535810686,Gilded Guardian (Skin: Cloak) (Bound),skin
+535810687,Bloodscent Image (Skin: Breastplate) (Bound),skin
+535810688,Bloodscent Image (Skin: Greaves) (Bound),skin
+535810689,Bloodscent Image (Skin: Helm) (Bound),skin
+535810690,Bloodscent Image (Skin: Pauldrons) (Bound),skin
+535810691,Bloodscent Image (Skin: Gloves) (Bound),skin
+535810692,Bloodscent Image (Skin: Boots) (Bound),skin
+535810693,Bloodscent Image (Skin: Cloak) (Bound),skin
+535810694,Shadowlight Wind (Skin: Breastplate) (Bound),skin
+535810695,Shadowlight Wind (Skin: Greaves) (Bound),skin
+535810696,Shadowlight Wind (Skin: Helm) (Bound),skin
+535810697,Shadowlight Wind (Skin: Pauldrons) (Bound),skin
+535810698,Shadowlight Wind (Skin: Gloves) (Bound),skin
+535810699,Shadowlight Wind (Skin: Boots) (Bound),skin
+535810700,Shadowlight Wind (Skin: Cloak) (Bound),skin
+535810701,Holylight Vestments (Skin: Breastplate) (Bound),skin
+535810702,Holylight Vestments (Skin: Greaves) (Bound),skin
+535810703,Holylight Vestments (Skin: Helm) (Bound),skin
+535810704,Holylight Vestments (Skin: Pauldrons) (Bound),skin
+535810705,Holylight Vestments (Skin: Gloves) (Bound),skin
+535810706,Holylight Vestments (Skin: Boots) (Bound),skin
+535810707,Holylight Vestments (Skin: Cloak) (Bound),skin
+535810708,Wilderness Grain (Skin: Breastplate) (Bound),skin
+535810709,Wilderness Grain (Skin: Greaves) (Bound),skin
+535810710,Wilderness Grain (Skin: Helm) (Bound),skin
+535810711,Wilderness Grain (Skin: Pauldrons) (Bound),skin
+535810712,Wilderness Grain (Skin: Gloves) (Bound),skin
+535810713,Wilderness Grain (Skin: Boots) (Bound),skin
+535810714,Wilderness Grain (Skin: Cloak) (Bound),skin
+535810715,Argent Light (Skin: Breastplate) (Bound),skin
+535810716,Argent Light (Skin: Greaves) (Bound),skin
+535810717,Argent Light (Skin: Helm) (Bound),skin
+535810718,Argent Light (Skin: Pauldrons) (Bound),skin
+535810719,Argent Light (Skin: Gloves) (Bound),skin
+535810720,Argent Light (Skin: Boots) (Bound),skin
+535810721,Argent Light (Skin: Cloak) (Bound),skin
+535810722,Pitch Black Night (Skin: Breastplate) (Bound),skin
+535810723,Pitch Black Night (Skin: Greaves) (Bound),skin
+535810724,Pitch Black Night (Skin: Helm) (Bound),skin
+535810725,Pitch Black Night (Skin: Pauldrons) (Bound),skin
+535810726,Pitch Black Night (Skin: Gloves) (Bound),skin
+535810727,Pitch Black Night (Skin: Boots) (Bound),skin
+535810728,Pitch Black Night (Skin: Cloak) (Bound),skin
+535810729,Duskpath (Skin: Breastplate) (Bound),skin
+535810730,Duskpath (Skin: Greaves) (Bound),skin
+535810731,Duskpath (Skin: Helm) (Bound),skin
+535810732,Duskpath (Skin: Pauldrons) (Bound),skin
+535810733,Duskpath (Skin: Gloves) (Bound),skin
+535810734,Duskpath (Skin: Boots) (Bound),skin
+535810735,Duskpath (Skin: Cloak) (Bound),skin
+535810736,Amethyst Scale (Skin: Breastplate) (Bound),skin
+535810737,Amethyst Scale (Skin: Greaves) (Bound),skin
+535810738,Amethyst Scale (Skin: Helm) (Bound),skin
+535810739,Amethyst Scale (Skin: Pauldrons) (Bound),skin
+535810740,Amethyst Scale (Skin: Gloves) (Bound),skin
+535810741,Amethyst Scale (Skin: Boots) (Bound),skin
+535810742,Amethyst Scale (Skin: Cloak) (Bound),skin
+535810743,Silent Breath (Skin: Breastplate) (Bound),skin
+535810744,Silent Breath (Skin: Greaves) (Bound),skin
+535810745,Silent Breath (Skin: Helm) (Bound),skin
+535810746,Silent Breath (Skin: Pauldrons) (Bound),skin
+535810747,Silent Breath (Skin: Gloves) (Bound),skin
+535810748,Silent Breath (Skin: Boots) (Bound),skin
+535810749,Silent Breath (Skin: Cloak) (Bound),skin
+535810750,Wind's Benediction (Skin: Breastplate) (Bound),skin
+535810751,Wind's Benediction (Skin: Greaves) (Bound),skin
+535810752,Wind's Benediction (Skin: Helm) (Bound),skin
+535810753,Wind's Benediction (Skin: Pauldrons) (Bound),skin
+535810754,Wind's Benediction (Skin: Gloves) (Bound),skin
+535810755,Wind's Benediction (Skin: Boots) (Bound),skin
+535810756,Wind's Benediction (Skin: Cloak) (Bound),skin
+535810764,Dream Executor (Skin: Breastplate) (Bound),skin
+535810765,Dream Executor (Skin: Greaves) (Bound),skin
+535810766,Dream Executor (Skin: Helm) (Bound),skin
+535810767,Dream Executor (Skin: Pauldrons) (Bound),skin
+535810768,Dream Executor (Skin: Gloves) (Bound),skin
+535810769,Dream Executor (Skin: Boots) (Bound),skin
+535810770,Dream Executor (Skin: Cloak) (Bound),skin
+535810771,Oblivion Mediator (Skin: Breastplate) (Bound),skin
+535810772,Oblivion Mediator (Skin: Greaves) (Bound),skin
+535810773,Oblivion Mediator (Skin: Helm) (Bound),skin
+535810774,Oblivion Mediator (Skin: Pauldrons) (Bound),skin
+535810775,Oblivion Mediator (Skin: Gloves) (Bound),skin
+535810776,Oblivion Mediator (Skin: Boots) (Bound),skin
+535810777,Oblivion Mediator (Skin: Cloak) (Bound),skin
+535810778,Ancient Guardian (Skin: Breastplate) (Bound),skin
+535810779,Ancient Guardian (Skin: Greaves) (Bound),skin
+535810780,Ancient Guardian (Skin: Helm) (Bound),skin
+535810781,Ancient Guardian (Skin: Pauldrons) (Bound),skin
+535810782,Ancient Guardian (Skin: Gloves) (Bound),skin
+535810783,Ancient Guardian (Skin: Boots) (Bound),skin
+535810784,Ancient Guardian (Skin: Cloak) (Bound),skin
+535810799,Salvation's Grace (Skin: Breastplate) (Bound),skin
+535810800,Salvation's Grace (Skin: Greaves) (Bound),skin
+535810801,Salvation's Grace (Skin: Helm) (Bound),skin
+535810802,Salvation's Grace (Skin: Pauldrons) (Bound),skin
+535810803,Salvation's Grace (Skin: Gloves) (Bound),skin
+535810804,Salvation's Grace (Skin: Boots) (Bound),skin
+535810805,Salvation's Grace (Skin: Cloak) (Bound),skin
+535810813,Skybright Oath (Skin: Breastplate) (Bound),skin
+535810814,Skybright Oath (Skin: Greaves) (Bound),skin
+535810815,Skybright Oath (Skin: Helm) (Bound),skin
+535810816,Skybright Oath (Skin: Pauldrons) (Bound),skin
+535810817,Skybright Oath (Skin: Gloves) (Bound),skin
+535810818,Skybright Oath (Skin: Boots) (Bound),skin
+535810819,Skybright Oath (Skin: Cloak) (Bound),skin
+535810820,Guardian of Honor (Skin: Breastplate) (Bound),skin
+535810821,Guardian of Honor (Skin: Greaves) (Bound),skin
+535810822,Guardian of Honor (Skin: Helm) (Bound),skin
+535810823,Guardian of Honor (Skin: Pauldrons) (Bound),skin
+535810824,Guardian of Honor (Skin: Gloves) (Bound),skin
+535810825,Guardian of Honor (Skin: Boots) (Bound),skin
+535810826,Guardian of Honor (Skin: Cloak) (Bound),skin
+535810827,Crimson Twilight Gown (Skin: Breastplate) (Bound),skin
+535810828,Crimson Twilight Gown (Skin: Greaves) (Bound),skin
+535810829,Crimson Twilight Gown (Skin: Helm) (Bound),skin
+535810830,Crimson Twilight Gown (Skin: Pauldrons) (Bound),skin
+535810831,Crimson Twilight Gown (Skin: Gloves) (Bound),skin
+535810832,Crimson Twilight Gown (Skin: Boots) (Bound),skin
+535810833,Crimson Twilight Gown (Skin: Cloak) (Bound),skin
+535810834,North Wind Ironclad (Skin: Breastplate) (Bound),skin
+535810835,North Wind Ironclad (Skin: Greaves) (Bound),skin
+535810836,North Wind Ironclad (Skin: Helm) (Bound),skin
+535810837,North Wind Ironclad (Skin: Pauldrons) (Bound),skin
+535810838,North Wind Ironclad (Skin: Gloves) (Bound),skin
+535810839,North Wind Ironclad (Skin: Boots) (Bound),skin
+535810840,North Wind Ironclad (Skin: Cloak) (Bound),skin
+535810841,Kromede's Desire (Skin: Breastplate) (Bound),skin
+535810842,Kromede's Desire (Skin: Greaves) (Bound),skin
+535810843,Kromede's Desire (Skin: Helm) (Bound),skin
+535810844,Kromede's Desire (Skin: Pauldrons) (Bound),skin
+535810845,Kromede's Desire (Skin: Gloves) (Bound),skin
+535810846,Kromede's Desire (Skin: Boots) (Bound),skin
+535810847,Kromede's Desire (Skin: Cloak) (Bound),skin
+535810849,Snowy Reindeer Festival (Greaves),skin
+535810850,Snowy Reindeer Festival (Helm),skin
+535810852,Snowy Reindeer Festival (Gloves),skin
+535810853,Snowy Reindeer Festival (Boots),skin
+535810854,Snowy Reindeer Festival (Cloak),skin
+535810856,Snowy Holiday (Greaves),skin
+535810857,Snowy Holiday (Helm),skin
+535810859,Snowy Holiday (Gloves),skin
+535810860,Snowy Holiday (Boots),skin
+535810861,Snowy Holiday (Cloak),skin
+535810863,Dreamy Day Uniform (Greaves),skin
+535810867,Dreamy Day Uniform (Boots),skin
+535810870,Relaxing Day Uniform (Greaves),skin
+535810873,Relaxing Day Uniform (Gloves),skin
+535810874,Relaxing Day Uniform (Boots),skin
+535810876,Loose-Fit Streetwear (Skin: Breastplate) (Bound),skin
+535810877,Loose-Fit Streetwear (Skin: Greaves) (Bound),skin
+535810878,Loose-Fit Streetwear (Skin: Helm) (Bound),skin
+535810880,Loose-Fit Streetwear (Skin: Gloves) (Bound),skin
+535810881,Loose-Fit Streetwear (Skin: Boots) (Bound),skin
+535810884,No-Nonsense Maid (Greaves),skin
+535810887,No-Nonsense Maid (Gloves),skin
+535810888,No-Nonsense Maid (Boots),skin
+535810898,Tech Biker (Greaves),skin
+535810899,Tech Biker (Helm),skin
+535810901,Tech Biker (Gloves),skin
+535810902,Tech Biker (Boots),skin
+535810905,Casual Hoodie (Greaves),skin
+535810909,Casual Hoodie (Boots),skin
+535810912,Leather Crop Fit (Greaves),skin
+535810916,Leather Crop Fit (Boots),skin
+535810919,Blanc Noir (Greaves),skin
+535810920,Blanc Noir (Helm),skin
+535810922,Blanc Noir (Gloves),skin
+535810923,Blanc Noir (Boots),skin
+535810932,Steadfast Advisor (Skin: Breastplate) (Bound),skin
+535810933,Steadfast Advisor (Skin: Greaves) (Bound),skin
+535810934,Steadfast Advisor (Skin: Helm) (Bound),skin
+535810935,Steadfast Advisor (Skin: Pauldrons) (Bound),skin
+535810936,Steadfast Advisor (Skin: Gloves) (Bound),skin
+535810937,Steadfast Advisor (Skin: Boots) (Bound),skin
+535810938,Steadfast Advisor (Skin: Cloak) (Bound),skin
+535810939,Sand Dunes Workshop (Skin: Breastplate) (Bound),skin
+535810940,Sand Dunes Workshop (Skin: Greaves) (Bound),skin
+535810941,Sand Dunes Workshop (Skin: Helm) (Bound),skin
+535810942,Sand Dunes Workshop (Skin: Pauldrons) (Bound),skin
+535810943,Sand Dunes Workshop (Skin: Gloves) (Bound),skin
+535810944,Sand Dunes Workshop (Skin: Boots) (Bound),skin
+535810945,Sand Dunes Workshop (Skin: Cloak) (Bound),skin
+535810946,Silent Wind (Skin: Breastplate) (Bound),skin
+535810947,Silent Wind (Skin: Greaves) (Bound),skin
+535810948,Silent Wind (Skin: Helm) (Bound),skin
+535810949,Silent Wind (Skin: Pauldrons) (Bound),skin
+535810950,Silent Wind (Skin: Gloves) (Bound),skin
+535810951,Silent Wind (Skin: Boots) (Bound),skin
+535810952,Silent Wind (Skin: Cloak) (Bound),skin
+535810953,Dawnfrost (Skin: Breastplate) (Bound),skin
+535810954,Dawnfrost (Skin: Greaves) (Bound),skin
+535810955,Dawnfrost (Skin: Helm) (Bound),skin
+535810956,Dawnfrost (Skin: Pauldrons) (Bound),skin
+535810957,Dawnfrost (Skin: Gloves) (Bound),skin
+535810958,Dawnfrost (Skin: Boots) (Bound),skin
+535810959,Dawnfrost (Skin: Cloak) (Bound),skin
+535810960,Silent Resolve (Skin: Breastplate) (Bound),skin
+535810961,Silent Resolve (Skin: Greaves) (Bound),skin
+535810962,Silent Resolve (Skin: Helm) (Bound),skin
+535810963,Silent Resolve (Skin: Pauldrons) (Bound),skin
+535810964,Silent Resolve (Skin: Gloves) (Bound),skin
+535810965,Silent Resolve (Skin: Boots) (Bound),skin
+535810966,Silent Resolve (Skin: Cloak) (Bound),skin
+535810967,Light of Life (Skin: Breastplate) (Bound),skin
+535810968,Light of Life (Skin: Greaves) (Bound),skin
+535810969,Light of Life (Skin: Helm) (Bound),skin
+535810970,Light of Life (Skin: Pauldrons) (Bound),skin
+535810971,Light of Life (Skin: Gloves) (Bound),skin
+535810972,Light of Life (Skin: Boots) (Bound),skin
+535810973,Light of Life (Skin: Cloak) (Bound),skin
+535810975,Red Horse Vestments (Greaves),skin
+535810976,Red Horse Vestments (Helm),skin
+535810978,Red Horse Vestments (Gloves),skin
+535810979,Red Horse Vestments (Boots),skin
+535810982,Sporty Chic Fit (Greaves),skin
+535810986,Sporty Chic Fit (Boots),skin
+535810988,Shadow Slayer (Skin: Breastplate) (Bound),skin
+535810989,Shadow Slayer (Skin: Greaves) (Bound),skin
+535810992,Shadow Slayer (Skin: Gloves) (Bound),skin
+535810993,Shadow Slayer (Skin: Boots) (Bound),skin
+535810994,Shadow Slayer (Skin: Cloak) (Bound),skin
+535810995,Wild Wanderer (Skin: Breastplate) (Bound),skin
+535810996,Wild Wanderer (Skin: Greaves) (Bound),skin
+535810997,Wild Wanderer (Skin: Helm) (Bound),skin
+535810999,Wild Wanderer (Skin: Gloves) (Bound),skin
+535811000,Wild Wanderer (Skin: Boots) (Bound),skin
+535811002,Promise Legion (Skin: Breastplate) (Bound),skin
+535811003,Promise Legion (Skin: Greaves) (Bound),skin
+535811004,Promise Legion (Skin: Helm) (Bound),skin
+535811005,Promise Legion (Skin: Pauldrons) (Bound),skin
+535811006,Promise Legion (Skin: Gloves) (Bound),skin
+535811007,Promise Legion (Skin: Boots) (Bound),skin
+535811008,Promise Legion (Skin: Cloak) (Bound),skin
+535811009,Shaggy Shugo Friend (Skin: Breastplate) (Bound),skin
+535811011,Shaggy Shugo Friend (Skin: Helm) (Bound),skin
+535811014,Floofy Shugo Friend (Skin: Boots) (Bound),skin
+535811016,Snowy Sheer (Skin: Breastplate) (Bound),skin
+535811017,Snowy Sheer (Skin: Greaves) (Bound),skin
+535811018,Snowy Sheer (Skin: Helm) (Bound),skin
+535811020,Snowy Sheer (Skin: Gloves) (Bound),skin
+535811021,Snowy Sheer (Skin: Boots) (Bound),skin
+535811022,Snowy Sheer (Skin: Cloak) (Bound),skin
+535811024,Genesis Daeva (Greaves),skin
+535811025,Genesis Daeva (Helm),skin
+535811026,Genesis Daeva (Pauldrons),skin
+535811027,Genesis Daeva (Gloves),skin
+535811028,Genesis Daeva (Boots),skin
+535811029,Genesis Daeva (Cloak),skin
+535811031,Relaxing Bathtime (Greaves),skin
+535811032,Relaxing Bathtime (Helm),skin
+535811035,Relaxing Bathtime (Boots),skin
+535811037,Mischievous Shugo (Skin: Breastplate) (Bound),skin
+535811039,Mischievous Shugo (Skin: Helm) (Bound),skin
+535811042,Mischievous Shugo (Skin: Boots) (Bound),skin
+535811045,Celadon Moon Hanbok (Greaves),skin
+535811046,Celadon Moon Hanbok (Helm),skin
+535811049,Celadon Moon Hanbok (Boots),skin
+535811051,Moonlit Aria (Skin: Breastplate) (Bound),skin
+535811052,Moonlit Aria (Skin: Greaves) (Bound),skin
+535811053,Moonlit Aria (Skin: Helm) (Bound),skin
+535811055,Moonlit Aria (Skin: Gloves) (Bound),skin
+535811056,Moonlit Aria (Skin: Boots) (Bound),skin
+535811057,Moonlit Aria (Skin: Cloak) (Bound),skin
+535811059,Classic Bunny Suit (Greaves),skin
+535811060,Classic Bunny Suit (Helm),skin
+535811062,Classic Bunny Suit (Gloves),skin
+535811063,Classic Bunny Suit (Boots),skin
+535811064,Classic Bunny Suit (Cloak),skin
+535811067,Modern Bunny Suit (Helm),skin
+535811069,Modern Bunny Suit (Gloves),skin
+535811070,Modern Bunny Suit (Boots),skin
+535811071,Modern Bunny Suit (Cloak),skin
+535811073,Black Cat (Greaves),skin
+535811074,Black Cat (Helm),skin
+535811076,Black Cat (Gloves),skin
+535811077,Black Cat (Boots),skin
+535811080,Winter Wonderland (Greaves),skin
+535811083,Winter Wonderland (Gloves),skin
+535811084,Winter Wonderland (Boots),skin
+535811106,Artisan Handicrafter (Cloak),skin
+535811115,Artisan Chef (Greaves),skin
+535811116,Artisan Chef (Helm),skin
+535811118,Artisan Chef (Gloves),skin
+535811119,Artisan Chef (Boots),skin
+535811128,Steel Brawler (Breastplate),skin
+535811129,Steel Brawler (Greaves),skin
+535811130,Steel Brawler (Helm),skin
+535811131,Steel Brawler (Pauldrons),skin
+535811132,Steel Brawler (Gloves),skin
+535811133,Steel Brawler (Boots),skin
+535811134,Steel Brawler (Cloak),skin
+535811142,Tranquil Dawn (Breastplate),skin
+535811143,Tranquil Dawn (Greaves),skin
+535811144,Tranquil Dawn (Helm),skin
+535811145,Tranquil Dawn (Pauldrons),skin
+535811146,Tranquil Dawn (Gloves),skin
+535811147,Tranquil Dawn (Boots),skin
+535811148,Tranquil Dawn (Cloak),skin
+535811149,A Moment in Time (Breastplate),skin
+535811150,A Moment in Time (Greaves),skin
+535811151,A Moment in Time (Helm),skin
+535811152,A Moment in Time (Pauldrons),skin
+535811153,A Moment in Time (Gloves),skin
+535811154,A Moment in Time (Boots),skin
+535811155,A Moment in Time (Cloak),skin
+535811156,Zikel's Shadow (Breastplate),skin
+535811157,Zikel's Shadow (Greaves),skin
+535811158,Zikel's Shadow (Helm),skin
+535811159,Zikel's Shadow (Pauldrons),skin
+535811160,Zikel's Shadow (Gloves),skin
+535811161,Zikel's Shadow (Boots),skin
+535811162,Zikel's Shadow (Cloak),skin
+535811163,Concealed Truth (Breastplate),skin
+535811164,Concealed Truth (Greaves),skin
+535811165,Concealed Truth (Helm),skin
+535811166,Concealed Truth (Pauldrons),skin
+535811167,Concealed Truth (Gloves),skin
+535811168,Concealed Truth (Boots),skin
+535811169,Concealed Truth (Cloak),skin
+535811170,Pure White Executioner (Breastplate),skin
+535811171,Pure White Executioner (Greaves),skin
+535811172,Pure White Executioner (Helm),skin
+535811173,Pure White Executioner (Pauldrons),skin
+535811174,Pure White Executioner (Gloves),skin
+535811175,Pure White Executioner (Boots),skin
+535811176,Pure White Executioner (Cloak),skin
+535811182,Cozy Bunny Suit (Boots),skin
+535811185,Shadow Moon Hanbok (Greaves),skin
+535811186,Shadow Moon Hanbok (Helm),skin
+535811188,Shadow Moon Hanbok (Gloves),skin
+535811189,Shadow Moon Hanbok (Boots),skin
+535811192,Fragrant Peony (Greaves),skin
+535811193,Fragrant Peony (Helm),skin
+535811195,Fragrant Peony (Gloves),skin
+535811196,Fragrant Peony (Boots),skin
+535811199,Forest's Whisper (Greaves),skin
+535811200,Forest's Whisper (Helm),skin
+535811202,Forest's Whisper (Gloves),skin
+535811203,Forest's Whisper (Boots),skin
+535811206,Sweet Cherry Cake (Greaves),skin
+535811207,Sweet Cherry Cake (Helm),skin
+535811209,Sweet Cherry Cake (Gloves),skin
+535811210,Sweet Cherry Cake (Boots),skin
+535811213,Red Velvet Ganache (Greaves),skin
+535811214,Red Velvet Ganache (Helm),skin
+535811216,Red Velvet Ganache (Gloves),skin
+535811217,Red Velvet Ganache (Boots),skin
+535811219,Scarlet Forest Sentry (Breastplate),skin
+535811220,Scarlet Forest Sentry (Greaves),skin
+535811221,Scarlet Forest Sentry (Helm),skin
+535811222,Scarlet Forest Sentry (Pauldrons),skin
+535811223,Scarlet Forest Sentry (Gloves),skin
+535811224,Scarlet Forest Sentry (Boots),skin
+535811225,Scarlet Forest Sentry (Cloak),skin
+535811228,100th Day Anniversary (Helm),skin
+535811234,Goodnight Bear Pajamas (Greaves),skin
+535811235,Goodnight Bear Pajamas (Helm),skin
+535811237,Goodnight Bear Pajamas (Gloves),skin
+535811238,Goodnight Bear Pajamas (Boots),skin
+535811245,Fluffy Chick Hoodie (Boots),skin
+535811248,Magical Heart Suit (Greaves),skin
+535811249,Magical Heart Suit (Helm),skin
+535811251,Magical Heart Suit (Gloves),skin
+535811252,Magical Heart Suit (Boots),skin
+535811261,Dragon's Shadow (Breastplate),skin
+535811262,Dragon's Shadow (Greaves),skin
+535811263,Dragon's Shadow (Helm),skin
+535811264,Dragon's Shadow (Pauldrons),skin
+535811265,Dragon's Shadow (Gloves),skin
+535811266,Dragon's Shadow (Boots),skin
+535811267,Dragon's Shadow (Cloak),skin
+535811269,Warm-Hearted Maid (Greaves),skin
+535811270,Warm-Hearted Maid (Helm),skin
+535811272,Warm-Hearted Maid (Gloves),skin
+535811273,Warm-Hearted Maid (Boots),skin
+535811275,Knight's Recollection (Breastplate),skin
+535811276,Knight's Recollection (Greaves),skin
+535811277,Knight's Recollection (Helm),skin
+535811278,Knight's Recollection (Pauldrons),skin
+535811279,Knight's Recollection (Gloves),skin
+535811280,Knight's Recollection (Boots),skin
+535811281,Knight's Recollection (Cloak),skin
+535811282,Desert Mirage (Breastplate),skin
+535811283,Desert Mirage (Greaves),skin
+535811284,Desert Mirage (Helm),skin
+535811285,Desert Mirage (Pauldrons),skin
+535811286,Desert Mirage (Gloves),skin
+535811287,Desert Mirage (Boots),skin
+535811288,Desert Mirage (Cloak),skin
+535811289,Past Record (Breastplate),skin
+535811290,Past Record (Greaves),skin
+535811291,Past Record (Helm),skin
+535811292,Past Record (Pauldrons),skin
+535811293,Past Record (Gloves),skin
+535811294,Past Record (Boots),skin
+535811295,Past Record (Cloak),skin
+535811301,Puffy Penguin Hoodie (Boots),skin
+535811304,Athleisure Leggings (Greaves),skin
+535811305,Athleisure Leggings (Helm),skin
+535811307,Athleisure Leggings (Gloves),skin
+535811308,Athleisure Leggings (Boots),skin
+535811311,Lazy Pajama Shirt (Greaves),skin
+535811312,Lazy Pajama Shirt (Helm),skin
+535811314,Lazy Pajama Shirt (Gloves),skin
+535811315,Lazy Pajama Shirt (Boots),skin
+535811318,Sharp Slim-Fit Suit (Greaves),skin
+535811321,Sharp Slim-Fit Suit (Gloves),skin
+535811322,Sharp Slim-Fit Suit (Boots),skin
+535811325,fromis_9 Park Jiwon (Greaves),skin
+535811328,fromis_9 Park Jiwon (Gloves),skin
+535811329,fromis_9 Park Jiwon (Boots),skin
+535811332,fromis_9 Lee Chaeyoung (Greaves),skin
+535811335,fromis_9 Lee Chaeyoung (Gloves),skin
+535811336,fromis_9 Lee Chaeyoung (Boots),skin
+535811339,fromis_9 Lee Nagyung (Greaves),skin
+535811342,fromis_9 Lee Nagyung (Gloves),skin
+535811343,fromis_9 Lee Nagyung (Boots),skin
+535811346,fromis_9 Song Hayoung (Greaves),skin
+535811349,fromis_9 Song Hayoung (Gloves),skin
+535811350,fromis_9 Song Hayoung (Boots),skin
+535811353,fromis_9 Baek Jiheon (Greaves),skin
+535811356,fromis_9 Baek Jiheon (Gloves),skin
+535811357,fromis_9 Baek Jiheon (Boots),skin
+535811359,Kromede's Heart (Breastplate),skin
+535811360,Kromede's Heart (Greaves),skin
+535811361,Kromede's Heart (Helm),skin
+535811362,Kromede's Heart (Pauldrons),skin
+535811363,Kromede's Heart (Gloves),skin
+535811364,Kromede's Heart (Boots),skin
+535811365,Kromede's Heart (Cloak),skin
+535811367,Retro Gym Clothes (Greaves),skin
+535811368,Retro Gym Clothes (Helm),skin
+535811371,Retro Gym Clothes (Boots),skin
+535811375,Fan Uniform (Helm),skin
+535811381,Windbound Wanderer (Greaves),skin
+535811382,Windbound Wanderer (Helm),skin
+535811383,Windbound Wanderer (Pauldrons),skin
+535811384,Windbound Wanderer (Gloves),skin
+535811385,Windbound Wanderer (Boots),skin
+535811386,Windbound Wanderer (Cloak),skin
+535811387,Woodlands Wayfinder (Breastplate),skin
+535811388,Woodlands Wayfinder (Greaves),skin
+535811389,Woodlands Wayfinder (Helm),skin
+535811390,Woodlands Wayfinder (Pauldrons),skin
+535811391,Woodlands Wayfinder (Gloves),skin
+535811392,Woodlands Wayfinder (Boots),skin
+535811393,Woodlands Wayfinder (Cloak),skin
+535811394,Outskirts Watcher (Breastplate),skin
+535811395,Outskirts Watcher (Greaves),skin
+535811396,Outskirts Watcher (Helm),skin
+535811397,Outskirts Watcher (Pauldrons),skin
+535811398,Outskirts Watcher (Gloves),skin
+535811399,Outskirts Watcher (Boots),skin
+535811400,Outskirts Watcher (Cloak),skin
+535811401,Dragon Stalker (Breastplate),skin
+535811402,Dragon Stalker (Greaves),skin
+535811403,Dragon Stalker (Helm),skin
+535811404,Dragon Stalker (Pauldrons),skin
+535811405,Dragon Stalker (Gloves),skin
+535811406,Dragon Stalker (Boots),skin
+535811407,Dragon Stalker (Cloak),skin
+535811408,Sage's Robes (Breastplate),skin
+535811409,Sage's Robes (Greaves),skin
+535811410,Sage's Robes (Helm),skin
+535811411,Sage's Robes (Pauldrons),skin
+535811412,Sage's Robes (Gloves),skin
+535811413,Sage's Robes (Boots),skin
+535811414,Sage's Robes (Cloak),skin
+535811415,Imperious Lord (Breastplate),skin
+535811416,Imperious Lord (Greaves),skin
+535811417,Imperious Lord (Helm),skin
+535811418,Imperious Lord (Pauldrons),skin
+535811419,Imperious Lord (Gloves),skin
+535811420,Imperious Lord (Boots),skin
+535811421,Imperious Lord (Cloak),skin
+535811422,Abyssal Executioner (Breastplate),skin
+535811423,Abyssal Executioner (Greaves),skin
+535811424,Abyssal Executioner (Helm),skin
+535811425,Abyssal Executioner (Pauldrons),skin
+535811426,Abyssal Executioner (Gloves),skin
+535811427,Abyssal Executioner (Boots),skin
+535811428,Abyssal Executioner (Cloak),skin
+535811434,Black Kitty Hoodie (Boots),skin
+535811437,Lovely Heart Angel (Greaves),skin
+535811438,Lovely Heart Angel (Helm),skin
+535811439,Lovely Heart Angel (Pauldrons),skin
+535811440,Lovely Heart Angel (Gloves),skin
+535811441,Lovely Heart Angel (Boots),skin
+535811442,Lovely Heart Angel (Cloak),skin
+535811444,Sexy Chic Devil (Greaves),skin
+535811445,Sexy Chic Devil (Helm),skin
+535811447,Sexy Chic Devil (Gloves),skin
+535811448,Sexy Chic Devil (Boots),skin
+535811449,Sexy Chic Devil (Cloak),skin
+535811451,Clear Skies Poncho (Greaves),skin
+535811455,Clear Skies Poncho (Boots),skin
+535811457,300th Day Celebration (Breastplate),skin
+535910001,Midnight Teatime (Earrings),skin
+535910004,Ring of Promise (Earrings),skin
+535910005,Verdant Leaf (Skin: Earrings) (Bound),skin
+535910006,Moonlit Dew (Skin: Earrings) (Bound),skin
+535910007,Silver Bloom (Skin: Earrings) (Bound),skin
+535910008,Azure Sky Barrier (Earrings),skin
+535910009,Emerald Glow (Skin: Earrings) (Bound),skin
+535910010,Shadow Ruby (Skin: Earrings) (Bound),skin
+535910011,Eclipse Form (Skin: Earrings) (Bound),skin
+535910012,Aqua Floret (Skin: Earrings) (Bound),skin
+535910013,Soaring (Earrings),skin
+535910014,Shadow Jewel (Skin: Earrings) (Bound),skin
+535910015,Soaring Fate (Earrings),skin
+535910016,Sky Blossom (Skin: Earrings) (Bound),skin
+535910017,Eternal Promise (Skin: Earrings) (Bound),skin
+535910018,Spring's Promise (Skin: Earrings) (Bound),skin
+535910019,Auldor's Feather (Skin: Earrings) (Bound),skin
+535910020,Violet Bead (Skin: Earrings) (Bound),skin
+535910021,Sky Orb (Skin: Earrings) (Bound),skin
+535910022,White Petal Sigh (Skin: Earrings) (Bound),skin
+535910023,Sweet Whisper (Skin: Earrings) (Bound),skin
+535910024,Silver Feather (Earrings),skin
+535910025,Draconic Memory (Earrings),skin
+535910026,Heavenly Tear (Skin: Earrings) (Bound),skin
+535910027,Silver Flux (Skin: Earrings) (Bound),skin
+535910028,Moonlight Blossom (Skin: Earrings) (Bound),skin
+535910029,Spring Blossom Whisper (Skin: Earrings) (Bound),skin
+535910030,Steel Wings (Skin: Earrings) (Bound),skin
+535910031,Eternal Feather (Skin: Earrings) (Bound),skin
+535910032,Silver Wings (Skin: Earrings) (Bound),skin
+535910033,Gale Wings (Earrings),skin
+535910035,Gilded Wings (Skin: Earrings) (Bound),skin
+535910036,Glorious Wings (Skin: Earrings) (Bound),skin
+535910037,Nocturnal Melody (Skin: Earrings) (Bound),skin
+535910038,Moonlight Melody (Earrings),skin
+535910039,Fragment of the Past (Earrings),skin
+535910040,Golden Feather (Earrings),skin
+535910041,Frozen Tear (Earrings),skin
+535910042,Light Crystal (Skin: Earrings) (Bound),skin
+535910043,Tranquil Night Dewdrop (Earrings),skin
+535910044,Gold Flux (Skin: Earrings) (Bound),skin
+535910045,Steel Wind (Earrings),skin
+535910046,Frost Crystal (Earrings),skin
+535910047,Sea's Lament (Skin: Earrings) (Bound),skin
+535910048,Flame Heart (Skin: Earrings) (Bound),skin
+535910049,Dawn's Eye (Skin: Earrings) (Bound),skin
+535910050,Void Echo (Earrings),skin
+535910051,Nebula Ring (Skin: Earrings) (Bound),skin
+535910052,Autumn Memory (Earrings),skin
+535910053,Eclipsing Flame (Skin: Earrings) (Bound),skin
+535910055,Autumn Wind (Earrings),skin
+535910056,Silver Starlight (Skin: Earrings) (Bound),skin
+535910057,Argent Moon (Skin: Earrings) (Bound),skin
+535910058,Moon Circle (Skin: Earrings) (Bound),skin
+535910059,Dawn Sky (Earrings),skin
+535910061,Windswept Feather (Earrings),skin
+535910062,Night Diamond (Earrings),skin
+535910064,Dewy Forest (Skin: Earrings) (Bound),skin
+535910065,Dark Deluge (Skin: Earrings) (Bound),skin
+535910066,Star Tear (Skin: Earrings) (Bound),skin
+535910067,Echo of the Abyss (Skin: Earrings) (Bound),skin
+535910068,Starry Starry Night (Skin: Earrings) (Bound),skin
+535910069,Woodland Whisper (Skin: Earrings) (Bound),skin
+535910071,Shining Melody (Skin: Earrings) (Bound),skin
+535910072,Dusk Grove (Skin: Earrings) (Bound),skin
+535910073,Fairy Leaf (Skin: Earrings) (Bound),skin
+535910074,Dew Leaf (Earrings),skin
+535910075,Eternal Companion (Earrings),skin
+535910077,Temple Guardian (Skin: Earrings) (Bound),skin
+535910078,Jade Droplet (Earrings),skin
+535910079,Gold Star (Skin: Earrings) (Bound),skin
+535910080,Scent of Spring (Earrings),skin
+535910081,Wind Droplet (Skin: Earrings) (Bound),skin
+535910082,Light Droplet (Skin: Earrings) (Bound),skin
+535910083,Dawn's Whisper (Skin: Earrings) (Bound),skin
+535910084,Dark Eye (Skin: Earrings) (Bound),skin
+535910086,Rose's Promise (Skin: Earrings) (Bound),skin
+535910087,Sky Recollection (Skin: Earrings) (Bound),skin
+535910088,Royal Secret (Earrings),skin
+535910089,Ancient Barrier (Skin: Earrings) (Bound),skin
+535910090,Gem Loop (Earrings),skin
+535910091,Radiant Legacy (Skin: Earrings) (Bound),skin
+535910092,Ancient Crest (Earrings),skin
+535910093,Unwavering Will (Skin: Earrings) (Bound),skin
+535910095,Master of the Throne (Earrings),skin
+535910096,Blue Eye (Skin: Earrings) (Bound),skin
+535910097,Cross Wave (Earrings),skin
+535910098,Golden Blaze (Earrings),skin
+535910099,Golden Knot (Earrings),skin
+535910100,Twilight Loop (Skin: Earrings) (Bound),skin
+535910101,Heart of the Sun (Skin: Earrings) (Bound),skin
+535910102,Sunburst Sky (Skin: Earrings) (Bound),skin
+535910107,Argent Fragment (Earrings),skin
+535910108,Exalted Sun (Earrings),skin
+535910109,Argent Star (Earrings),skin
+535910111,Chubby Shugo (Earrings),skin
+535910112,Warm Sunlight Shugo (Skin: Earrings) (Bound),skin
+535910116,Night Star (Earrings),skin
+535910118,Shard of Moonlight (Earrings),skin
+535910124,Ribbit Ribbit (Earrings),skin
+535910125,Woodland Companion (Earrings),skin
+535910128,Happy Cat (Earrings),skin
+535910129,Blue Sea Whale (Earrings),skin
+535910130,Rubber Ducky (Earrings),skin
+535910131,Strawberrylicious (Earrings),skin
+535910132,Cheerful Cherries (Earrings),skin
+535910135,Summer Getaway (Earrings),skin
+535910136,Refreshing Respite (Earrings),skin
+535910137,Sweet Fruits (Earrings),skin
+535910138,Midnight Teatime (Necklace),skin
+535910141,Ring of Promise (Necklace),skin
+535910142,Verdant Leaf (Skin: Necklace) (Bound),skin
+535910143,Moonlit Dew (Skin: Necklace) (Bound),skin
+535910145,Azure Sky Barrier (Necklace),skin
+535910146,Emerald Glow (Skin: Necklace) (Bound),skin
+535910147,Shadow Ruby (Skin: Necklace) (Bound),skin
+535910148,Eclipse Form (Skin: Necklace) (Bound),skin
+535910149,Aqua Floret (Skin: Necklace) (Bound),skin
+535910150,Soaring (Necklace),skin
+535910151,Shadow Jewel (Skin: Necklace) (Bound),skin
+535910152,Soaring Fate (Necklace),skin
+535910153,Sky Blossom (Skin: Necklace) (Bound),skin
+535910154,Eternal Promise (Skin: Necklace) (Bound),skin
+535910155,Spring's Promise (Skin: Necklace) (Bound),skin
+535910156,Auldor's Feather (Skin: Necklace) (Bound),skin
+535910157,Violet Bead (Skin: Necklace) (Bound),skin
+535910158,Sky Orb (Skin: Necklace) (Bound),skin
+535910159,White Petal Sigh (Skin: Necklace) (Bound),skin
+535910160,Sweet Whisper (Skin: Necklace) (Bound),skin
+535910161,Silver Feather (Necklace),skin
+535910162,Draconic Memory (Necklace),skin
+535910163,Heavenly Tear (Skin: Necklace) (Bound),skin
+535910164,Silver Flux (Skin: Necklace) (Bound),skin
+535910165,Moonlight Blossom (Skin: Necklace) (Bound),skin
+535910166,Spring Blossom Whisper (Skin: Necklace) (Bound),skin
+535910167,Steel Wings (Skin: Necklace) (Bound),skin
+535910168,Eternal Feather (Skin: Necklace) (Bound),skin
+535910169,Silver Wings (Skin: Necklace) (Bound),skin
+535910170,Gale Wings (Necklace),skin
+535910172,Gilded Wings (Skin: Necklace) (Bound),skin
+535910173,Glorious Wings (Skin: Necklace) (Bound),skin
+535910174,Nocturnal Melody (Skin: Necklace) (Bound),skin
+535910175,Moonlight Melody (Necklace),skin
+535910176,Fragment of the Past (Necklace),skin
+535910177,Golden Feather (Necklace),skin
+535910178,Frozen Tear (Necklace),skin
+535910179,Light Crystal (Skin: Necklace) (Bound),skin
+535910180,Tranquil Night Dewdrop (Necklace),skin
+535910181,Gold Flux (Skin: Necklace) (Bound),skin
+535910182,Steel Wind (Necklace),skin
+535910183,Frost Crystal (Necklace),skin
+535910184,Sea's Lament (Skin: Necklace) (Bound),skin
+535910185,Flame Heart (Skin: Necklace) (Bound),skin
+535910186,Dawn's Eye (Skin: Necklace) (Bound),skin
+535910187,Void Echo (Necklace),skin
+535910188,Nebula Ring (Skin: Necklace) (Bound),skin
+535910189,Autumn Memory (Necklace),skin
+535910190,Eclipsing Flame (Skin: Necklace) (Bound),skin
+535910192,Autumn Wind (Necklace),skin
+535910193,Silver Starlight (Skin: Necklace) (Bound),skin
+535910194,Argent Moon (Skin: Necklace) (Bound),skin
+535910195,Moon Circle (Skin: Necklace) (Bound),skin
+535910196,Dawn Sky (Necklace),skin
+535910198,Windswept Feather (Necklace),skin
+535910199,Night Diamond (Necklace),skin
+535910201,Dewy Forest (Skin: Necklace) (Bound),skin
+535910202,Dark Deluge (Skin: Necklace) (Bound),skin
+535910203,Star Tear (Skin: Necklace) (Bound),skin
+535910204,Echo of the Abyss (Skin: Necklace) (Bound),skin
+535910205,Starry Starry Night (Skin: Necklace) (Bound),skin
+535910206,Woodland Whisper (Skin: Necklace) (Bound),skin
+535910208,Shining Melody (Skin: Necklace) (Bound),skin
+535910209,Dusk Grove (Skin: Necklace) (Bound),skin
+535910210,Fairy Leaf (Skin: Necklace) (Bound),skin
+535910211,Dew Leaf (Necklace),skin
+535910212,Eternal Companion (Necklace),skin
+535910214,Temple Guardian (Skin: Necklace) (Bound),skin
+535910215,Jade Droplet (Necklace),skin
+535910216,Gold Star (Skin: Necklace) (Bound),skin
+535910217,Scent of Spring (Necklace),skin
+535910218,Wind Droplet (Skin: Necklace) (Bound),skin
+535910219,Light Droplet (Skin: Necklace) (Bound),skin
+535910220,Dawn's Whisper (Skin: Necklace) (Bound),skin
+535910221,Dark Eye (Skin: Necklace) (Bound),skin
+535910223,Rose's Promise (Skin: Necklace) (Bound),skin
+535910224,Sky Recollection (Skin: Necklace) (Bound),skin
+535910225,Royal Secret (Necklace),skin
+535910226,Ancient Barrier (Skin: Necklace) (Bound),skin
+535910227,Gem Loop (Necklace),skin
+535910228,Radiant Legacy (Skin: Necklace) (Bound),skin
+535910229,Ancient Crest (Necklace),skin
+535910230,Unwavering Will (Skin: Necklace) (Bound),skin
+535910232,Master of the Throne (Necklace),skin
+535910233,Blue Eye (Skin: Necklace) (Bound),skin
+535910234,Cross Wave (Necklace),skin
+535910235,Golden Blaze (Necklace),skin
+535910236,Golden Knot (Necklace),skin
+535910237,Twilight Loop (Skin: Necklace) (Bound),skin
+535910238,Heart of the Sun (Skin: Necklace) (Bound),skin
+535910239,Sunburst Sky (Skin: Necklace) (Bound),skin
+535910244,Argent Fragment (Necklace),skin
+535910245,Exalted Sun (Necklace),skin
+535910246,Argent Star (Necklace),skin
+535910248,Chubby Shugo (Necklace),skin
+535910249,Warm Sunlight Shugo (Skin: Necklace) (Bound),skin
+535910253,Night Star (Necklace),skin
+535910255,Shard of Moonlight (Necklace),skin
+535910261,Ribbit Ribbit (Necklace),skin
+535910262,Woodland Companion (Necklace),skin
+535910265,Happy Cat (Necklace),skin
+535910266,Blue Sea Whale (Necklace),skin
+535910267,Rubber Ducky (Necklace),skin
+535910268,Strawberrylicious (Necklace),skin
+535910269,Cheerful Cherries (Necklace),skin
+535910272,Summer Getaway (Necklace),skin
+535910273,Refreshing Respite (Necklace),skin
+535910274,Sweet Fruits (Necklace),skin
+535910275,Turquoise Breath (Earrings),skin
+535910277,Scattered Memories (Earrings),skin
+535910280,Silver Dew (Earrings),skin
+535910285,Glittering Holiday (Earrings),skin
+535910286,Turquoise Breath (Necklace),skin
+535910288,Scattered Memories (Necklace),skin
+535910291,Silver Dew (Necklace),skin
+535910296,Glittering Holiday (Necklace),skin
+535910298,Rider's (Earrings),skin
+535910300,Rider's (Necklace),skin
+535910301,Noir Pearl Drop (Earrings),skin
+535910302,Noir Pearl Drop (Necklace),skin
+535910303,Red Horse Leather (Earrings),skin
+535910304,Red Horse Leather (Necklace),skin
+535910305,Snow Bell Ribbon (Necklace),skin
+535910306,White Fur Ribbon (Necklace),skin
+535910307,Silver Horseshoe (Earrings),skin
+535910308,Silver Horseshoe (Necklace),skin
+535910309,Lunar Glow (Earrings),skin
+535910310,Lunar Glow (Necklace),skin
+535910311,Mellow White (Earrings),skin
+535910312,Mellow White (Necklace),skin
+535910313,Black Baby Ribbon (Earrings),skin
+535910314,Black Baby Ribbon (Necklace),skin
+535910315,Silver Layered Chain (Necklace),skin
+535910316,Gilded Butterfly Fragment (Earrings),skin
+535910317,Gilded Butterfly Fragment (Necklace),skin
+535910318,Elegant Pearl (Earrings),skin
+535910319,Elegant Pearl (Necklace),skin
+535910320,Black Cat Bell (Earrings),skin
+535910321,Black Cat Bell (Necklace),skin
+535910322,Sweet Lollipop (Earrings),skin
+535910323,Sweet Lollipop (Necklace),skin
+535910324,Scarlet Desire (Earrings),skin
+535910325,Scarlet Desire (Necklace),skin
+535910326,200th Day Superstar (Necklace),skin
+535910327,fromis_9 Park Jiwon Earrings (Earrings),skin
+535910328,fromis_9 Lee Chaeyeong Earrings (Earrings),skin
+535910329,fromis_9 Lee Nagyung Earrings (Earrings),skin
+535910330,fromis_9 Song Hayoung Earrings (Earrings),skin
+535910331,fromis_9 Baek Jiheon Earrings (Earrings),skin
+535910332,Breath of Flame (Earrings),skin
+535910333,Gingham Teddy Bear (Earrings),skin
+535910334,Breath of Flame (Necklace),skin
+535910335,Gingham Teddy Bear (Necklace),skin
+535910336,Chain Devil (Earrings),skin
+535910337,Chain Devil (Necklace),skin
+535910338,Heart Angel (Earrings),skin
+535910339,Heart Angel (Necklace),skin
+536010001,Red Horse Hat (Helm),skin
+536010002,Snowflake Knit Cap (Helm),skin
+536010003,Winter Knit Cap (Helm),skin
+536010004,White Pom-Pom Beanie (Helm),skin
+536010005,Snowkitten Knit Cap (Helm),skin
+536010006,Talisra Delusion Crown (Skin: Helm) (Bound),skin
+536010007,Talisra Celestial Crown (Skin: Helm) (Bound),skin
+536010008,Talisra Eventide Crown (Skin: Helm) (Bound),skin
+536010009,Talisra Crown (Skin: Helm) (Bound),skin
+536010010,Talisra Coronet (Skin: Helm) (Bound),skin
+536010011,Talisra Hairband (Skin: Helm) (Bound),skin
+536010012,Zikel's Apparition Eventide Crown (Skin: Helm) (Bound),skin
+536010013,Zikel's Apparition Delusion Crown (Skin: Helm) (Bound),skin
+536010014,Zikel's Apparition Celestial Crown (Skin: Helm) (Bound),skin
+536010015,Zikel's Apparition Durable Coronet (Skin: Helm) (Bound),skin
+536010016,Zikel's Apparition Coronet (Skin: Helm) (Bound),skin
+536010017,Zikel's Apparition Mask (Skin: Helm) (Bound),skin
+536010018,Kitty Headband (Helm),skin
+536010019,Black Kitty Bell Headband (Helm),skin
+536010020,Black Kitty (Helm),skin
+536010021,Siamese Kitty (Helm),skin
+536010022,Elegant Gat (Helm),skin
+536010023,Black Mask (Helm),skin
+536010024,Saam Laurel (Skin: Helm) (Bound),skin
+536010025,Windmancer Mask (Skin: Helm) (Bound),skin
+536010026,Water Spirit Mask (Skin: Helm) (Bound),skin
+536010027,Guardian Token (Skin: Helm) (Bound),skin
+536010028,Saendukal Mask (Skin: Helm) (Bound),skin
+536010030,Sauna Hat (Helm),skin
+536010031,Ducky Bathtime (Helm),skin
+536010036,Festive Hat (Helm),skin
+536010037,Holiday Tree Headband (Helm),skin
+536010038,Snowman Mask (Helm),skin
+536010039,Golden Reindeer Headband (Helm),skin
+536010040,Party Hat (Helm),skin
+536010041,Head Bow (Helm),skin
+536010042,Chubby Panda (Helm),skin
+536010043,Dark Maid Hairband (Helm),skin
+536010045,Divine Auldor Mask (Skin: Helm) (Bound),skin
+536010046,Bunny Ears (Helm),skin
+536010048,White Headset (Skin: Helm) (Bound),skin
+536010049,Glossy Heart Headset (Helm),skin
+536010050,Cute Cat Headset (Helm),skin
+536010051,Holiday Silk Hat (Helm),skin
+536010052,Holiday White Bunny (Helm),skin
+536010053,Red Horse Doll Headpiece (Helm),skin
+536010054,New Year Fortune Pouch (Helm),skin
+536010055,Black Crow Mask (Helm),skin
+536010056,Void Silver Horns (Helm),skin
+536010057,Concubine Hahoe Mask (Helm),skin
+536010058,Aristocrat Hahoe Mask (Helm),skin
+536010059,Night-Cloaked Haechi Mask (Helm),skin
+536010060,Pearl Dew Coronet (Helm),skin
+536010061,Black Conical Hat (Helm),skin
+536010062,Luxurious Peaked Hat (Helm),skin
+536010063,Candy Knit Hat (Helm),skin
+536010064,Pink Cap (Helm),skin
+536010065,Candy Hairband (Helm),skin
+536010066,Nightblooming Flower (Helm),skin
+536010067,Silver Moonlight Tiara (Helm),skin
+536010068,Fresh Leaf Tiara (Helm),skin
+536010069,Rumu Hat (Helm),skin
+536010070,Rotar Sorcerer (Helm),skin
+536010071,Ketu's Horn (Helm),skin
+536010072,Sura Priest Cowl (Helm),skin
+536010073,Ludra's Horn (Helm),skin
+536010074,Mumu Overseer Mask (Helm),skin
+536010080,Sprout (Helm),skin
+536010081,Dandelion (Helm),skin
+536010084,Sprout Hat (Helm),skin
+536010085,Teddy Hat (Helm),skin
+536010086,Rollin' Pink Helmet (Helm),skin
+536010087,Deep Sea Monstrosity (Helm),skin
+536010088,Beachside Sunfish (Helm),skin
+536010089,Floral Swim Cap (Helm),skin
+536010090,Swim Cap (Helm),skin
+536010091,Cute Crab (Helm),skin
+536010092,Drowsy Lamb (Helm),skin
+536010093,Cozy Lamb Headband (Helm),skin
+536010094,Cozy Teddy Nightcap (Helm),skin
+536310001,Sharp Monocle (Eyewear),skin
+536310002,Oversized Round Glasses (Eyewear),skin
+536310003,Urd's Squirrel (Skin: Shoulder) (Bound),skin
+536310004,Adorable Young Elim (Shoulder),skin
+536310005,Woodland Young Elim (Shoulder),skin
+536310006,Flowery Young Elim (Shoulder),skin
+536310007,White Fur Lugi (Shoulder),skin
+536310008,Frosty Snowman (Shoulder),skin
+536310009,Pom-Pom Hat Snowman (Shoulder),skin
+536310010,Cyber Glasses (Skin: Eyewear) (Bound),skin
+536310011,Silver Face Chain (Eyewear),skin
+536310012,Silver Line Glasses (Eyewear),skin
+536310013,Silver Monocle (Eyewear),skin
+536310014,Pixel Glasses (Skin: Eyewear) (Bound),skin
+536310015,Mustache Reindeer Nose (Facewear),skin
+536310016,Reindeer's Red Nose (Facewear),skin
+536310018,Artisan Handicrafter's Glasses (Eyewear),skin
+536310021,Holiday Glasses (Eyewear),skin
+536310022,Red Horse Doll (Shoulder),skin
+536310023,Happy New Year 2026 (Eyewear),skin
+536310024,Little Teddy Bear (Shoulder),skin
+536310025,Lunar Shadow Veil (Facewear),skin
+536310026,Heart-racing Pink Glasses (Eyewear),skin
+536310027,Fluffball Haechi (Shoulder),skin
+536310028,Black Cat Sunglasses (Eyewear),skin
+536310029,Shutter Shade Sunglasses (Eyewear),skin
+536310031,Heart Glasses (Eyewear),skin
+536310032,Alien Glasses (Eyewear),skin
+536310033,Classic Horn-Rimmed Glasses (Eyewear),skin
+536310034,Red Devil Glasses (Eyewear),skin
+536310038,Good Night Sleep Mask (Eyewear),skin
+536310039,Treasured Teddy (Shoulder),skin
+536310040,Street Bubble Gum (Facewear),skin
+536310041,Romantic Rose (Facewear),skin
+536310042,Tardy Toast (Facewear),skin
+536310043,Kitty Mask (Facewear),skin
+536310045,Gentle Cat Whiskers (Facewear),skin
+536310046,Twisted Ring Piercing (Facewear),skin
+536310047,Predator Mask (Facewear),skin
+536310048,Black Kitty (Shoulder),skin
+536310049,Baby Harp Seal (Shoulder),skin
+536310050,Mysteriously Cool Glasses (Eyewear),skin
+536310051,Dorky Glasses (Eyewear),skin
+536310052,Black Mask (Facewear),skin
+536310053,Sweet Lollipop (Facewear),skin
+536310054,Immortal Conqueror (Headpiece),skin
+536310055,Chaos Conqueror (Headpiece),skin
+536310056,Arena Conqueror (Headpiece),skin
+536310057,Transcendent Desire (Headpiece),skin
+536310058,Burning Desire (Headpiece),skin
+536310059,Blooming Desire (Headpiece),skin
+536310060,Rampaging Nightmare (Headpiece),skin
+536310061,Stirring Nightmare (Headpiece),skin
+536310062,Ominous Nightmare (Headpiece),skin
+536310077,Secret Agent's Black Sunglasses (Eyewear),skin
+536310079,Cat Goggles (Eyewear),skin
+536310080,Cat Diving Mask (Eyewear),skin
+536310084,Snorkel Goggles (Eyewear),skin
+536310085,Little Lamb (Shoulder),skin
+513830001,Theostone: Fregion's Schemes,godstone
+513830003,Theostone: Beritra's Conspiracy,godstone
+513830004,Theostone: Nezekan's March,godstone
+513830005,Theostone: Meslamtaeda's Greed,godstone
+513830006,Theostone: Ereshkigal's Honor,godstone
+513830007,Theostone: Kaisinel's Reverie,godstone
+513830008,Theostone: Lumiel's Interference,godstone
+513830009,Theostone: Zikel's Arrogance,godstone
+513830010,Theostone: Fregion's Strategy,godstone
+513830011,Theostone: Tiamat's Rage,godstone
+513830012,Theostone: Triniel's Rationality,godstone
+513830013,Theostone: Vaizel's Oath,godstone
+513830014,Theostone: Meslamtaeda's Regret,godstone
+513830015,Theostone: Tiamat's Counterstrike,godstone
+513830016,Theostone: Marchutan's Justice,godstone
+513830017,Theostone: Yustiel's Compassion,godstone
+513830018,Theostone: Beritra's Selfishness,godstone
+513840001,Theostone: Bollvig's Tragedy,godstone
+513840003,Theostone: Khrudgelmir's Silence,godstone
+513840004,Theostone: Charna's Root,godstone
+513840005,Theostone: Fasimedes's Dignity,godstone
+513840006,Theostone: Vidar's Dignity,godstone
+513840007,Theostone: Deltras's Loyalty,godstone
+513840008,Theostone: Io's Sadness,godstone
+513840009,Theostone: Orissan's Blood,godstone
+513840010,Theostone: Mahisha's Wrath,godstone
+513840011,Theostone: Traufnir's Courage,godstone
+513840012,Theostone: Sif's Knowledge,godstone
+513840013,Theostone: Freyr's Wisdom,godstone
+513840014,Theostone: Sigyn's Brilliance,godstone
+513840015,Theostone: Boreas's Encouragement,godstone
+513840016,Theostone: Charna's Acumen,godstone
+513840017,Theostone: Thrasymedes's Wisdom,godstone
+513840018,Theostone: Jumentis's Dexterity,godstone
+513850001,Theostone: Kaisinel's Vestige,godstone
+513850003,Theostone: Perion's Tragedy,godstone
+513850004,Theostone: Heladrir's Chains,godstone
+513850005,Theostone: Aulak's Roar,godstone
+513850006,Theostone: Nua's Scheme,godstone
+513850007,Theostone: Reda's Tenacity,godstone
+513850008,Theostone: Notun's Craft,godstone
+513850009,Theostone: Santras's Secret,godstone
+513850010,Theostone: Feruk's Instinct,godstone
+513850011,Theostone: Zikel's Vestige,godstone
+513850012,Theostone: Tassin's Command,godstone
+513850013,Theostone: Ulgorn's Will,godstone
+513850014,Theostone: Aultross's Promise,godstone
+513850015,Theostone: Bargott's Ember,godstone
+513850016,Theostone: Aulvicar's Sorcery,godstone
+513850017,Theostone: Gartua's Strength,godstone
+513850018,Theostone: Rathman's Greed,godstone
+533830001,Theostone: Fregion's Schemes (Bound),godstone
+533830003,Theostone: Beritra's Conspiracy (Bound),godstone
+533830004,Theostone: Nezekan's March (Bound),godstone
+533830005,Theostone: Meslamtaeda's Greed (Bound),godstone
+533830006,Theostone: Ereshkigal's Honor (Bound),godstone
+533830007,Theostone: Kaisinel's Reverie (Bound),godstone
+533830008,Theostone: Lumiel's Interference (Bound),godstone
+533830009,Theostone: Zikel's Arrogance (Bound),godstone
+533830010,Theostone: Fregion's Strategy (Bound),godstone
+533830011,Theostone: Tiamat's Rage (Bound),godstone
+533830012,Theostone: Triniel's Rationality (Bound),godstone
+533830013,Theostone: Vaizel's Oath (Bound),godstone
+533830014,Theostone: Meslamtaeda's Regret (Bound),godstone
+533830015,Theostone: Tiamat's Counterstrike (Bound),godstone
+533830016,Theostone: Marchutan's Justice (Bound),godstone
+533830017,Theostone: Yustiel's Compassion (Bound),godstone
+533830018,Theostone: Beritra's Selfishness (Bound),godstone
+533840001,Theostone: Bollvig's Tragedy (Bound),godstone
+533840003,Theostone: Khrudgelmir's Silence (Bound),godstone
+533840004,Theostone: Charna's Root (Bound),godstone
+533840005,Theostone: Fasimedes's Dignity (Bound),godstone
+533840006,Theostone: Vidar's Dignity (Bound),godstone
+533840007,Theostone: Deltras's Loyalty (Bound),godstone
+533840008,Theostone: Io's Sadness (Bound),godstone
+533840009,Theostone: Orissan's Blood (Bound),godstone
+533840010,Theostone: Mahisha's Wrath (Bound),godstone
+533840011,Theostone: Traufnir's Courage (Bound),godstone
+533840012,Theostone: Sif's Knowledge (Bound),godstone
+533840013,Theostone: Freyr's Wisdom (Bound),godstone
+533840014,Theostone: Sigyn's Brilliance (Bound),godstone
+533840015,Theostone: Boreas's Encouragement (Bound),godstone
+533840016,Theostone: Charna's Acumen (Bound),godstone
+533840017,Theostone: Thrasymedes's Wisdom (Bound),godstone
+533840018,Theostone: Jumentis's Dexterity (Bound),godstone
+533850001,Theostone: Kaisinel's Vestige (Bound),godstone
+533850003,Theostone: Perion's Tragedy (Bound),godstone
+533850004,Theostone: Heladrir's Chains (Bound),godstone
+533850005,Theostone: Aulak's Roar (Bound),godstone
+533850006,Theostone: Nua's Scheme (Bound),godstone
+533850007,Theostone: Reda's Tenacity (Bound),godstone
+533850008,Theostone: Notun's Craft (Bound),godstone
+533850009,Theostone: Santras's Secret (Bound),godstone
+533850010,Theostone: Feruk's Instinct (Bound),godstone
+533850011,Theostone: Zikel's Vestige (Bound),godstone
+533850012,Theostone: Tassin's Command (Bound),godstone
+533850013,Theostone: Ulgorn's Will (Bound),godstone
+533850014,Theostone: Aultross's Promise (Bound),godstone
+533850015,Theostone: Bargott's Ember (Bound),godstone
+533850016,Theostone: Aulvicar's Sorcery (Bound),godstone
+533850017,Theostone: Gartua's Strength (Bound),godstone
+533850018,Theostone: Rathman's Greed (Bound),godstone
