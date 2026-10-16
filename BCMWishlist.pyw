@@ -28,12 +28,12 @@ import npcap_native
 import theme
 from catalog import TYPE_LABELS, Catalog, append_user_catalog, update_user_catalog
 import safety
-from shop_decoder import ShopDecoder, ShopPage, TAB_BY_ENTRY_PREFIX
+from shop_decoder import ShopDecoder, ShopPage
 import chime
 from bulk_add import Resolver, parse_list
 from paste_dialog import NameItemDialog, NoticeDialog, PasteListDialog, ResolveDialog
 from ui_widgets import MIN_WINDOW_HEIGHT, OverlayWindow, SearchDropdown, dock_position, monitor_work_area, overlay_size
-from wishlist import MAX_WISHLIST, WishEntry, Wishlist, WishlistFull, build_views
+from wishlist import MAX_WISHLIST, TABS, WishEntry, Wishlist, WishlistFull, build_views
 
 APP_TITLE = "BCM Wishlist"
 CHIME_FILE = "found_chime.wav"
@@ -749,6 +749,7 @@ class BlackCloudWatcher:
                         self._set_status("Scan stopped.")
             except Exception as exc:                        # one bad message must never stop the program
                 self._on_callback_error(type(exc), exc, exc.__traceback__)
+        self._check_auto_stop()
         if self.running and self.capture_started_monotonic is not None and not self._waiting_notice_sent:
             elapsed = time.monotonic() - self.capture_started_monotonic
             if self.packet_count == 0 and elapsed >= 8:
@@ -779,9 +780,15 @@ class BlackCloudWatcher:
         if not noted and not any(v.matches for v in self.views):
             self._set_status(f"Scanned the {page.tab_guess} tab - none of your items. "
                              f"({len(self.pages)}/3 tabs scanned)")
-        if (self.running and not self._auto_stopped and not self._outdated_notified
-                and set(TAB_BY_ENTRY_PREFIX.values()) <= set(self.pages)):
-            self._auto_stopped = True                       # Special, Pets and Skins are all in: nothing left to wait for
+        self._check_auto_stop()
+
+    def _check_auto_stop(self) -> None:
+        """End the scan as soon as the overlay has all three tabs filled in (Special, Pets, Skins)."""
+        if not self.running or self._auto_stopped:
+            return
+        filled = {v.tab for v in self.views if v.seen and v.cells}
+        if all(tab in filled for tab in TABS):
+            self._auto_stopped = True
             self.stop_capture()
 
     # ------------------------------------------------------------------ #
