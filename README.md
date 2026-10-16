@@ -44,12 +44,6 @@ The overlay follows the program window when you move or resize it. To see it ove
 | **Wishlist missing or reset** | A damaged `wishlist.json` is copied to `wishlist.json.bad` and the program starts with what it could read. If the program folder is read-only, the list is saved in `%APPDATA%\BCMWishlist`. |
 | **SmartScreen blocks the exe** | Click **More info**, then **Run anyway**. |
 
-More technical notes (how the capture works, the item list, building the exe) are in [docs/DETAILS.md](docs/DETAILS.md).
-
 ## Privacy
 
 BCM Wishlist does not send any information to other computers or services. It reads the game's network traffic on your own PC (through Npcap) and keeps your wishlist and learned items in files next to the program (or in `%APPDATA%\BCMWishlist`). It has no telemetry, no update check and no account. Npcap is a separate program with its own [license](https://npcap.com/oem/) and terms.
-
----
-
-Free code signing by [SignPath.io](https://signpath.io), certificate by [SignPath Foundation](https://signpath.org). See the [code signing policy](CODE_SIGNING_POLICY.md).
