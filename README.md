@@ -16,7 +16,7 @@ Nothing else is needed. No Python and no installer: download `BCMWishlist.exe` f
 2. Click **Start Scan**.
 3. In the game, open the Black Cloud Merchant and click **each tab** (Special, Pets, Skins). The game only sends a tab's items when you open it.
 4. Wanted items show up in the overlay and in your wishlist, with a chime. The **Chime volume** slider sets how loud it is (0 is silent), and **Test** plays it.
-5. **Stop Scan** ends the capture. **Show Overlay / Hide Overlay** toggles the overlay at any time.
+5. The scan **stops by itself** once all three tabs (Special, Pets, Skins) have been read. **Stop Scan** ends it earlier, and you can click **Start Scan** again at any time. **Show Overlay / Hide Overlay** toggles the overlay at any time.
 
 ### How to read the overlay
 

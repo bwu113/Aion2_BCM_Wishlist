@@ -28,7 +28,7 @@ import npcap_native
 import theme
 from catalog import TYPE_LABELS, Catalog, append_user_catalog, update_user_catalog
 import safety
-from shop_decoder import ShopDecoder, ShopPage
+from shop_decoder import ShopDecoder, ShopPage, TAB_BY_ENTRY_PREFIX
 import chime
 from bulk_add import Resolver, parse_list
 from paste_dialog import NameItemDialog, NoticeDialog, PasteListDialog, ResolveDialog
@@ -118,6 +118,7 @@ class BlackCloudWatcher:
         self.last_error = ""                    # details of the last unexpected error (the program keeps running)
         self._format_problems = 0               # shop messages that did not look as expected, this scan
         self._format_details: list[str] = []
+        self._auto_stopped = False              # the scan ended by itself because all 3 tabs were scanned
         self._outdated_notified = False         # the "download a new version" notice is shown once per scan
         self._notice_window = None
         self._naming_queue: list = []           # unknown shop items waiting for the user to name them
@@ -647,6 +648,7 @@ class BlackCloudWatcher:
         self._format_problems = 0
         self._format_details = []
         self._outdated_notified = False
+        self._auto_stopped = False
         self.running = True
         self._set_controls_running(True)
         self._set_status("Scanning. In the game open the Black Cloud Merchant and click each tab "
@@ -739,7 +741,11 @@ class BlackCloudWatcher:
                 elif kind == "finished":
                     self.running = False
                     self._set_controls_running(False)
-                    if not self._had_error:
+                    if self._auto_stopped and not self._had_error:
+                        found = sum(len(v.matches) for v in self.views)
+                        self._set_status("All 3 tabs scanned - scan stopped automatically. "
+                                         + (f"{found} of your items found." if found else "None of your items are in the shop."))
+                    elif not self._had_error:
                         self._set_status("Scan stopped.")
             except Exception as exc:                        # one bad message must never stop the program
                 self._on_callback_error(type(exc), exc, exc.__traceback__)
@@ -773,6 +779,10 @@ class BlackCloudWatcher:
         if not noted and not any(v.matches for v in self.views):
             self._set_status(f"Scanned the {page.tab_guess} tab - none of your items. "
                              f"({len(self.pages)}/3 tabs scanned)")
+        if (self.running and not self._auto_stopped and not self._outdated_notified
+                and set(TAB_BY_ENTRY_PREFIX.values()) <= set(self.pages)):
+            self._auto_stopped = True                       # Special, Pets and Skins are all in: nothing left to wait for
+            self.stop_capture()
 
     # ------------------------------------------------------------------ #
     # Safety net: game updates / unknown items must never crash the program
