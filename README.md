@@ -47,3 +47,7 @@ The overlay follows the program window when you move or resize it. To see it ove
 ## Privacy
 
 BCM Wishlist does not send any information to other computers or services. It reads the game's network traffic on your own PC (through Npcap) and keeps your wishlist and learned items in files next to the program (or in `%APPDATA%\BCMWishlist`). It has no telemetry, no update check and no account. Npcap is a separate program with its own [license](https://npcap.com/oem/) and terms.
+
+---
+
+Free code signing by [SignPath.io](https://signpath.io), certificate by [SignPath Foundation](https://signpath.org). See the [code signing policy](CODE_SIGNING_POLICY.md).
