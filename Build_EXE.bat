@@ -2,7 +2,7 @@
 setlocal
 cd /d "%~dp0"
 echo ================================================
-echo  Building BCM Wishlist (one .exe, Nuitka - takes a few minutes)
+echo  Building BCM Wishlist (one .exe)
 echo ================================================
 echo  Python is only needed to BUILD the exe. The finished exe
 echo  is one file; the PC running it needs only Npcap.
@@ -26,16 +26,15 @@ if errorlevel 1 goto failed
 %PY% -m pip install -r requirements.txt
 if errorlevel 1 goto failed
 
-copy /Y BCMWishlist.pyw BCMWishlist_app.py >nul
-%PY% -m nuitka --onefile --assume-yes-for-downloads --windows-console-mode=disable ^
-  --enable-plugin=tk-inter --output-dir=dist --output-filename=BCMWishlist.exe ^
-  --windows-icon-from-ico=bcm_icon.ico ^
-  --company-name=bwu113 --product-name="BCM Wishlist" --file-description="BCM Wishlist" ^
-  --file-version=1.0.0.0 --product-version=1.0.0.0 ^
-  --include-data-files=aion2_items.csv=aion2_items.csv ^
-  --include-data-files=bcm_icon.ico=bcm_icon.ico --include-data-files=bcm_icon.png=bcm_icon.png ^
-  --include-data-files=found_chime.wav=found_chime.wav ^
-  BCMWishlist_app.py
+%PY% -m PyInstaller --noconfirm --clean --onefile --windowed ^
+  --name BCMWishlist ^
+  --icon bcm_icon.ico --version-file version_info.txt ^
+  --add-data "aion2_items.csv;." ^
+  --add-data "bcm_icon.ico;." --add-data "bcm_icon.png;." ^
+  --add-data "found_chime.wav;." ^
+  --hidden-import=shop_decoder --hidden-import=catalog --hidden-import=wishlist ^
+  --hidden-import=ui_widgets --hidden-import=theme --hidden-import=chime --hidden-import=safety --hidden-import=bulk_add --hidden-import=paste_dialog --hidden-import=npcap_native ^
+  BCMWishlist.pyw
 if errorlevel 1 goto failed
 
 echo.

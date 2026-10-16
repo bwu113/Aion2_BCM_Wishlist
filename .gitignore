@@ -7,7 +7,3 @@ wishlist.json
 wishlist.json.bad
 wishlist.json.tmp
 item_catalog.csv.tmp
-BCMWishlist_app.py
-*.build/
-*.onefile-build/
-*.dist/
