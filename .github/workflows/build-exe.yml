@@ -2,14 +2,26 @@ name: Build Windows exe
 
 # Builds BCMWishlist.exe on GitHub's Windows machines - nothing to install locally.
 # Actions tab > "Build Windows exe" > Run workflow, then download the artifact.
+#
+# Code signing (free, by SignPath.io / certificate by SignPath Foundation) switches on by itself
+# once the repository has the secret SIGNPATH_API_TOKEN and the variables SIGNPATH_ORGANIZATION_ID,
+# SIGNPATH_PROJECT_SLUG and SIGNPATH_POLICY_SLUG (Settings > Secrets and variables > Actions).
+# Without them the build simply produces the unsigned exe, as before.
+# Pushing a tag such as v1.0.0 also publishes the exe on the Releases page.
 on:
   workflow_dispatch:
   push:
     tags: ["v*"]
 
+permissions:
+  contents: write   # only used to attach the exe to a release on tag builds
+  actions: read     # SignPath checks the build's origin
+
 jobs:
   build:
     runs-on: windows-latest
+    env:
+      SIGNPATH_API_TOKEN: ${{ secrets.SIGNPATH_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -20,14 +32,55 @@ jobs:
         shell: cmd
         run: >
           python -m PyInstaller --noconfirm --clean --onefile --windowed
-          --name BCMWishlist --icon bcm_icon.ico
+          --name BCMWishlist --icon bcm_icon.ico --version-file version_info.txt
           --add-data "aion2_items.csv;." --add-data "bcm_icon.ico;." --add-data "bcm_icon.png;."
           --add-data "found_chime.wav;."
           --collect-all scapy --hidden-import=scapy.arch.windows
           --hidden-import=shop_decoder --hidden-import=catalog --hidden-import=wishlist
           --hidden-import=ui_widgets --hidden-import=theme --hidden-import=chime --hidden-import=safety --hidden-import=bulk_add --hidden-import=paste_dialog --hidden-import=npcap_native --hidden-import=scapy_backend
           BCMWishlist.pyw
+
+      # --- code signing (skipped while SIGNPATH_API_TOKEN is not set) ---
+      - name: Upload unsigned exe (input for SignPath)
+        id: unsigned
+        if: env.SIGNPATH_API_TOKEN != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: BCMWishlist-unsigned
+          path: dist/BCMWishlist.exe
+      - name: Sign with SignPath
+        if: env.SIGNPATH_API_TOKEN != ''
+        uses: signpath/github-action-submit-signing-request@v1
+        with:
+          api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+          organization-id: ${{ vars.SIGNPATH_ORGANIZATION_ID }}
+          project-slug: ${{ vars.SIGNPATH_PROJECT_SLUG }}
+          signing-policy-slug: ${{ vars.SIGNPATH_POLICY_SLUG }}
+          github-artifact-id: ${{ steps.unsigned.outputs.artifact-id }}
+          wait-for-completion: true
+          output-artifact-directory: signed
+
+      - name: Collect the final exe
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force final | Out-Null
+          if ($env:SIGNPATH_API_TOKEN) {
+            $zip = Get-ChildItem signed -Filter *.zip -ErrorAction SilentlyContinue | Select-Object -First 1
+            if ($zip) { Expand-Archive $zip.FullName -DestinationPath signed -Force }
+            $exe = Get-ChildItem signed -Recurse -Filter BCMWishlist.exe | Select-Object -First 1
+            if (-not $exe) { throw "SignPath did not return BCMWishlist.exe" }
+            Copy-Item $exe.FullName final/BCMWishlist.exe
+          } else {
+            Copy-Item dist/BCMWishlist.exe final/BCMWishlist.exe
+          }
+          Get-AuthenticodeSignature final/BCMWishlist.exe | Format-List Status, StatusMessage, SignerCertificate
       - uses: actions/upload-artifact@v4
         with:
           name: BCMWishlist
-          path: dist/BCMWishlist.exe
+          path: final/BCMWishlist.exe
+      - name: Publish release (tag builds only)
+        if: startsWith(github.ref, 'refs/tags/')
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$env:GITHUB_REF_NAME" final/BCMWishlist.exe --title "BCM Wishlist $env:GITHUB_REF_NAME" --generate-notes

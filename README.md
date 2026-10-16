@@ -6,7 +6,7 @@ It does not inject packets, modify game memory or automate gameplay. Review the 
 
 ## Getting the program
 
-**Requirement on the PC that runs it: [Npcap](https://npcap.com/)** (install with "WinPcap API-compatible mode" ticked). Nothing else - no Python, no installer: `BCMWishlist.exe` is a single self-contained file. Windows SmartScreen may warn about an unsigned program the first time: *More info > Run anyway*. If capture finds nothing, start it with right-click > *Run as administrator*. If Npcap is missing the program says so and links to the download.
+**Requirement on the PC that runs it: [Npcap](https://npcap.com/)** (install with "WinPcap API-compatible mode" ticked). Nothing else - no Python, no installer: `BCMWishlist.exe` is a single self-contained file. Windows SmartScreen may warn about an unrecognised or unsigned program the first time: *More info > Run anyway*. If capture finds nothing, start it with right-click > *Run as administrator*. If Npcap is missing the program says so and links to the download.
 
 Two ways to produce the exe (done once by whoever distributes it):
 - **On a Windows PC with Python 3.10+:** double-click `Build_EXE.bat` -> `dist\BCMWishlist.exe`.
@@ -99,3 +99,15 @@ The program is built not to crash, whatever the game sends:
 - **The shop no longer looks the way this version expects** (the game was probably updated): an unknown shop tab, shop entries that cannot be read, items of the wrong type for their tab, several IDs far outside every known range, or most of a page missing from the item list. The program then says **"Please download a new version"** (once per scan, in a pop-up that does not block anything) and learns nothing from that page, so bad data never ends up in your list.
 - **Unexpected errors** anywhere in the program are caught: the status line says what happened and the program keeps running. A message that cannot be processed is skipped, and the next one is handled normally.
 - **A damaged `wishlist.json`** never stops the program or silently wipes your list: unreadable entries are skipped, and an unreadable file is first copied to `wishlist.json.bad`.
+
+## Code signing policy
+
+Free code signing provided by [SignPath.io](https://signpath.io), certificate by [SignPath Foundation](https://signpath.org).
+
+- **What is signed:** only `BCMWishlist.exe`, built by the public GitHub Actions workflow (`.github/workflows/build-exe.yml`) from the source in this repository. Nothing is signed from anyone's own PC.
+- **Team roles:** [@bwu113](https://github.com/bwu113) is the author (committer), reviewer and approver. Every signing request is approved manually before a release is signed.
+- **Two-factor authentication** is used on the GitHub and SignPath accounts.
+
+## Privacy
+
+BCM Wishlist does not send any information to other computers or services. It reads the game's network traffic on your own PC (through Npcap) and keeps your wishlist and learned items in files next to the program (or in `%APPDATA%\BCMWishlist`). It has no telemetry, no update check and no account. Npcap is a separate program with its own [license](https://npcap.com/oem/) and terms.

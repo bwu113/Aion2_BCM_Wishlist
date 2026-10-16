@@ -28,7 +28,7 @@ if errorlevel 1 goto failed
 
 %PY% -m PyInstaller --noconfirm --clean --onefile --windowed ^
   --name BCMWishlist ^
-  --icon bcm_icon.ico ^
+  --icon bcm_icon.ico --version-file version_info.txt ^
   --add-data "aion2_items.csv;." ^
   --add-data "bcm_icon.ico;." --add-data "bcm_icon.png;." ^
   --add-data "found_chime.wav;." ^
