@@ -16,6 +16,7 @@ libpcap instead, which is how the logic is tested.
 from __future__ import annotations
 
 import ctypes
+import ctypes.util
 import os
 import socket
 import struct
@@ -100,7 +101,6 @@ def _load_library() -> ctypes.CDLL:
                     raise NpcapError(f"Npcap is installed but could not be loaded ({exc})") from exc
         raise NpcapMissing("Npcap is not installed. Install it from https://npcap.com "
                            "(keep \"WinPcap API-compatible mode\" ticked), then start the scan again.")
-    import ctypes.util
     name = ctypes.util.find_library("pcap")
     if not name:
         raise NpcapMissing("libpcap is not installed.")
