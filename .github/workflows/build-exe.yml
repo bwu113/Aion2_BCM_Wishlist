@@ -7,14 +7,15 @@ name: Build Windows exe
 # once the repository has the secret SIGNPATH_API_TOKEN and the variables SIGNPATH_ORGANIZATION_ID,
 # SIGNPATH_PROJECT_SLUG and SIGNPATH_POLICY_SLUG (Settings > Secrets and variables > Actions).
 # Without them the build simply produces the unsigned exe, as before.
-# Pushing a tag such as v1.0.0 also publishes the exe on the Releases page.
+# Publishing a release (Releases > Draft a new release > Publish) builds the exe and attaches it to
+# that release automatically, so users can download BCMWishlist.exe without building anything.
 on:
   workflow_dispatch:
-  push:
-    tags: ["v*"]
+  release:
+    types: [published]
 
 permissions:
-  contents: write   # only used to attach the exe to a release on tag builds
+  contents: write   # only used to attach the exe to a release
   actions: read     # SignPath checks the build's origin
 
 jobs:
@@ -78,9 +79,10 @@ jobs:
         with:
           name: BCMWishlist
           path: final/BCMWishlist.exe
-      - name: Publish release (tag builds only)
-        if: startsWith(github.ref, 'refs/tags/')
+      - name: Attach the exe to the release
+        if: github.event_name == 'release'
         shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "$env:GITHUB_REF_NAME" final/BCMWishlist.exe --title "BCM Wishlist $env:GITHUB_REF_NAME" --generate-notes
+          TAG: ${{ github.event.release.tag_name }}
+        run: gh release upload "$env:TAG" final/BCMWishlist.exe --clobber
