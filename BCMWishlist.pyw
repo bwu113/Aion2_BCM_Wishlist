@@ -628,15 +628,16 @@ class BlackCloudWatcher:
         self.root.after(300, self._poll_overlay)
 
     def _apply_focus_rule(self) -> None:
-        """Show the overlay only while the game or this program is the window in front (alt+tab to a browser hides it)."""
+        """The overlay follows the program window: while another program's window covers the program, the overlay
+        is hidden too (unless that window is the game itself)."""
         ov = self.overlay
         if ov is None:
             return
         try:
             if self.root.state() == "iconic":
                 return                                          # minimised: the unmap handler has already hidden it
-            info = foreground.foreground_info()
-            show = foreground.overlay_should_show(info, os.getpid())
+            state, cover = foreground.program_cover(self.root.winfo_id(), os.getpid())
+            show = foreground.overlay_should_show(state, cover)
             if show and self._focus_hidden:
                 self._focus_hidden = False
                 ov.deiconify()
@@ -648,11 +649,12 @@ class BlackCloudWatcher:
                 ov.withdraw()
             else:
                 return
-            if self.running and info is not None:
+            if self.running:
+                what = cover.describe() if cover is not None else state
                 self._append_log([f"{time.strftime('%H:%M:%S')} overlay {'shown' if show else 'hidden'}: "
-                                  f"window in front = {info.describe()}"])
+                                  f"program window is {state}" + (f" by {what}" if cover is not None else "")])
         except Exception:
-            pass                                                # never let the focus check break anything
+            pass                                                # never let this check break anything
 
     def _on_root_configure(self, event: tk.Event) -> None:
         if event.widget is self.root and self.overlay is not None and not self._sync_pending:

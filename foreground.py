@@ -1,7 +1,6 @@
-"""Which window is in front?  Used to show the overlay only while the game or this program is in front.
+"""Is this program's window covered by another window?  Used so the overlay follows the program window.
 
-Windows only (ctypes, no extra packages).  Everywhere else ``foreground_info()`` returns None and the overlay
-is simply always shown.
+Windows only (ctypes, no extra packages).  Everywhere else the answer is "unknown" and the overlay stays shown.
 """
 from __future__ import annotations
 
@@ -9,18 +8,16 @@ import sys
 from dataclasses import dataclass
 
 IS_WINDOWS = sys.platform.startswith("win")
-GAME_WORDS = ("aion",)                 # in the window title or the program's file name
 
 
 @dataclass
-class Foreground:
+class Window:
     pid: int
     title: str
     exe: str
-    fullscreen: bool
 
     def describe(self) -> str:
-        return f"'{self.title[:60]}' ({self.exe or 'unknown program'})" + (", full screen" if self.fullscreen else "")
+        return f"'{self.title[:60]}' ({self.exe or 'unknown program'})"
 
 
 _API = None
@@ -33,30 +30,27 @@ def _api():
         import ctypes
         from ctypes import wintypes
         u32, k32 = ctypes.windll.user32, ctypes.windll.kernel32
-        u32.GetForegroundWindow.restype = wintypes.HWND
+        u32.GetAncestor.argtypes = [wintypes.HWND, wintypes.UINT]
+        u32.GetAncestor.restype = wintypes.HWND
+        u32.IsIconic.argtypes = [wintypes.HWND]
+        u32.GetWindowRect.argtypes = [wintypes.HWND, ctypes.POINTER(wintypes.RECT)]
+        u32.WindowFromPoint.argtypes = [wintypes.POINT]
+        u32.WindowFromPoint.restype = wintypes.HWND
         u32.GetWindowTextW.argtypes = [wintypes.HWND, wintypes.LPWSTR, ctypes.c_int]
         u32.GetWindowThreadProcessId.argtypes = [wintypes.HWND, ctypes.POINTER(wintypes.DWORD)]
-        u32.GetWindowRect.argtypes = [wintypes.HWND, ctypes.POINTER(wintypes.RECT)]
-        u32.MonitorFromWindow.argtypes = [wintypes.HWND, wintypes.DWORD]
-        u32.MonitorFromWindow.restype = wintypes.HANDLE
-
-        class MONITORINFO(ctypes.Structure):
-            _fields_ = [("cbSize", wintypes.DWORD), ("rcMonitor", wintypes.RECT),
-                        ("rcWork", wintypes.RECT), ("dwFlags", wintypes.DWORD)]
-        u32.GetMonitorInfoW.argtypes = [wintypes.HANDLE, ctypes.POINTER(MONITORINFO)]
         k32.OpenProcess.argtypes = [wintypes.DWORD, wintypes.BOOL, wintypes.DWORD]
         k32.OpenProcess.restype = wintypes.HANDLE
         k32.QueryFullProcessImageNameW.argtypes = [wintypes.HANDLE, wintypes.DWORD, wintypes.LPWSTR,
                                                    ctypes.POINTER(wintypes.DWORD)]
         k32.CloseHandle.argtypes = [wintypes.HANDLE]
-        _API = (ctypes, wintypes, u32, k32, MONITORINFO)
+        _API = (ctypes, wintypes, u32, k32)
     return _API
 
 
 def _exe_name(pid: int) -> str:
     if pid in _exe_cache:
         return _exe_cache[pid]
-    ctypes, wintypes, _u32, k32, _mi = _api()
+    ctypes, wintypes, _u32, k32 = _api()
     name = ""
     handle = k32.OpenProcess(0x1000, False, pid)            # PROCESS_QUERY_LIMITED_INFORMATION
     if handle:
@@ -73,40 +67,48 @@ def _exe_name(pid: int) -> str:
     return name
 
 
-def foreground_info() -> Foreground | None:
+def program_cover(widget_id: int, own_pid: int) -> tuple[str, Window | None]:
+    """How much of this program's window can be seen?
+
+    Returns ("visible", None) when some of it shows, ("covered", window) when only other programs' windows are on
+    top of it (``window`` is the first one found), ("minimized", None), or ("unknown", None).
+    """
     if not IS_WINDOWS:
-        return None
+        return "unknown", None
     try:
-        ctypes, wintypes, u32, _k32, MONITORINFO = _api()
-        hwnd = u32.GetForegroundWindow()
-        if not hwnd:
-            return Foreground(0, "", "", False)               # nothing has focus (desktop / switching)
-        buf = ctypes.create_unicode_buffer(256)
-        u32.GetWindowTextW(hwnd, buf, 256)
-        pid = wintypes.DWORD(0)
-        u32.GetWindowThreadProcessId(hwnd, ctypes.byref(pid))
+        ctypes, wintypes, u32, _k32 = _api()
+        top = u32.GetAncestor(widget_id, 2) or widget_id            # GA_ROOT: the real top-level window
+        if u32.IsIconic(top):
+            return "minimized", None
         rect = wintypes.RECT()
-        fullscreen = False
-        if u32.GetWindowRect(hwnd, ctypes.byref(rect)):
-            mon = u32.MonitorFromWindow(hwnd, 2)               # MONITOR_DEFAULTTONEAREST
-            info = MONITORINFO()
-            info.cbSize = ctypes.sizeof(MONITORINFO)
-            if mon and u32.GetMonitorInfoW(mon, ctypes.byref(info)):
-                m = info.rcMonitor
-                fullscreen = (rect.left <= m.left and rect.top <= m.top
-                              and rect.right >= m.right and rect.bottom >= m.bottom)
-        return Foreground(int(pid.value), buf.value, _exe_name(int(pid.value)), fullscreen)
+        if not u32.GetWindowRect(top, ctypes.byref(rect)):
+            return "unknown", None
+        w, h = rect.right - rect.left, rect.bottom - rect.top
+        if w < 80 or h < 80:
+            return "unknown", None
+        inset = 24                                                  # skip the invisible resize borders
+        xs = (rect.left + inset, rect.left + w // 2, rect.right - inset)
+        ys = (rect.top + inset, rect.top + h // 2, rect.bottom - inset)
+        points = [(xs[1], ys[1]), (xs[0], ys[0]), (xs[2], ys[0]), (xs[0], ys[2]), (xs[2], ys[2])]
+        foreign: Window | None = None
+        for x, y in points:
+            hit = u32.WindowFromPoint(wintypes.POINT(x, y))
+            if not hit:
+                continue
+            hit = u32.GetAncestor(hit, 2) or hit
+            pid = wintypes.DWORD(0)
+            u32.GetWindowThreadProcessId(hit, ctypes.byref(pid))
+            if int(pid.value) == own_pid:
+                return "visible", None                              # at least part of the program shows
+            if foreign is None:
+                buf = ctypes.create_unicode_buffer(256)
+                u32.GetWindowTextW(hit, buf, 256)
+                foreign = Window(int(pid.value), buf.value, _exe_name(int(pid.value)))
+        return ("covered", foreign) if foreign is not None else ("unknown", None)
     except Exception:
-        return None
+        return "unknown", None
 
 
-def overlay_should_show(info: Foreground | None, own_pid: int) -> bool:
-    """True while the game (or this program) is the window in front.  Unknown -> show."""
-    if info is None:
-        return True
-    if info.pid == own_pid:
-        return True
-    text = f"{info.title} {info.exe}".lower()
-    if any(word in text for word in GAME_WORDS):
-        return True
-    return info.fullscreen            # a game in borderless full screen whose title we do not recognise
+def overlay_should_show(state: str, cover: Window | None) -> bool:
+    """The overlay simply follows the program window: hidden while another window covers the program."""
+    return state != "covered"                                       # visible / unknown / minimised (handled elsewhere)
