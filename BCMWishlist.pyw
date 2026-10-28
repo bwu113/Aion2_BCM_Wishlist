@@ -118,6 +118,7 @@ class BlackCloudWatcher:
         self.last_error = ""                    # details of the last unexpected error (the program keeps running)
         self._format_problems = 0               # shop messages that did not look as expected, this scan
         self._format_details: list[str] = []
+        self._diag_time = 0.0                   # last refresh of the live diagnostic numbers
         self._auto_stopped = False              # the scan ended by itself because all 3 tabs were scanned
         self._outdated_notified = False         # the "download a new version" notice is shown once per scan
         self._notice_window = None
@@ -760,6 +761,12 @@ class BlackCloudWatcher:
                 self._set_status("Scanning. Now open the Black Cloud Merchant in the game and click each tab. "
                                  f"({self.decoder.summary()})")
                 self._waiting_notice_sent = True
+        elif (self.running and not self.pages and self._waiting_notice_sent
+              and time.monotonic() - self._diag_time >= 2.0
+              and self.status_var.get().startswith("Scanning. Now open")):
+            self._diag_time = time.monotonic()               # keep the numbers live until the first shop page arrives
+            self._set_status("Scanning. Now open the Black Cloud Merchant in the game and click each tab. "
+                             f"({self.decoder.summary()})")
         self.root.after(150 if self.running else 600, self._drain_queue)
 
     def _handle_page(self, page: ShopPage, stamp: float) -> None:

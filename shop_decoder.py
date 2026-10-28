@@ -38,6 +38,7 @@ from __future__ import annotations
 import re
 import struct
 import time
+from collections import Counter
 from dataclasses import dataclass, field
 from typing import Iterable
 
@@ -183,6 +184,7 @@ class FrameStream:
         self.packets = 0
         self.gaps = 0
         self.frames = 0
+        self.opcodes: Counter = Counter()          # first two bytes of every message: what the server is sending
         self.hole_since: float | None = None      # when the current hole was noticed
 
     # -- TCP level ---------------------------------------------------------- #
@@ -267,6 +269,8 @@ class FrameStream:
                 return frames
             frames.append(bytes(self.buf[hdr:hdr + length]))
             self.frames += 1
+            if len(self.opcodes) < 256:
+                self.opcodes[bytes(self.buf[hdr:hdr + 2])] += 1
             del self.buf[:hdr + length]
 
 
@@ -296,7 +300,8 @@ class ShopDecoder:
         game = self.streams.get(self.locked_flow) if self.locked_flow else None
         if game is None:
             return "game connection not recognised yet"
-        return (f"game connection found; {game.frames} messages read, {game.gaps} gaps, "
+        top = ", ".join(f"{op.hex()}x{n}" for op, n in game.opcodes.most_common(4))
+        return (f"game connection found; {game.frames} messages read ({top}), {game.gaps} gaps, "
                 f"{self.shop_frames} shop lists seen")
 
     def feed_tcp(self, flow: tuple, seq: int, payload: bytes, now: float | None = None) -> list[ShopPage]:
