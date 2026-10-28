@@ -667,7 +667,7 @@ class BlackCloudWatcher:
             self.packet_count += 1
             flow = (fields["src"], fields["sport"], fields["dst"], fields["dport"])
             try:
-                pages = decoder.feed_tcp(flow, fields["seq"], fields["payload"])
+                pages = decoder.feed_tcp(flow, fields["seq"], fields["payload"], fields["time"])
             except Exception as exc:                        # a decoder bug must never kill the capture
                 self._safe_queue_put(("format", f"the shop data caused an error ({type(exc).__name__}: {exc})"))
                 return None
@@ -757,7 +757,8 @@ class BlackCloudWatcher:
                                  "If it stays empty, try running the program as administrator.")
                 self._waiting_notice_sent = True
             elif self.packet_count > 0 and not self.pages and elapsed >= 15:
-                self._set_status("Scanning. Now open the Black Cloud Merchant in the game and click each tab.")
+                self._set_status("Scanning. Now open the Black Cloud Merchant in the game and click each tab. "
+                                 f"({self.decoder.summary()})")
                 self._waiting_notice_sent = True
         self.root.after(150 if self.running else 600, self._drain_queue)
 

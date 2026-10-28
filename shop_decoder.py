@@ -37,6 +37,7 @@ from __future__ import annotations
 
 import re
 import struct
+import time
 from dataclasses import dataclass, field
 from typing import Iterable
 
@@ -170,8 +171,8 @@ class FrameStream:
       A shop page that was inside the hole is lost (``gaps`` counts these).
     """
 
-    GAP_SEGMENTS = 8          # ~0.4 s of heartbeats before a hole is declared lost
-    GAP_BYTES = 16384
+    GAP_SECONDS = 1.0         # a hole may wait this long for the missing bytes (a TCP retransmit) before it is skipped
+    GAP_BYTES = 1 << 20       # ...unless this much data piles up behind it
 
     def __init__(self) -> None:
         self.next_seq: int | None = None
@@ -181,6 +182,8 @@ class FrameStream:
         self.ever_synced = False      # found a real heartbeat at least once => this is the game connection
         self.packets = 0
         self.gaps = 0
+        self.frames = 0
+        self.hole_since: float | None = None      # when the current hole was noticed
 
     # -- TCP level ---------------------------------------------------------- #
     def _collect(self) -> bytes:
@@ -198,7 +201,7 @@ class FrameStream:
             out += nxt
             self.next_seq = (self.next_seq + len(nxt)) & 0xFFFFFFFF
 
-    def feed(self, seq: int, payload: bytes) -> list[bytes]:
+    def feed(self, seq: int, payload: bytes, now: float | None = None) -> list[bytes]:
         if not payload:
             return []
         if self.next_seq is None:
@@ -212,8 +215,13 @@ class FrameStream:
             seq = self.next_seq
             diff = 0
         if diff > 0:                                    # hole / out of order
+            now = time.monotonic() if now is None else now
             self.pending[seq] = payload
-            if (len(self.pending) < self.GAP_SEGMENTS
+            if self.hole_since is None:
+                self.hole_since = now
+            # Wait for the missing bytes (the server resends them within a moment).  In a crowd hundreds of
+            # segments arrive meanwhile, so the wait is measured in time, not in segments.
+            if (now - self.hole_since < self.GAP_SECONDS
                     and sum(len(p) for p in self.pending.values()) < self.GAP_BYTES):
                 return []
             # The missing bytes are not coming: skip the hole and re-sync.
@@ -221,9 +229,16 @@ class FrameStream:
             self.next_seq = min(self.pending, key=lambda s: (s - self.next_seq) & 0xFFFFFFFF)
             self.buf.clear()
             self.synced = True      # optimistic: segments normally start on a frame boundary
-            return self._parse(self._collect())
+            frames = self._parse(self._collect())
+            self.hole_since = now if self.pending else None
+            return frames
         self.next_seq = (seq + len(payload)) & 0xFFFFFFFF
-        return self._parse(payload + self._collect())
+        frames = self._parse(payload + self._collect())
+        if not self.pending:
+            self.hole_since = None
+        elif self.hole_since is None:
+            self.hole_since = time.monotonic() if now is None else now
+        return frames
 
     # -- frame level -------------------------------------------------------- #
     def _parse(self, data: bytes) -> list[bytes]:
@@ -251,13 +266,15 @@ class FrameStream:
             if len(self.buf) < hdr + length:
                 return frames
             frames.append(bytes(self.buf[hdr:hdr + length]))
+            self.frames += 1
             del self.buf[:hdr + length]
 
 
 class ShopDecoder:
     """Feed TCP segments; get ShopPage objects back.  One FrameStream per flow."""
 
-    UNSYNCED_LIMIT = 40        # a flow that shows no game heartbeat in this many data packets is not the game
+    UNSYNCED_LIMIT = 400       # a flow that shows no game heartbeat in this many data packets is not the game
+                               # (generous: in a crowd the server sends hundreds of packets a second)
     MAX_IGNORED = 4096
 
     def __init__(self) -> None:
@@ -265,14 +282,25 @@ class ShopDecoder:
         self.ignored: set[tuple] = set()
         self.locked_flow: tuple | None = None      # the flow that carries the game's heartbeat
         self.problems: list[str] = []              # shop messages that did not look as expected (game update?)
+        self.shop_frames = 0
 
     def reset(self) -> None:
         self.streams.clear()
         self.ignored.clear()
         self.locked_flow = None
         self.problems.clear()
+        self.shop_frames = 0
 
-    def feed_tcp(self, flow: tuple, seq: int, payload: bytes) -> list[ShopPage]:
+    def summary(self) -> str:
+        """One line for the status bar when traffic is seen but no shop page: what the decoder has made of it."""
+        game = self.streams.get(self.locked_flow) if self.locked_flow else None
+        if game is None:
+            return "game connection not recognised yet"
+        return (f"game connection found; {game.frames} messages read, {game.gaps} gaps, "
+                f"{self.shop_frames} shop lists seen")
+
+    def feed_tcp(self, flow: tuple, seq: int, payload: bytes, now: float | None = None) -> list[ShopPage]:
+        """``now`` = capture time of the segment in seconds (any consistent clock); needed to time out TCP holes."""
         if not payload or flow in self.ignored:
             return []
         stream = self.streams.get(flow)
@@ -281,7 +309,9 @@ class ShopDecoder:
                 self.streams.clear()
             stream = self.streams[flow] = FrameStream()
         pages = []
-        for frame in stream.feed(seq, payload):
+        for frame in stream.feed(seq, payload, now):
+            if frame[:2] == SHOP_OPCODE:
+                self.shop_frames += 1
             page = parse_shop_payload(frame)
             if page:
                 pages.append(page)
@@ -338,8 +368,8 @@ def _main(argv: list[str]) -> int:
         if os.path.isfile(path):
             catalog.update(load_catalog(path))
     decoder = ShopDecoder()
-    for flow, seq, payload in iter_pcap_tcp(argv[1]):
-        for page in decoder.feed_tcp(flow, seq, payload):
+    for flow, seq, payload, stamp in iter_pcap_tcp(argv[1], with_time=True):
+        for page in decoder.feed_tcp(flow, seq, payload, stamp):
             print(f"\nShop page  request=0x{page.request_id:02x}  tab(guess)={page.tab_guess}  "
                   f"entries={len(page.offers)}/{page.declared_count}")
             print(f"{'#':>2} {'entry':>8} {'item_id':>10} {'qty':>4} {'orig':>9} {'price':>9} {'off':>5}  name")
@@ -349,8 +379,9 @@ def _main(argv: list[str]) -> int:
     return 0
 
 
-def iter_pcap_tcp(path: str) -> Iterable[tuple[tuple, int, bytes]]:
-    """Minimal classic-pcap reader yielding (flow, seq, payload) for IPv4/TCP packets."""
+def iter_pcap_tcp(path: str, with_time: bool = False) -> Iterable[tuple]:
+    """Minimal classic-pcap reader yielding (flow, seq, payload) - or (flow, seq, payload, seconds) with
+    ``with_time`` - for IPv4/TCP packets."""
     with open(path, "rb") as fh:
         data = fh.read()
     magic = data[:4]
@@ -364,6 +395,7 @@ def iter_pcap_tcp(path: str) -> Iterable[tuple[tuple, int, bytes]]:
     pos = 24
     while pos + 16 <= len(data):
         _s, _us, caplen, _orig = struct.unpack(e + "IIII", data[pos:pos + 16])
+        stamp = _s + _us / 1e6
         pos += 16
         raw = data[pos:pos + caplen]
         pos += caplen
@@ -393,7 +425,7 @@ def iter_pcap_tcp(path: str) -> Iterable[tuple[tuple, int, bytes]]:
         payload = seg[doff:]
         if payload:
             flow = (".".join(map(str, ip[12:16])), sport, ".".join(map(str, ip[16:20])), dport)
-            yield flow, seq, payload
+            yield (flow, seq, payload, stamp) if with_time else (flow, seq, payload)
 
 
 if __name__ == "__main__":

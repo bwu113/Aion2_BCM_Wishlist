@@ -30,6 +30,7 @@ IS_WINDOWS = sys.platform.startswith("win")
 LOST_SECONDS = 20.0            # silence on the game connection before capture goes back to the wide filter
 TIMEOUT_MS = 100               # how long the driver may hold packets back (also the idle wake-up interval)
 SNAPLEN = 65535
+KERNEL_BUFFER = 8 * 1024 * 1024   # bytes the driver may hold while this program is busy (the default is 1 MB)
 PCAP_D_IN = 1
 PCAP_IF_LOOPBACK = 0x1
 PCAP_ERRBUF_SIZE = 256
@@ -138,6 +139,11 @@ class PcapAPI:
             L.pcap_setdirection.restype = c_int
         except AttributeError as exc:
             raise NpcapError(f"the capture library is missing a function ({exc})") from exc
+        try:                                                     # optional: only Npcap / WinPcap have it
+            L.pcap_setbuff.argtypes = [c_void_p, c_int]
+            L.pcap_setbuff.restype = c_int
+        except AttributeError:
+            pass
 
     # -- adapters ----------------------------------------------------------- #
     def devices(self) -> list[Device]:
@@ -175,6 +181,10 @@ class PcapAPI:
             raise NpcapError(f"could not open {name}: {err.value.decode(errors='replace') or 'unknown error'}")
         try:
             self.lib.pcap_setdirection(handle, PCAP_D_IN)         # only what arrives (ignored if unsupported)
+        except Exception:
+            pass
+        try:
+            self.lib.pcap_setbuff(handle, KERNEL_BUFFER)          # bigger driver buffer: no drops in a crowd (Npcap/WinPcap only)
         except Exception:
             pass
         return handle
