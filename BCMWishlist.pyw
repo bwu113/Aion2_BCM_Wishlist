@@ -716,6 +716,12 @@ class BlackCloudWatcher:
         except Exception as exc:
             self._safe_queue_put(("error", f"Live capture failed: {exc}"))
         finally:
+            try:
+                lines = decoder.take_log()                  # the last second of notes, so the log is complete
+                if lines:
+                    self.packet_queue.put(("log", lines), timeout=0.5)
+            except Exception:
+                pass
             self._safe_queue_put(("finished", "live"))
 
     def stop_capture(self) -> None:
