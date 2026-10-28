@@ -361,10 +361,9 @@ def fit_text(text: str, box_w: float, box_h: float, px_max: int, px_min: int,
 
 
 class OverlayWindow(tk.Toplevel):
-    """Replica of the shop screen with your wanted items lit up, docked beside the program window.
+    """Resizable, always-on-top replica of the shop screen with your wanted items lit up.
 
-    It is owned by the program window: it sits just above it and goes behind other windows (alt+tab to
-    another program) together with it - it is not "always on top".
+    The program withdraws it while some other window (not the game, not this program) is in front.
 
     Cards are in the in-game positions (6 on the top row, 4 on the bottom row).  Click a tab
     to look at another tab; the overlay jumps to the tab you open in the game.
@@ -381,10 +380,7 @@ class OverlayWindow(tk.Toplevel):
         self._drawn: tuple | None = None              # what is on the canvas now: skip identical redraws
         self._views_key: tuple = ()
         try:
-            self.transient(parent)                    # owned by the program window: it follows that window's stacking
-        except tk.TclError:
-            pass
-        try:
+            self.attributes("-topmost", True)         # visible over the game; the program hides it while another window is in front
             if alpha < 1.0:                           # a see-through window costs the compositor extra work
                 self.attributes("-alpha", alpha)
         except tk.TclError:

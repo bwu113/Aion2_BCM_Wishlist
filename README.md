@@ -27,7 +27,7 @@ The overlay appears to the right of the program window as soon as the first shop
 - **Green glowing cards** are items on your wishlist. They are repeated by name in the middle under **WANTED HERE**.
 - Prices and discounts are not shown, and the game doesn't send item pictures, so the type label stands in for the artwork.
 
-The overlay follows the program window: it moves and resizes with it, and it goes behind other windows together with it. When you switch to another program (alt+tab) and that window covers the program, it covers the overlay too. To keep the overlay in view while you play, put the program beside the game or on a second monitor.
+The overlay follows the program window when you move or resize it. It stays on top of the game, and it hides itself while some other program (a browser, for example) is in front, then comes back when you return to the game or the program. To see it over the game, run the game in **borderless / windowed** mode, not exclusive fullscreen.
 
 ## Troubleshooting
 
@@ -36,7 +36,7 @@ The overlay follows the program window: it moves and resizes with it, and it goe
 | **"Npcap is not installed"** | Install [Npcap](https://npcap.com/) (keep WinPcap API-compatible mode ticked), then click **Start Scan** again. |
 | **"No game traffic seen yet"** | Make sure the game is running and connected. If it stays empty, close the program and start it again with right-click → **Run as administrator**. |
 | **Traffic is seen but the overlay stays empty** | Open the merchant and click **each tab** after **Start Scan**. If a page was missed, switch to another tab and back. |
-| **The overlay is hidden behind the game** | The overlay stays with the program window, so a game window in front of the program covers it. Move the program beside the game or onto a second monitor, or click the program in the taskbar. Also check **Show Overlay**, because the overlay stays hidden if you hid it yourself. |
+| **The overlay doesn't show over the game** | Switch the game to borderless/windowed mode. Also check **Show Overlay**, because the overlay stays hidden if you hid it yourself, and note that it hides while another program is in front. |
 | **"Please download a new version"** | The game was probably updated and the shop no longer looks the way this version expects. Download the latest version from the [Releases page](../../releases). |
 | **A pop-up asks you to name an item** | The game added an item the program doesn't know yet. Enter its name and pick a type, or click **Skip**. It is remembered in `item_catalog.csv`. |
 | **"Your list is full"** | The limit is 100 items. Delete something first. |

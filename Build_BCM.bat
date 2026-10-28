@@ -33,7 +33,7 @@ if errorlevel 1 goto failed
   --add-data "bcm_icon.ico;." --add-data "bcm_icon.png;." ^
   --add-data "found_chime.wav;." ^
   --hidden-import=shop_decoder --hidden-import=catalog --hidden-import=wishlist ^
-  --hidden-import=ui_widgets --hidden-import=theme --hidden-import=chime --hidden-import=safety --hidden-import=bulk_add --hidden-import=paste_dialog --hidden-import=npcap_native ^
+  --hidden-import=ui_widgets --hidden-import=theme --hidden-import=chime --hidden-import=safety --hidden-import=bulk_add --hidden-import=paste_dialog --hidden-import=npcap_native --hidden-import=foreground ^
   BCMWishlist.pyw
 if errorlevel 1 goto failed
 

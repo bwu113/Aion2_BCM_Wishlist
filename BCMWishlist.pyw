@@ -28,6 +28,7 @@ import npcap_native
 import theme
 from catalog import TYPE_LABELS, Catalog, append_user_catalog, update_user_catalog
 import safety
+import foreground
 from shop_decoder import ShopDecoder, ShopPage
 import chime
 from bulk_add import Resolver, parse_list
@@ -133,6 +134,7 @@ class BlackCloudWatcher:
         self._naming_done = 0
         self.root.report_callback_exception = self._on_callback_error
         self.overlay: OverlayWindow | None = None
+        self._focus_hidden = False              # the overlay is withdrawn because another window is in front
         self._user_hid_overlay = False          # the user clicked Hide: do not pop it up again by itself
         self._auto_show_pending = False         # show the overlay on the first shop page of a scan
         self.current_tab = ""
@@ -575,6 +577,7 @@ class BlackCloudWatcher:
     def show_overlay(self) -> None:
         if self.overlay is None:
             self.overlay = OverlayWindow(self.root)
+            self._focus_hidden = False
             self._overlay_geometry = None
             self._window_placement = None
         seen = [v.tab for v in self.views if v.seen]
@@ -584,12 +587,13 @@ class BlackCloudWatcher:
         self._update_overlay_button()
         if not self._polling:
             self._polling = True
-            self.root.after(500, self._poll_overlay)
+            self.root.after(300, self._poll_overlay)
 
     def hide_overlay(self) -> None:
         if self.overlay is not None:
             self.overlay.destroy()
             self.overlay = None
+        self._focus_hidden = False
         self._update_overlay_button()
 
     def _update_overlay_button(self) -> None:
@@ -619,8 +623,36 @@ class BlackCloudWatcher:
         if self.overlay is None:
             self._polling = False
             return
+        self._apply_focus_rule()
         self._sync_overlay()
-        self.root.after(500, self._poll_overlay)
+        self.root.after(300, self._poll_overlay)
+
+    def _apply_focus_rule(self) -> None:
+        """Show the overlay only while the game or this program is the window in front (alt+tab to a browser hides it)."""
+        ov = self.overlay
+        if ov is None:
+            return
+        try:
+            if self.root.state() == "iconic":
+                return                                          # minimised: the unmap handler has already hidden it
+            info = foreground.foreground_info()
+            show = foreground.overlay_should_show(info, os.getpid())
+            if show and self._focus_hidden:
+                self._focus_hidden = False
+                ov.deiconify()
+                self._overlay_geometry = None                   # place it again, it may have been moved meanwhile
+                self._window_placement = None
+                self._sync_overlay()
+            elif not show and not self._focus_hidden:
+                self._focus_hidden = True
+                ov.withdraw()
+            else:
+                return
+            if self.running and info is not None:
+                self._append_log([f"{time.strftime('%H:%M:%S')} overlay {'shown' if show else 'hidden'}: "
+                                  f"window in front = {info.describe()}"])
+        except Exception:
+            pass                                                # never let the focus check break anything
 
     def _on_root_configure(self, event: tk.Event) -> None:
         if event.widget is self.root and self.overlay is not None and not self._sync_pending:
@@ -632,7 +664,7 @@ class BlackCloudWatcher:
             self.overlay.withdraw()
 
     def _on_root_map(self, event: tk.Event) -> None:
-        if event.widget is self.root and self.overlay is not None:
+        if event.widget is self.root and self.overlay is not None and not self._focus_hidden:
             self.overlay.deiconify()
             self._sync_overlay()
 
