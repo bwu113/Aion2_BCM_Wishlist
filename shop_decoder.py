@@ -204,6 +204,91 @@ def _read_varint(buf: bytes | bytearray, pos: int) -> tuple[int, int] | None:
     return -1, pos                          # malformed
 
 
+# --------------------------------------------------------------------------- #
+# Bundles: in busy places the server packs many messages into one LZ4-compressed message
+#   ff ff | u32 little-endian uncompressed size | LZ4 block   ->   the usual  varint(len+4) payload  messages
+# --------------------------------------------------------------------------- #
+BUNDLE_MARK = b"\xff\xff"
+MAX_BUNDLE = 4 << 20
+
+
+def lz4_block(src: bytes, size: int) -> bytes | None:
+    """Plain LZ4 block decompressor (no frame header).  Returns None unless the result is exactly ``size`` bytes."""
+    out = bytearray()
+    i, n = 0, len(src)
+    try:
+        while i < n:
+            token = src[i]
+            i += 1
+            lit = token >> 4
+            if lit == 15:
+                while True:
+                    b = src[i]
+                    i += 1
+                    lit += b
+                    if b != 255:
+                        break
+            out += src[i:i + lit]
+            i += lit
+            if i >= n:
+                break
+            off = src[i] | (src[i + 1] << 8)
+            i += 2
+            if off == 0 or off > len(out):
+                return None
+            ml = token & 15
+            if ml == 15:
+                while True:
+                    b = src[i]
+                    i += 1
+                    ml += b
+                    if b != 255:
+                        break
+            ml += 4
+            if len(out) + ml > size:
+                return None
+            if off >= ml:
+                out += out[-off:len(out) - off + ml]
+            else:                                       # overlapping copy repeats the last `off` bytes
+                for _ in range(ml):
+                    out.append(out[-off])
+            if len(out) > size:
+                return None
+    except IndexError:
+        return None
+    return bytes(out) if len(out) == size else None
+
+
+def split_frames(data: bytes) -> list[bytes] | None:
+    """Cut data into  varint(len+4) payload  messages.  None if it does not divide up exactly."""
+    frames: list[bytes] = []
+    pos = 0
+    while pos < len(data):
+        vr = _read_varint(data, pos)
+        if vr is None or vr[0] < 0:
+            return None
+        n, hdr = vr
+        length = n - 4
+        if length < 2 or hdr + length > len(data):
+            return None
+        frames.append(data[hdr:hdr + length])
+        pos = hdr + length
+    return frames
+
+
+def unpack_bundle(frame: bytes) -> list[bytes] | None:
+    """The messages inside a bundle, or None if ``frame`` is not a bundle we can read."""
+    if frame[:2] != BUNDLE_MARK or len(frame) < 8:
+        return None
+    size = struct.unpack_from("<I", frame, 2)[0]
+    if not 4 <= size <= MAX_BUNDLE:
+        return None
+    data = lz4_block(frame[6:], size)
+    if data is None:
+        return None
+    return split_frames(data)
+
+
 class FrameStream:
     """Reassembles one server->client TCP direction and yields frame payloads.
 
@@ -226,6 +311,7 @@ class FrameStream:
         self.packets = 0
         self.gaps = 0
         self.frames = 0
+        self.bundles = 0                          # compressed bundles unpacked
         self.opcodes: Counter = Counter()          # first two bytes of every message: what the server is sending
         self.hole_since: float | None = None      # when the current hole was noticed
         self.extra_pages: list[ShopPage] = []     # shop lists found in the raw bytes although the framing was lost
@@ -308,6 +394,12 @@ class FrameStream:
         return frames
 
     # -- frame level -------------------------------------------------------- #
+    def _emit(self, frame: bytes, frames: list[bytes]) -> None:
+        frames.append(frame)
+        self.frames += 1
+        if len(self.opcodes) < 256:
+            self.opcodes[frame[:2]] += 1
+
     def _parse(self, data: bytes) -> list[bytes]:
         before = len(self.buf)
         self.buf += data
@@ -341,11 +433,15 @@ class FrameStream:
                 continue
             if len(self.buf) < hdr + length:
                 return frames
-            frames.append(bytes(self.buf[hdr:hdr + length]))
-            self.frames += 1
-            if len(self.opcodes) < 256:
-                self.opcodes[bytes(self.buf[hdr:hdr + 2])] += 1
+            frame = bytes(self.buf[hdr:hdr + length])
             del self.buf[:hdr + length]
+            inner = unpack_bundle(frame) if frame[:2] == BUNDLE_MARK else None
+            if inner is not None:
+                self.bundles += 1
+                for part in inner:
+                    self._emit(part, frames)
+            else:
+                self._emit(frame, frames)
 
 
 class ShopDecoder:
@@ -394,7 +490,7 @@ class ShopDecoder:
         if game is None:
             return "game connection not recognised yet"
         top = ", ".join(f"{op.hex()}x{n}" for op, n in game.opcodes.most_common(4))
-        return (f"game connection found; {game.frames} messages read ({top}), {game.gaps} gaps, "
+        return (f"game connection found; {game.frames} messages read ({top}), {game.bundles} bundles, {game.gaps} gaps, "
                 f"{self.shop_frames} shop lists seen" + (f", {self.nested_pages} packed" if self.nested_pages else "")
                 + (f", {self.salvaged} recovered" if self.salvaged else ""))
 
