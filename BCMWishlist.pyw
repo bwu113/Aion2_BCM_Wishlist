@@ -122,6 +122,7 @@ class BlackCloudWatcher:
         self._format_problems = 0               # shop messages that did not look as expected, this scan
         self._format_details: list[str] = []
         self._diag_time = 0.0                   # last refresh of the live diagnostic numbers
+        self._debug_clock = 0.0
         self._log_bytes = 0
         self._debug_written = 0                 # how many unreadable big messages are already in bcm_debug.txt
         self._auto_stopped = False              # the scan ended by itself because all 3 tabs were scanned
@@ -774,6 +775,9 @@ class BlackCloudWatcher:
             except Exception as exc:                        # one bad message must never stop the program
                 self._on_callback_error(type(exc), exc, exc.__traceback__)
         self._check_auto_stop()
+        if self.running and time.monotonic() - self._debug_clock >= 2.0:
+            self._debug_clock = time.monotonic()
+            self._write_debug_file()                          # samples of the server messages the program could not read
         if self.running and self.capture_started_monotonic is not None and not self._waiting_notice_sent:
             elapsed = time.monotonic() - self.capture_started_monotonic
             if self.packet_count == 0 and elapsed >= 8:

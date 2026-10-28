@@ -354,7 +354,7 @@ class ShopDecoder:
     UNSYNCED_LIMIT = 400       # a flow that shows no game heartbeat in this many data packets is not the game
                                # (generous: in a crowd the server sends hundreds of packets a second)
     MAX_IGNORED = 4096
-    DEBUG_FRAMES = 250         # how many big unreadable messages are kept for bcm_debug.txt
+    DEBUG_FRAMES = 60          # how many big unreadable messages are kept for bcm_debug.txt
     DEBUG_BYTES = 1500
 
     def __init__(self) -> None:
@@ -426,8 +426,10 @@ class ShopDecoder:
                 if nested:
                     self.nested_pages += len(nested)
                     pages.extend(nested)
+                    stream.log(f"shop list found inside a bigger message ({frame[:2].hex()}, {len(frame)} bytes)")
                 elif len(self.debug_frames) < self.DEBUG_FRAMES:
                     self.debug_frames.append(frame[:self.DEBUG_BYTES])
+                    stream.log(f"unreadable message {frame[:2].hex()} ({len(frame)} bytes) kept as sample #{len(self.debug_frames)}")
         if stream.extra_pages:                                 # found in the raw bytes
             keys = {tuple(o.entry_id for o in pg.offers) for pg in pages}
             for pg in stream.extra_pages:
