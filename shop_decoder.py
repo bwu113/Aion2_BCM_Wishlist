@@ -214,7 +214,7 @@ class FrameStream:
       A shop page that was inside the hole is lost (``gaps`` counts these).
     """
 
-    GAP_SECONDS = 1.0         # a hole may wait this long for the missing bytes (a TCP retransmit) before it is skipped
+    GAP_SECONDS = 0.5         # a hole may wait this long for the missing bytes (a TCP retransmit) before it is skipped
     GAP_BYTES = 1 << 20       # ...unless this much data piles up behind it
 
     def __init__(self) -> None:
@@ -228,6 +228,9 @@ class FrameStream:
         self.frames = 0
         self.opcodes: Counter = Counter()          # first two bytes of every message: what the server is sending
         self.hole_since: float | None = None      # when the current hole was noticed
+        self.extra_pages: list[ShopPage] = []     # shop lists found in the raw bytes although the framing was lost
+        self.salvage_seen: list[tuple] = []
+        self.events: list[str] = []               # what happened to this connection (for bcm_log.txt)
 
     # -- TCP level ---------------------------------------------------------- #
     def _collect(self) -> bytes:
@@ -244,6 +247,25 @@ class FrameStream:
                 nxt = self.pending.pop(s)[(self.next_seq - s) & 0xFFFFFFFF:]
             out += nxt
             self.next_seq = (self.next_seq + len(nxt)) & 0xFFFFFFFF
+
+    def log(self, text: str) -> None:
+        if len(self.events) < 400:
+            self.events.append(f"{time.strftime('%H:%M:%S')} {text}")
+
+    def _salvage(self, from_pos: int) -> None:
+        """Look for shop lists in the raw bytes, whatever the framing says: after a lost packet the framing can be out
+        of step for a while, and a shop list that arrives meanwhile would be swallowed."""
+        buf = self.buf
+        for m in _SHOP_MARK_RE.finditer(buf, max(0, from_pos - 2048)):
+            page = parse_shop_payload(bytes(buf[m.start():m.start() + 12000]))
+            if page is None or not _valid_page(page):
+                continue
+            key = (tuple(o.entry_id for o in page.offers), page.server_time_ms)
+            if key in self.salvage_seen:
+                continue
+            self.salvage_seen.append(key)
+            del self.salvage_seen[:-30]
+            self.extra_pages.append(page)
 
     def feed(self, seq: int, payload: bytes, now: float | None = None) -> list[bytes]:
         if not payload:
@@ -270,6 +292,7 @@ class FrameStream:
                 return []
             # The missing bytes are not coming: skip the hole and re-sync.
             self.gaps += 1
+            self.log(f"packet(s) missing: skipped a hole after {now - self.hole_since:.1f}s, {len(self.pending)} segments waiting")
             self.next_seq = min(self.pending, key=lambda s: (s - self.next_seq) & 0xFFFFFFFF)
             self.buf.clear()
             self.synced = True      # optimistic: segments normally start on a frame boundary
@@ -286,24 +309,33 @@ class FrameStream:
 
     # -- frame level -------------------------------------------------------- #
     def _parse(self, data: bytes) -> list[bytes]:
+        before = len(self.buf)
         self.buf += data
+        if data:
+            self._salvage(before)
         frames: list[bytes] = []
         while True:
             if not self.synced:
                 m = _HEARTBEAT_RE.search(self.buf)
                 if not m:
                     if len(self.buf) > 64:
-                        del self.buf[:-16]
+                        keep = 16
+                        k = self.buf.rfind(SHOP_OPCODE, max(0, len(self.buf) - 4096))
+                        if k >= 0:
+                            keep = max(keep, len(self.buf) - k)     # a shop list may be arriving: do not cut its start
+                        del self.buf[:-keep]
                     return frames
                 del self.buf[:m.start()]
                 self.synced = True
                 self.ever_synced = True
+                self.log("framing found again (heartbeat)")
             vr = _read_varint(self.buf, 0)
             if vr is None:
                 return frames
             n, hdr = vr
             length = n - 4
             if n < 0 or length < 2 or length > MAX_FRAME:
+                self.log(f"framing lost (bad message length {n}); looking for the next heartbeat")
                 self.synced = False                     # garbage: hunt for the next heartbeat
                 del self.buf[:1]
                 continue
@@ -331,8 +363,10 @@ class ShopDecoder:
         self.locked_flow: tuple | None = None      # the flow that carries the game's heartbeat
         self.problems: list[str] = []              # shop messages that did not look as expected (game update?)
         self.shop_frames = 0
+        self.log_lines: list[str] = []             # events for bcm_log.txt
         self.debug_frames: list[bytes] = []        # the first big messages, for diagnosing a scan that finds nothing
         self.nested_pages = 0
+        self.salvaged = 0
 
     def reset(self) -> None:
         self.streams.clear()
@@ -341,7 +375,18 @@ class ShopDecoder:
         self.problems.clear()
         self.shop_frames = 0
         self.debug_frames.clear()
+        self.log_lines.clear()
         self.nested_pages = 0
+        self.salvaged = 0
+
+    def take_log(self) -> list[str]:
+        """New event lines since the last call (from every connection)."""
+        out = self.log_lines[:]
+        self.log_lines.clear()
+        for st in self.streams.values():
+            out.extend(st.events)
+            st.events.clear()
+        return out
 
     def summary(self) -> str:
         """One line for the status bar when traffic is seen but no shop page: what the decoder has made of it."""
@@ -350,7 +395,8 @@ class ShopDecoder:
             return "game connection not recognised yet"
         top = ", ".join(f"{op.hex()}x{n}" for op, n in game.opcodes.most_common(4))
         return (f"game connection found; {game.frames} messages read ({top}), {game.gaps} gaps, "
-                f"{self.shop_frames} shop lists seen" + (f", {self.nested_pages} packed" if self.nested_pages else ""))
+                f"{self.shop_frames} shop lists seen" + (f", {self.nested_pages} packed" if self.nested_pages else "")
+                + (f", {self.salvaged} recovered" if self.salvaged else ""))
 
     def feed_tcp(self, flow: tuple, seq: int, payload: bytes, now: float | None = None) -> list[ShopPage]:
         """``now`` = capture time of the segment in seconds (any consistent clock); needed to time out TCP holes."""
@@ -365,6 +411,8 @@ class ShopDecoder:
         for frame in stream.feed(seq, payload, now):
             if frame[:2] == SHOP_OPCODE:
                 self.shop_frames += 1
+            if frame[:2] in (SHOP_OPCODE, SHOP_ACK_OPCODE):
+                stream.log(f"shop message {frame[:2].hex()} ({len(frame)} bytes)")
             page = parse_shop_payload(frame)
             if page:
                 pages.append(page)
@@ -378,6 +426,14 @@ class ShopDecoder:
                     pages.extend(nested)
                 elif len(self.debug_frames) < self.DEBUG_FRAMES:
                     self.debug_frames.append(frame[:self.DEBUG_BYTES])
+        if stream.extra_pages:                                 # found in the raw bytes
+            keys = {tuple(o.entry_id for o in pg.offers) for pg in pages}
+            for pg in stream.extra_pages:
+                if tuple(o.entry_id for o in pg.offers) not in keys:
+                    pages.append(pg)
+                    self.salvaged += 1
+                    stream.log(f"shop list ({pg.tab_guess}, {len(pg.offers)} items) recovered from the raw data")
+            stream.extra_pages.clear()
         if stream.ever_synced:
             if self.locked_flow is None:
                 self.locked_flow = flow

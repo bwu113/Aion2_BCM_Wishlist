@@ -41,6 +41,8 @@ ITEMS_FILE = "aion2_items.csv"
 USER_CATALOG_FILE = "item_catalog.csv"
 WISHLIST_FILE = "wishlist.json"
 DEBUG_FILE = "bcm_debug.txt"
+LOG_FILE = "bcm_log.txt"
+LOG_MAX_BYTES = 300_000
 MIN_WIDTH = 400
 DEFAULT_WIDTH = 460
 DEFAULT_HEIGHT = 486                    # overlay about 658 x 389 (80 % of the window height)
@@ -120,6 +122,7 @@ class BlackCloudWatcher:
         self._format_problems = 0               # shop messages that did not look as expected, this scan
         self._format_details: list[str] = []
         self._diag_time = 0.0                   # last refresh of the live diagnostic numbers
+        self._log_bytes = 0
         self._debug_written = 0                 # how many unreadable big messages are already in bcm_debug.txt
         self._auto_stopped = False              # the scan ended by itself because all 3 tabs were scanned
         self._outdated_notified = False         # the "download a new version" notice is shown once per scan
@@ -653,6 +656,7 @@ class BlackCloudWatcher:
         self._outdated_notified = False
         self._auto_stopped = False
         self._debug_written = 0
+        self._log_bytes = 0
         self._remove_debug_file()
         self.running = True
         self._set_controls_running(True)
@@ -668,6 +672,8 @@ class BlackCloudWatcher:
         decoder.reset()
         self._narrow_sent = False
 
+        log_clock = [time.monotonic()]
+
         def on_fields(fields: dict):
             self.packet_count += 1
             flow = (fields["src"], fields["sport"], fields["dst"], fields["dport"])
@@ -682,6 +688,11 @@ class BlackCloudWatcher:
                 decoder.problems.clear()
             for page in pages:
                 self._safe_queue_put(("page", (page, fields["time"])))
+            if time.monotonic() - log_clock[0] >= 1.0:       # hand the connection's event notes to the window once a second
+                log_clock[0] = time.monotonic()
+                lines = decoder.take_log()
+                if lines:
+                    self._safe_queue_put(("log", lines))
             if decoder.locked_flow is not None and not self._narrow_sent:
                 self._narrow_sent = True                    # found the game connection: listen to it alone
                 src, sport = decoder.locked_flow[0], decoder.locked_flow[1]
@@ -736,6 +747,8 @@ class BlackCloudWatcher:
             try:
                 if kind == "page":
                     self._handle_page(*value)
+                elif kind == "log":
+                    self._append_log(value)
                 elif kind == "format":
                     self._note_format_problem(str(value))
                 elif kind == "warning":
@@ -776,10 +789,23 @@ class BlackCloudWatcher:
         self.root.after(150 if self.running else 600, self._drain_queue)
 
     def _remove_debug_file(self) -> None:
+        for name in (DEBUG_FILE, LOG_FILE):
+            try:
+                os.remove(os.path.join(data_dir(), name))
+            except OSError:
+                pass
+
+    def _append_log(self, lines: list) -> None:
+        """bcm_log.txt: what happened to the game connection (lost packets, lost framing, shop messages)."""
         try:
-            os.remove(os.path.join(data_dir(), DEBUG_FILE))
-        except OSError:
-            pass
+            if self._log_bytes > LOG_MAX_BYTES:
+                return
+            text = "\n".join(str(x) for x in lines) + "\n"
+            with open(os.path.join(data_dir(), LOG_FILE), "a", encoding="utf-8") as fh:
+                fh.write(text)
+            self._log_bytes += len(text)
+        except Exception:
+            pass                                               # diagnostics must never get in the way
 
     def _write_debug_file(self) -> None:
         """While no shop page has been read: keep the big messages the server sent in a text file (hex), so that a
