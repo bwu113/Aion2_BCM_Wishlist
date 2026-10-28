@@ -416,6 +416,8 @@ class ShopDecoder:
             page = parse_shop_payload(frame)
             if page:
                 pages.append(page)
+                stream.log(f"shop list decoded: {page.tab_guess}, request 0x{page.request_id:02x}, "
+                           f"{len(page.offers)}/{page.declared_count} items" + ("" if page.complete else " (INCOMPLETE)"))
                 continue
             if frame[:2] == SHOP_OPCODE and len(frame) >= 4 and frame[3] > 0:
                 self.problems.append(f"a shop list with {frame[3]} items could not be read")

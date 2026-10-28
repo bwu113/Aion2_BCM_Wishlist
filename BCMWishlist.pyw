@@ -825,6 +825,8 @@ class BlackCloudWatcher:
         self.pages[page.tab_guess] = page
         self.page_time[page.tab_guess] = format_timestamp(stamp)
         self.current_tab = page.tab_guess
+        self._append_log([f"{time.strftime('%H:%M:%S')} window got the {page.tab_guess} list "
+                          f"({len(self.pages)}/3 tabs filled: {', '.join(sorted(self.pages))})"])
         noted = False
         try:
             noted = self._check_page(page)
@@ -866,6 +868,9 @@ class BlackCloudWatcher:
         """Compare a decoded shop page with the item list: learn new items, or warn that the game was updated.
         Returns True if it put a message in the status line."""
         audit = safety.audit_page(page, self.catalog)
+        if audit.verdict != "ok":
+            self._append_log([f"{time.strftime('%H:%M:%S')} check of the {page.tab_guess} list: {audit.verdict} "
+                              f"({'; '.join(audit.reasons)[:200]})"])
         if audit.verdict == "ok":
             return False
         if audit.new_items:
@@ -929,6 +934,7 @@ class BlackCloudWatcher:
         self.root.after_idle(self._next_naming)
 
     def _note_format_problem(self, detail: str) -> None:
+        self._append_log([f"{time.strftime('%H:%M:%S')} problem: {detail[:200]}"])
         self._format_problems += 1
         self._format_details.append(detail)
         if self._format_problems >= 2:
