@@ -38,6 +38,7 @@ from __future__ import annotations
 import re
 import struct
 import time
+import zlib
 from collections import Counter
 from dataclasses import dataclass, field
 from typing import Iterable
@@ -60,6 +61,7 @@ TIER_PERCENT = {0: 10, 1: 20, 2: 30, 3: 50}
 TAB_BY_ENTRY_PREFIX = {11: "Special", 12: "Pets", 13: "Skins"}
 
 # Heartbeat: 0e 00 36 + u64 epoch-ms (upper bytes are 01 00 00 for the next ~500 years)
+_SHOP_MARK_RE = re.compile(re.escape(SHOP_OPCODE))
 _HEARTBEAT_RE = re.compile(rb"\x0e\x00\x36.{5}\x01\x00\x00", re.DOTALL)
 
 
@@ -143,6 +145,46 @@ def parse_shop_payload(payload: bytes) -> ShopPage | None:
         if 10**12 < ts < 10**13:            # plausible epoch-ms
             page.server_time_ms = ts
     return page if page.offers else None
+
+
+def _valid_page(page: ShopPage) -> bool:
+    """A shop list found inside some other message must be complete and use only the known shop tabs."""
+    return bool(page.complete and all(o.entry_id // 10000 in TAB_BY_ENTRY_PREFIX for o in page.offers))
+
+
+def _unwrap(frame: bytes) -> list[bytes]:
+    """The frame itself plus anything that can be inflated out of it (the server may pack many messages into one
+    bigger message, possibly compressed, when there is a lot to send)."""
+    blobs = [frame]
+    if len(frame) < 40:
+        return blobs
+    for off in range(0, min(16, len(frame) - 6)):
+        for wbits in (15, -15):
+            if wbits == 15 and not (frame[off] & 0x0F == 8 and ((frame[off] << 8) | frame[off + 1]) % 31 == 0):
+                continue
+            try:
+                out = zlib.decompressobj(wbits).decompress(frame[off:], 1 << 22)
+            except zlib.error:
+                continue
+            if len(out) >= 40:
+                blobs.append(out)
+                break
+    return blobs
+
+
+def find_nested_shop_pages(frame: bytes) -> list[ShopPage]:
+    """Look for shop lists inside a message that is not itself a shop list (also inside inflated data)."""
+    pages: list[ShopPage] = []
+    seen: set[tuple] = set()
+    for blob in _unwrap(frame):
+        for m in _SHOP_MARK_RE.finditer(blob):
+            page = parse_shop_payload(blob[m.start():])
+            if page and _valid_page(page):
+                key = tuple(o.entry_id for o in page.offers)
+                if key not in seen:                          # the same list can be found by two inflate attempts
+                    seen.add(key)
+                    pages.append(page)
+    return pages
 
 
 # --------------------------------------------------------------------------- #
@@ -280,6 +322,8 @@ class ShopDecoder:
     UNSYNCED_LIMIT = 400       # a flow that shows no game heartbeat in this many data packets is not the game
                                # (generous: in a crowd the server sends hundreds of packets a second)
     MAX_IGNORED = 4096
+    DEBUG_FRAMES = 250         # how many big unreadable messages are kept for bcm_debug.txt
+    DEBUG_BYTES = 1500
 
     def __init__(self) -> None:
         self.streams: dict[tuple, FrameStream] = {}
@@ -287,6 +331,8 @@ class ShopDecoder:
         self.locked_flow: tuple | None = None      # the flow that carries the game's heartbeat
         self.problems: list[str] = []              # shop messages that did not look as expected (game update?)
         self.shop_frames = 0
+        self.debug_frames: list[bytes] = []        # the first big messages, for diagnosing a scan that finds nothing
+        self.nested_pages = 0
 
     def reset(self) -> None:
         self.streams.clear()
@@ -294,6 +340,8 @@ class ShopDecoder:
         self.locked_flow = None
         self.problems.clear()
         self.shop_frames = 0
+        self.debug_frames.clear()
+        self.nested_pages = 0
 
     def summary(self) -> str:
         """One line for the status bar when traffic is seen but no shop page: what the decoder has made of it."""
@@ -302,7 +350,7 @@ class ShopDecoder:
             return "game connection not recognised yet"
         top = ", ".join(f"{op.hex()}x{n}" for op, n in game.opcodes.most_common(4))
         return (f"game connection found; {game.frames} messages read ({top}), {game.gaps} gaps, "
-                f"{self.shop_frames} shop lists seen")
+                f"{self.shop_frames} shop lists seen" + (f", {self.nested_pages} packed" if self.nested_pages else ""))
 
     def feed_tcp(self, flow: tuple, seq: int, payload: bytes, now: float | None = None) -> list[ShopPage]:
         """``now`` = capture time of the segment in seconds (any consistent clock); needed to time out TCP holes."""
@@ -320,8 +368,16 @@ class ShopDecoder:
             page = parse_shop_payload(frame)
             if page:
                 pages.append(page)
-            elif frame[:2] == SHOP_OPCODE and len(frame) >= 4 and frame[3] > 0:
+                continue
+            if frame[:2] == SHOP_OPCODE and len(frame) >= 4 and frame[3] > 0:
                 self.problems.append(f"a shop list with {frame[3]} items could not be read")
+            elif len(frame) >= 120:                       # a big message of another kind: is a shop list packed inside?
+                nested = find_nested_shop_pages(frame)
+                if nested:
+                    self.nested_pages += len(nested)
+                    pages.extend(nested)
+                elif len(self.debug_frames) < self.DEBUG_FRAMES:
+                    self.debug_frames.append(frame[:self.DEBUG_BYTES])
         if stream.ever_synced:
             if self.locked_flow is None:
                 self.locked_flow = flow

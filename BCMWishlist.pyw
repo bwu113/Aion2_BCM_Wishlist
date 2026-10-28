@@ -40,6 +40,7 @@ CHIME_FILE = "found_chime.wav"
 ITEMS_FILE = "aion2_items.csv"
 USER_CATALOG_FILE = "item_catalog.csv"
 WISHLIST_FILE = "wishlist.json"
+DEBUG_FILE = "bcm_debug.txt"
 MIN_WIDTH = 400
 DEFAULT_WIDTH = 460
 DEFAULT_HEIGHT = 486                    # overlay about 658 x 389 (80 % of the window height)
@@ -119,6 +120,7 @@ class BlackCloudWatcher:
         self._format_problems = 0               # shop messages that did not look as expected, this scan
         self._format_details: list[str] = []
         self._diag_time = 0.0                   # last refresh of the live diagnostic numbers
+        self._debug_written = 0                 # how many unreadable big messages are already in bcm_debug.txt
         self._auto_stopped = False              # the scan ended by itself because all 3 tabs were scanned
         self._outdated_notified = False         # the "download a new version" notice is shown once per scan
         self._notice_window = None
@@ -650,6 +652,8 @@ class BlackCloudWatcher:
         self._format_details = []
         self._outdated_notified = False
         self._auto_stopped = False
+        self._debug_written = 0
+        self._remove_debug_file()
         self.running = True
         self._set_controls_running(True)
         self._set_status("Scanning. In the game open the Black Cloud Merchant and click each tab "
@@ -765,9 +769,31 @@ class BlackCloudWatcher:
               and time.monotonic() - self._diag_time >= 2.0
               and self.status_var.get().startswith("Scanning. Now open")):
             self._diag_time = time.monotonic()               # keep the numbers live until the first shop page arrives
+            self._write_debug_file()
+            note = f" Details: {DEBUG_FILE}." if self._debug_written else ""
             self._set_status("Scanning. Now open the Black Cloud Merchant in the game and click each tab. "
-                             f"({self.decoder.summary()})")
+                             f"({self.decoder.summary()}).{note}")
         self.root.after(150 if self.running else 600, self._drain_queue)
+
+    def _remove_debug_file(self) -> None:
+        try:
+            os.remove(os.path.join(data_dir(), DEBUG_FILE))
+        except OSError:
+            pass
+
+    def _write_debug_file(self) -> None:
+        """While no shop page has been read: keep the big messages the server sent in a text file (hex), so that a
+        scan that finds nothing can be looked at afterwards.  Only appends; stops after DEBUG_FRAMES messages."""
+        try:
+            frames = list(self.decoder.debug_frames)
+            if len(frames) <= self._debug_written:
+                return
+            with open(os.path.join(data_dir(), DEBUG_FILE), "a", encoding="utf-8") as fh:
+                for i in range(self._debug_written, len(frames)):
+                    fh.write(f"{i} len={len(frames[i])} {frames[i].hex()}\n")
+            self._debug_written = len(frames)
+        except Exception:
+            pass                                               # diagnostics must never get in the way
 
     def _handle_page(self, page: ShopPage, stamp: float) -> None:
         self.pages[page.tab_guess] = page
